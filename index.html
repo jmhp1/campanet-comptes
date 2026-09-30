@@ -296,6 +296,14 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
     <p class="note">Detall disponible del pressupost inicial per any.</p>
     <div class="tablewrap"><table><thead><tr><th>Any</th><th>Detall</th></tr></thead><tbody id="covBody"></tbody></table></div>
   </section>
+  <section class="panel">
+    <h2>Documents originals</h2>
+    <p class="note">PDFs oficials, arxivats perquè cada xifra es pugui comprovar contra el document font.</p>
+    <div class="grid2">
+      <div class="tablewrap"><table><thead><tr><th>Any</th><th>Comptes anuals</th></tr></thead><tbody id="docsComptesBody"></tbody></table></div>
+      <div class="tablewrap"><table><thead><tr><th>Any</th><th>Pressupost</th></tr></thead><tbody id="docsPressBody"></tbody></table></div>
+    </div>
+  </section>
 </div>
 
 <footer>Totes les xifres en euros corrents. 2023* és el pressupost de 2022 prorrogat. Fet amb dades públiques; cada xifra es pot comprovar al document enllaçat a «Fonts i mètode».</footer>
@@ -765,12 +773,17 @@ function drawContractes(){
 }
 
 /* ---------- FONTS ---------- */
+const DOCS_BASE="https://pub-600ea2af22b94ea9a2481130245d41b7.r2.dev/";
+const DOCS_COMPTES={2017:"comptes-2017.pdf",2018:"comptes-2018.pdf",2019:"comptes-2019.pdf",2020:"comptes-2020.pdf",2021:"comptes-2021.pdf",2022:"comptes-2022.pdf",2023:"comptes-2023.pdf",2024:"comptes-2024-provisionals.pdf"};
+const DOCS_PRESS={2010:"pressupost-2010.pdf",2011:"pressupost-2011.pdf",2012:"pressupost-2012.pdf",2013:"pressupost-2013.pdf",2014:"pressupost-2014.pdf",2015:"pressupost-2015.pdf",2016:"pressupost-2016.pdf",2017:"pressupost-2017.pdf",2018:"pressupost-2018.pdf",2019:"pressupost-2019.pdf",2020:"pressupost-2020.pdf",2021:"pressupost-2021.pdf",2024:"pressupost-2024.pdf"};
 function drawFonts(){
   const extra={2022:"El pressupost detallat no és a la web: els totals surten de la columna comparativa del pressupost 2024.",2016:"Només totals per capítol del pressupost i romanent (columna comparativa dels comptes 2017)."};
   const all={...extra,...LIQ_WARN};
   document.getElementById("warnBody").innerHTML=Object.keys(all).sort((a,b)=>b-a).map(y=>`<tr><td>${y}</td><td>${all[y]}</td></tr>`).join("");
   const st={2016:"Només totals per capítol",2017:"Complet",2018:"Complet",2019:"Complet",2020:"Complet",2021:"Complet",2022:"Només totals per capítol",2023:"Prorrogat del 2022",2024:"Complet"};
   document.getElementById("covBody").innerHTML=Object.entries(st).map(([y,s])=>`<tr><td>${y}</td><td>${s}</td></tr>`).join("");
+  document.getElementById("docsComptesBody").innerHTML=Object.keys(DOCS_COMPTES).sort((a,b)=>b-a).map(y=>`<tr><td>${y}</td><td><a href="${DOCS_BASE}${DOCS_COMPTES[y]}" rel="noopener" target="_blank">PDF</a></td></tr>`).join("");
+  document.getElementById("docsPressBody").innerHTML=Object.keys(DOCS_PRESS).sort((a,b)=>b-a).map(y=>`<tr><td>${y}</td><td><a href="${DOCS_BASE}${DOCS_PRESS[y]}" rel="noopener" target="_blank">PDF</a></td></tr>`).join("");
 }
 
 const DRAW={resum:drawResum,diners:drawDiners,promes:drawPromes,salut:drawSalut,contractes:drawContractes,fonts:drawFonts};
