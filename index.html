@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Els comptes de Campanet 2017–2024</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{
+  --bg:#F3F5F6; --panel:#FFFFFF; --ink:#1D2329; --muted:#5B646C; --line:#DADFE3;
+  --pos:#1E8449; --pos-soft:#D8EFE0; --neg:#C0392B; --neg-soft:#F6DCD8;
+  --plan:#8C959E; --plan2:#C9CED3; --real:#2563A8; --real-mid:#7FA6D6; --real-soft:#DCE7F5;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#14181C; --panel:#1C2127; --ink:#E6EAED; --muted:#9AA4AD; --line:#2E353C;
+  --pos:#4CC27E; --pos-soft:#1D3A2A; --neg:#EF6B5E; --neg-soft:#44221F;
+  --plan:#7E8891; --plan2:#4A525A; --real:#5B9BE0; --real-mid:#3B6694; --real-soft:#1E3048;
+}}
+:root[data-theme="dark"]{
+  --bg:#14181C; --panel:#1C2127; --ink:#E6EAED; --muted:#9AA4AD; --line:#2E353C;
+  --pos:#4CC27E; --pos-soft:#1D3A2A; --neg:#EF6B5E; --neg-soft:#44221F;
+  --plan:#7E8891; --plan2:#4A525A; --real:#5B9BE0; --real-mid:#3B6694; --real-soft:#1E3048;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1140px;margin:0 auto;padding:24px 20px 60px}
+h1,h2,.num,.tabs button{font-family:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif}
+h1{font-size:clamp(32px,5.5vw,54px);line-height:1;margin:0;font-weight:700;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:8px 0 18px;max-width:68ch}
+.tabs{display:flex;gap:4px;overflow-x:auto;border-bottom:2px solid var(--ink);margin-bottom:14px;scrollbar-width:thin}
+.tabs button{all:unset;cursor:pointer;font-size:17px;font-weight:600;padding:10px 14px 8px;color:var(--muted);white-space:nowrap;border-bottom:4px solid transparent;margin-bottom:-2px}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink)}
+.tabs button:focus-visible{outline:3px solid var(--real);outline-offset:-3px}
+.key{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--muted);margin:0 0 22px}
+.key span{display:inline-flex;align-items:center;gap:6px}
+.key i{width:14px;height:14px;border-radius:3px;display:inline-block}
+[role="tabpanel"][hidden]{display:none}
+.lead{font-size:17px;max-width:70ch;margin:0 0 20px}
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:22px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:18px 20px;display:grid;grid-template-columns:1fr 150px;gap:4px 16px;align-items:center}
+.kpi .num{font-size:44px;font-weight:700;line-height:1}
+.kpi h3{margin:0 0 6px;font-size:15px;font-weight:600}
+.kpi p{margin:6px 0 0;color:var(--muted);font-size:14px;grid-column:1/-1}
+.kpi .spark{height:64px;position:relative}
+.kpi button.go{all:unset;cursor:pointer;color:var(--real);font-size:14px;font-weight:500;grid-column:1/-1;margin-top:6px}
+.kpi button.go:hover{text-decoration:underline}
+.kpi button.go:focus-visible{outline:2px solid var(--real);outline-offset:2px}
+section.panel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:18px 20px;margin-bottom:18px}
+h2{font-size:23px;margin:0 0 4px;font-weight:600}
+.note{color:var(--muted);font-size:14px;margin:0 0 14px;max-width:80ch}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.chartbox{position:relative;height:320px}
+.chartbox.tall{height:400px}
+.chartbox.short{height:250px}
+.govline{font-size:14px;color:var(--muted);margin:-4px 0 12px}
+.govline b{color:var(--ink);font-weight:600}
+.mand{display:flex;gap:3px;margin:0 0 22px;font-size:13px}
+.mand div{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:8px 10px;min-width:0}
+.mand b{display:block;font-size:14px}
+.sk-wrap{overflow-x:auto}
+#sankey{display:block;width:100%;min-width:640px;height:auto}
+#sankey text{font-family:"IBM Plex Sans",system-ui,sans-serif;fill:var(--ink)}
+#sankey .amt{fill:var(--muted)}
+#sankey path{transition:opacity .15s}
+#sankey path:hover{opacity:.85}
+.warn{background:var(--bg);border-left:4px solid var(--plan);padding:10px 14px;font-size:14px;margin:0 0 14px;color:var(--ink)}
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.pills{display:flex;flex-wrap:wrap;gap:4px}
+.pills button,.seg button{font:600 14px "IBM Plex Sans Condensed",sans-serif;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:6px 11px;border-radius:4px;cursor:pointer}
+.pills button[aria-pressed="true"],.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.pills button:focus-visible,.seg button:focus-visible,select:focus-visible,input:focus-visible,th button:focus-visible,a:focus-visible{outline:3px solid var(--real);outline-offset:2px}
+.seg{display:inline-flex;gap:0}
+.seg button{border-radius:0}.seg button:first-child{border-radius:4px 0 0 4px}.seg button:last-child{border-radius:0 4px 4px 0}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-weight:600;color:var(--muted);border-bottom:2px solid var(--ink);padding:8px 10px;white-space:nowrap}
+th button{all:unset;cursor:pointer}
+td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+td.r,th.r{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.tot td{font-weight:600;border-top:2px solid var(--ink)}
+tr.muted td{color:var(--muted)}
+.pos{color:var(--pos)} .neg{color:var(--neg)}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:10px;background:var(--bg);border:1px solid var(--line);white-space:nowrap}
+.tag.ok{background:var(--pos-soft);border-color:transparent;color:var(--pos)}
+.tag.real{background:var(--real-soft);border-color:transparent;color:var(--real)}
+select,input[type=search]{font:14px "IBM Plex Sans",sans-serif;padding:7px 10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:4px}
+a{color:var(--real)}
+.cov{display:grid;grid-template-columns:auto repeat(8,1fr);gap:3px;font-size:13px;margin-top:6px}
+.cov div{padding:7px 6px;border-radius:3px;text-align:center}
+.cov .h{font-weight:600;color:var(--muted);text-align:left;background:none}
+.cov .ok{background:var(--pos-soft);color:var(--pos)}
+.cov .zero{background:var(--bg);color:var(--muted)}
+.cov .no{border:1px dashed var(--line);color:var(--muted)}
+.cov .na{color:var(--muted)}
+ul.src li{margin-bottom:6px}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:14px;margin-top:10px}
+@media (max-width:860px){
+  .kpis,.grid2{grid-template-columns:1fr}
+  .kpi{grid-template-columns:1fr 110px}
+  .kpi .num{font-size:36px}
+  .cov{grid-template-columns:auto repeat(8,minmax(34px,1fr));overflow-x:auto}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Els comptes de Campanet</h1>
+  <p class="sub">Què va aprovar l'Ajuntament, què va gastar i ingressar de veritat, quant estalvi li queda i a qui adjudica els contractes. Dades oficials, 2017–2024.</p>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Seccions">
+  <button role="tab" id="t-resum" aria-controls="p-resum" data-tab="resum">Resum</button>
+  <button role="tab" id="t-diners" aria-controls="p-diners" data-tab="diners">Ingressos i despeses</button>
+  <button role="tab" id="t-promes" aria-controls="p-promes" data-tab="promes">Pressupostat vs fet</button>
+  <button role="tab" id="t-salut" aria-controls="p-salut" data-tab="salut">Salut financera</button>
+  <button role="tab" id="t-contractes" aria-controls="p-contractes" data-tab="contractes">Contractació</button>
+  <button role="tab" id="t-fonts" aria-controls="p-fonts" data-tab="fonts">Fonts i mètode</button>
+</nav>
+<div class="key" aria-label="Clau de colors">
+  <span><i style="background:var(--pos)"></i>Saldo positiu, estalvi</span>
+  <span><i style="background:var(--neg)"></i>Saldo negatiu, dèficit, deutes</span>
+  <span><i style="background:var(--plan)"></i>Pressupostat (el que es preveu)</span>
+  <span><i style="background:var(--real)"></i>Executat (el que ha passat)</span>
+</div>
+
+<!-- RESUM -->
+<div role="tabpanel" id="p-resum" aria-labelledby="t-resum" hidden>
+  <p class="lead">Quatre xifres per entendre els comptes. Cada una porta a la pestanya on s'explica amb detall.</p>
+  <div class="kpis" id="kpis"></div>
+  <section class="panel">
+    <h2 id="skTitle">D'on venen i a on van els diners</h2>
+    <p class="note">Dades executades de l'any (comptes anuals). L'amplada de cada flux és proporcional als euros. A l'esquerra, d'on venen els diners; a la dreta, en què s'han gastat. Si ha sobrat, surt en verd; si s'ha hagut de tirar d'estalvi d'anys anteriors, en vermell.</p>
+    <div class="controls"><span>Any</span><div class="pills" data-years></div></div>
+    <p class="govline" data-gov></p>
+    <div class="sk-wrap"><svg id="sankey" role="img" aria-labelledby="skTitle"></svg></div>
+  </section>
+  <h2 style="margin-top:6px">Qui governava</h2>
+  <p class="note">Mandats municipals. Les línies puntejades dels gràfics per any marquen els canvis de govern (juny del 2019 i juny del 2023).</p>
+  <div class="mand" id="mand"></div>
+</div>
+
+<!-- DINERS -->
+<div role="tabpanel" id="p-diners" aria-labelledby="t-diners" hidden>
+  <section class="panel">
+    <h2>Quant ha sobrat o faltat cada any</h2>
+    <p class="note">Ingressos reconeguts menys despeses reconegudes de l'any (resultat pressupostari). Verd: han entrat més diners dels que han sortit. Vermell: han sortit més dels que han entrat.</p>
+    <div class="chartbox short"><canvas id="chSaldo" aria-label="Saldo anual"></canvas></div>
+  </section>
+  <div class="grid2">
+    <section class="panel">
+      <h2 id="incTitle">D'on venen els ingressos</h2>
+      <p class="note">Drets reconeguts per tipus d'ingrés.</p>
+      <div class="chartbox"><canvas id="chInc" aria-label="Ingressos per tipus"></canvas></div>
+    </section>
+    <section class="panel">
+      <h2 id="polTitle">En què es gasta</h2>
+      <p class="note" id="polNote"></p>
+      <div class="chartbox"><canvas id="chPol" aria-label="Despesa per política"></canvas></div>
+    </section>
+  </div>
+  <section class="panel">
+    <h2>El dia a dia: ingressos corrents menys despeses corrents</h2>
+    <p class="note">Sense obres ni subvencions per a obres. Mesura si els impostos, taxes i transferències ordinàries paguen sous, serveis i aportacions. Si és vermell, el funcionament ordinari s'ha pagat amb estalvi d'anys anteriors.</p>
+    <div class="chartbox short"><canvas id="chCorr" aria-label="Saldo corrent anual"></canvas></div>
+  </section>
+</div>
+
+<!-- PROMES -->
+<div role="tabpanel" id="p-promes" aria-labelledby="t-promes" hidden>
+  <section class="panel">
+    <h2>Pressupostat vs executat</h2>
+    <p class="note"><b>Inicial</b>: el que aprova el Ple. <b>Definitiu</b>: després de les modificacions durant l'any. <b>Executat</b>: el que realment s'ha gastat (obligacions reconegudes) o ingressat (drets reconeguts).</p>
+    <div class="controls">
+      <div class="seg" id="side" role="group" aria-label="Despeses o ingressos"><button aria-pressed="true" data-s="d">Despeses</button><button aria-pressed="false" data-s="i">Ingressos</button></div>
+      <div class="pills" data-years></div>
+    </div>
+    <p class="govline" data-gov></p>
+    <div class="warn" id="execWarn" hidden></div>
+    <div class="chartbox"><canvas id="chExec" aria-label="Inicial, definitiu i executat per capítol"></canvas></div>
+    <div class="tablewrap" style="margin-top:14px">
+      <table><thead><tr><th>Capítol</th><th class="r">Inicial</th><th class="r">Definitiu</th><th class="r">Executat</th><th class="r">% executat del definitiu</th><th class="r">Executat − inicial</th></tr></thead><tbody id="execBody"></tbody></table>
+    </div>
+  </section>
+  <section class="panel">
+    <h2>Quanta inversió s'executa</h2>
+    <p class="note">Percentatge del crèdit d'inversió disponible (definitiu) que s'ha gastat realment cada any.</p>
+    <div class="chartbox short"><canvas id="chInv" aria-label="Percentatge d'inversió executada"></canvas></div>
+  </section>
+  <section class="panel">
+    <h2>Projectes d'inversió anunciats</h2>
+    <p class="note">Annex d'inversions de cada pressupost: el que es va anunciar. Quan el projecte s'ha pogut enllaçar amb un contracte de la Plataforma de Contractació, se'n mostra l'adjudicatari.</p>
+    <div class="warn" id="projWarn" hidden></div>
+    <div class="controls">
+      <label for="projYear">Any</label><select id="projYear"></select>
+      <input type="search" id="projSearch" placeholder="Cerca un projecte" aria-label="Cerca un projecte">
+      <span id="projSum" class="note" style="margin:0"></span>
+    </div>
+    <div class="tablewrap"><table>
+      <thead><tr><th><button data-k="any">Any</button></th><th><button data-k="nom">Projecte</button></th><th class="r"><button data-k="imp">Previst</button></th><th>Finançament</th><th>Adjudicatari</th></tr></thead>
+      <tbody id="projBody"></tbody></table></div>
+  </section>
+</div>
+
+<!-- SALUT -->
+<div role="tabpanel" id="p-salut" aria-labelledby="t-salut" hidden>
+  <section class="panel">
+    <h2>Estalvi acumulat a 31 de desembre</h2>
+    <p class="note">Romanent de tresoreria. Només la part verda es pot gastar lliurement. La verda clara són subvencions cobrades per a obres concretes que encara no s'han fet. La vermella són deutes antics que probablement no es cobraran.</p>
+    <div class="chartbox tall"><canvas id="chRT" aria-label="Composició del romanent de tresoreria"></canvas></div>
+  </section>
+  <section class="panel">
+    <h2>El que li deuen i el que deu</h2>
+    <p class="note">A 31 de desembre. Amunt, el que l'Ajuntament té pendent de cobrar (sense els deutes dubtosos). Avall, el que té pendent de pagar i els deutes que no espera cobrar.</p>
+    <div class="chartbox"><canvas id="chDeutes" aria-label="Pendent de cobrar i de pagar"></canvas></div>
+  </section>
+  <section class="panel">
+    <h2>Resultat de l'any, corregit</h2>
+    <p class="note">Barres: resultat ajustat, que descompta el desfasament de les subvencions per a obres i la despesa pagada amb estalvi previ. És la mesura més neta de si l'any ha tancat en positiu. Punts grisos: resultat sense ajustar.</p>
+    <div class="chartbox short"><canvas id="chRP" aria-label="Resultat pressupostari ajustat"></canvas></div>
+  </section>
+  <section class="panel">
+    <h2>Com es calcula l'estalvi</h2>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Any</th><th class="r">Caixa i bancs</th><th class="r">+ Pendent de cobrar</th><th class="r">− Pendent de pagar</th><th class="r">± Pendent d'aplicar</th><th class="r">= Total</th><th class="r">− Deutes dubtosos</th><th class="r">− Reservat per a obres</th><th class="r">= Estalvi lliure</th></tr></thead>
+      <tbody id="rtBody"></tbody></table></div>
+  </section>
+</div>
+
+<!-- CONTRACTES -->
+<div role="tabpanel" id="p-contractes" aria-labelledby="t-contractes" hidden>
+  <section class="panel">
+    <h2>Com s'adjudica</h2>
+    <p class="note">Import total adjudicat cada any segons el procediment (memòria dels comptes anuals, apartat 22). Procediment obert: qualsevol empresa pot presentar oferta. Negociat: l'Ajuntament convida algunes empreses. Adjudicació directa: s'encarrega sense concurrència (inclou contractes menors). Tots els tons de blau són imports ja adjudicats; com més clar, menys concurrència. La línia és el percentatge d'adjudicació directa.</p>
+    <div class="chartbox"><canvas id="chProc" aria-label="Import adjudicat per procediment"></canvas></div>
+  </section>
+  <section class="panel">
+    <h2>Contractes i adjudicataris</h2>
+    <p class="note">Expedients publicats per l'Ajuntament a la Plataforma de Contractació del Sector Públic. Cada fila enllaça a la fitxa oficial.</p>
+    <div class="controls">
+      <input type="search" id="ctSearch" placeholder="Cerca per empresa, NIF o objecte" aria-label="Cerca contractes" style="min-width:260px">
+      <span id="ctSum" class="note" style="margin:0"></span>
+    </div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Any</th><th>Expedient</th><th>Objecte</th><th>Procediment</th><th>Estat</th><th>Adjudicatari</th><th class="r">Import adjudicat amb IVA</th><th>Lligam amb els comptes</th></tr></thead>
+      <tbody id="ctBody"></tbody></table></div>
+  </section>
+  <div class="grid2">
+    <section class="panel">
+      <h2>Empreses que més han cobrat</h2>
+      <p class="note">Suma dels imports adjudicats amb IVA, contractes carregats fins ara.</p>
+      <div class="chartbox short"><canvas id="chTop" aria-label="Adjudicataris per import"></canvas></div>
+    </section>
+    <section class="panel">
+      <h2>Dades de contractació carregades</h2>
+      <p class="note">Conjunts de dades oberts de la Plataforma. Verd: carregat amb contractes de Campanet. Gris: revisat, sense contractes de Campanet. Cap dels contractes menors de l'Ajuntament (2018–2024) apareix a les dades obertes de la Plataforma, tot i que la memòria dels comptes declara adjudicacions directes cada any.</p>
+      <div class="cov" id="ctCov"></div>
+    </section>
+  </div>
+  <section class="panel">
+    <h2>Serveis que paga cada any</h2>
+    <p class="note">Partides del pressupost inicial que cobra un tercer de manera recurrent. L'empresa concreta s'anirà omplint amb les dades de contractació.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Concepte</th><th>Qui ho cobra</th><th class="r">2017</th><th class="r">2018</th><th class="r">2019</th><th class="r">2020</th><th class="r">2021</th><th class="r">2024</th></tr></thead>
+      <tbody id="recBody"></tbody></table></div>
+  </section>
+</div>
+
+<!-- FONTS -->
+<div role="tabpanel" id="p-fonts" aria-labelledby="t-fonts" hidden>
+  <section class="panel">
+    <h2>D'on surten les dades</h2>
+    <ul class="src">
+      <li><a href="https://ajcampanet.net/ca/pressuposts" rel="noopener" target="_blank">Pressuposts de l'Ajuntament de Campanet</a>: pressupost inicial, annex d'inversions i despesa per polítiques.</li>
+      <li><a href="https://ajcampanet.net/ca/comptes-anuals" rel="noopener" target="_blank">Comptes anuals 2017–2024</a>: liquidació del pressupost, resultat pressupostari, romanent de tresoreria (estat 24.6) i procediments d'adjudicació (apartat 22). Els de 2024 són provisionals.</li>
+      <li><a href="https://www.hacienda.gob.es/es-ES/GobiernoAbierto/Datos%20Abiertos/Paginas/licitaciones_plataforma_contratacion.aspx" rel="noopener" target="_blank">Dades obertes de la Plataforma de Contractació del Sector Públic</a>: expedients de l'Ajuntament (NIF P0701200H).</li>
+      <li>Governs municipals: premsa local (Última Hora, IB3, Ara Balears) i decrets de batlia publicats al BOIB.</li>
+      <li><a href="https://claude.ai/code/artifact/62c62c8b-28f6-4b49-b714-5f4986267a4b" rel="noopener" target="_blank">Guia del dashboard</a>: definició de cada variable i de cada gràfic.</li>
+    </ul>
+  </section>
+  <section class="panel">
+    <h2>Com s'ha verificat</h2>
+    <p class="note" style="max-width:none">La liquidació s'ha agregat partida per partida i cada any quadra al cèntim amb els totals oficials. Ingressos menys despeses reconeguts dona exactament el resultat publicat. Al romanent, els components sumen el total i la columna comparativa de cada any coincideix amb l'any anterior. Els contractes es comproven contra les obligacions reconegudes de la partida quan és possible.</p>
+  </section>
+  <section class="panel">
+    <h2>Avisos per any</h2>
+    <div class="tablewrap"><table><thead><tr><th>Any</th><th>Què cal saber</th></tr></thead><tbody id="warnBody"></tbody></table></div>
+  </section>
+  <section class="panel">
+    <h2>Pressuposts carregats</h2>
+    <p class="note">Detall disponible del pressupost inicial per any.</p>
+    <div class="tablewrap"><table><thead><tr><th>Any</th><th>Detall</th></tr></thead><tbody id="covBody"></tbody></table></div>
+  </section>
+</div>
+
+<footer>Totes les xifres en euros corrents. 2023* és el pressupost de 2022 prorrogat. Fet amb dades públiques; cada xifra es pot comprovar al document enllaçat a «Fonts i mètode».</footer>
+</div>
+
+<script>
+const YEARS=[2016,2017,2018,2019,2020,2021,2022,2023,2024];
+const CAP={ // despeses per capítol
+ 2016:{c1:902761.95,c2:825021.85,c3:3842.16,c4:269382.21,c6:116083.56,c9:92093.76,t:2209185.49},
+ 2017:{c1:884460.08,c2:868524.52,c3:3400,c4:297675.67,c6:193085.46,t:2247145.73},
+ 2018:{c1:918694.75,c2:965221.95,c3:3400,c4:301492.39,c6:588628.32,t:2777437.41},
+ 2019:{c1:998268.95,c2:937847.45,c3:3400,c4:271562.75,c6:262071.39,t:2473150.54},
+ 2020:{c1:1164812.71,c2:1010873.63,c3:3400,c4:309791.53,c6:298883.65,t:2787761.52},
+ 2021:{c1:1235286.15,c2:1083960.02,c3:3400,c4:334847.97,c6:1237770.90,t:3895265.04},
+ 2022:{c1:1293387.03,c2:1062556.74,c3:8542.82,c4:340401.19,c6:824705.44,t:3529593.22},
+ 2024:{c1:1446505.92,c2:1206062.34,c3:8600,c4:504741.14,c6:37800,t:3203709.40}
+};
+CAP[2023]={...CAP[2022],prorrogat:true};
+const ING={
+ 2016:{i1:708234.26,i2:31000,i3:713799.18,i4:737593.73,i5:6200,i7:12358.34},
+ 2017:{i1:783208.91,i2:80000,i3:631299.17,i4:734079.31,i5:6200,i7:12358.34},
+ 2018:{i1:797325.67,i2:120000,i3:794730.78,i4:760440.84,i5:6200,i7:298740.12},
+ 2019:{i1:762325,i2:200000,i3:643500.01,i4:816367.19,i5:6200,i7:44758.34},
+ 2020:{i1:762445.92,i2:79987.36,i3:776646.57,i4:887678.13,i5:6200,i7:274803.54},
+ 2021:{i1:846649.21,i2:86987.36,i3:766922.61,i4:1033691.22,i5:6200,i7:1154814.64},
+ 2022:{i1:847724.21,i2:92987.36,i3:803458.45,i4:1062474.40,i5:6230,i7:716718.80},
+ 2024:{i1:912826.88,i2:94751.89,i3:967511.93,i4:1214704.54,i5:6010,i7:7904.16}
+};
+ING[2023]=ING[2022];
+const AREA={
+ 2016:[890286.29,293405.75,363674.14,15375.50,550507.89,95935.92],
+ 2017:[959089.51,298541.87,359938.30,15280.85,610895.19,3400],
+ 2018:[1366242.76,304867.81,437684.56,8000,657242.28,3400],
+ 2019:[1044244.12,362351.55,438632.34,6000,618522.53,3400],
+ 2020:[1214470.71,429613.93,391920.10,35500,712856.78,3400],
+ 2021:[1730937.34,480280.35,865232.91,77165.09,738249.35,3400],
+ 2022:[1702079.36,450594.23,553103.68,11600,803673.13,8542.82],
+ 2024:[1207626.48,463235.35,595187.58,5000,924059.99,8600]
+};
+AREA[2023]=AREA[2022];
+const AREA_N=["Serveis públics bàsics","Protecció i promoció social","Béns públics preferents (educació, cultura, esport)","Actuacions econòmiques","Actuacions de caràcter general","Deute públic"];
+const POL_N=["Seguretat i policia","Habitatge i urbanisme (vies, edificis)","Aigua, residus, enllumenat","Medi ambient","Serveis socials","Educació","Cultura i festes","Esports","Comerç i turisme","Òrgans de govern","Administració general","Mancomunitat i altres ens","Deute"];
+const POL={
+ 2017:[172096.06,419274.98,358718.47,9000,298541.87,159374.67,157728.74,42834.89,15280.85,91014.43,493786.98,26093.78,3400],
+ 2018:[207961.47,790047.15,350234.14,12000,304867.81,160136.93,208124.39,69423.24,8000,92891.40,533905.90,30444.98,3400],
+ 2019:[217171.71,489441.09,329631.31,8000,362351.55,171747.56,211299.08,55585.71,6000,95164.94,492912.61,30444.98,3400],
+ 2020:[223433.83,527051.81,457985.07,6000,429613.93,189189.53,152496.45,50234.12,35500,93557.45,572183.78,47115.55,3400],
+ 2021:[208181.21,656942.94,829599.94,36213.25,480280.35,198911.88,222297.44,444023.59,77165.09,93557.45,605672.57,39019.33,3400],
+ 2024:[186426.82,502925.69,486792.55,31481.42,463235.35,334897.88,223808.54,36481.16,5000,96304.37,752058.00,75697.62,8600]
+};
+const MANC={2017:231440.55,2019:201217.44,2018:231147.08,2020:221946.22,2021:240202.84,2024:435397.35};
+const P=(any,prog,nom,imp,fin)=>({any,prog,nom,imp,fin:fin||"Recursos propis / no especificat"});
+const PROJ=[
+ P(2017,"1522","Inversió associada al funcionament operatiu dels serveis",104585.46,"No especificat (aportació CIM prevista)"),
+ P(2017,"920","Equips informàtics",25000),
+ P(2017,"1522","Rehabilitació sala de vetlles del cementiri",18000),
+ P(2017,"1522","Plaques fotovoltaiques (Sa Cova i CEIP Llorenç Riber)",18000),
+ P(2017,"1532","Pavimentació carrers",15000),
+ P(2017,"1532","Mobiliari urbà",8000),
+ P(2017,"1522","Retirada parallamps de l'església",3000),
+ P(2017,"342","Remodelació vestidors poliesportiu",1000),
+ P(2017,"334","Adquisició de quadres",500),
+ P(2019,"1522","Obres aparcaments i altres",125839.39),
+ P(2019,"1522","Plaques fotovoltaiques escoleta",34000,"CAIB (32.400 €)"),
+ P(2019,"1532","Pavimentació carrers",25000),
+ P(2019,"334","Casa de Cultura: grades mòbils i condicionament",25000),
+ P(2019,"1532","Radars pedagògics",23232),
+ P(2019,"342","Reformes instal·lacions esportives",10000),
+ P(2019,"1532","Mobiliari urbà i senyalització",10000),
+ P(2019,"1522","Càmeres de vigilància interior",6000),
+ P(2019,"920","Equips informàtics",2000),
+ P(2019,"334","Adquisició de quadres",1000),
+ P(2018,"1532","Pavimentació camí de na Pontons",290695.91,"Consorci Borsa d'Allotjaments Turístics (probable)"),
+ P(2018,"1522","Construcció aparcaments nucli urbà",163432.41),
+ P(2018,"1522","Instal·lació plaques fotovoltaiques (Can Gaieta, escoleta, CEIP)",42000),
+ P(2018,"342","Reformes instal·lacions esportives (torres d'enllumenat)",25000),
+ P(2018,"334","Casa de Cultura: grades mòbils i condicionament",25000),
+ P(2018,"1532","Pavimentació carrers",25000),
+ P(2018,"1532","Mobiliari urbà i senyalització",15000),
+ P(2018,"920","Equips informàtics",2000),
+ P(2018,"334","Adquisició de quadres",500),
+ P(2020,"1532","Ampliació Plaça Major",87113.95,"CIM"),
+ P(2020,"161","Renovació trams xarxa d'aigua potable",75994.05,"CIM"),
+ P(2020,"1532","Camió brigada municipal",52477.70,"CIM"),
+ P(2020,"165","Substitució lluminàries enllumenat públic",15686.92),
+ P(2020,"161","Vàlvules reguladores de pressió xarxa d'aigua",14459.50,"CIM"),
+ P(2020,"1532","Pavimentació carrers",10000),
+ P(2020,"342","Reformes instal·lacions esportives",10000),
+ P(2020,"1532","Mobiliari urbà i senyalització",8000),
+ P(2020,"1532","Honoraris redacció i direcció obra Plaça Major",7651.53),
+ P(2020,"1532","Radars pedagògics",6000),
+ P(2020,"231","Equips informàtics serveis socials",5000),
+ P(2020,"1522","Càmeres de vigilància interior",4000),
+ P(2020,"920","Equips informàtics",2500),
+ P(2021,"161","Renovació xarxa aigua i sanejament Son Massanet",243000.22,"CIM (fons Covid)"),
+ P(2021,"1522","Oficina turística / reforma Plaça Major 23",241660.89,"CIM POS 2020-21 (169.162,62 €) + propis"),
+ P(2021,"342","Renovació gespa artificial futbol 11 i futbol 7",213659.49,"CIM POS 2020-21"),
+ P(2021,"342","2 pistes de pàdel i renovació pistes de tennis",142571.70,"CIM esports"),
+ P(2021,"161","Vàlvules de pressió i sectorització xarxa d'aigua",100021.77,"CIM POS 2020-21"),
+ P(2021,"164","Accessibilitat del cementiri",97132.99,"CIM (fons Covid)"),
+ P(2021,"1532","Rehabilitació camí del Sant Crist",50000,"CAIB Serra de Tramuntana"),
+ P(2021,"342","Renovació reg camp de futbol",48389.28,"CIM esports"),
+ P(2021,"165","Eficiència enllumenat públic, quadre 02",34510.92,"CIM PAESC"),
+ P(2021,"165","Eficiència enllumenat públic, quadre 01",22805.61,"CIM PAESC"),
+ P(2021,"1522","Restauració creu de Sant Miquel",16970.85,"CAIB Serra de Tramuntana"),
+ P(2021,"1532","Pavimentació carrers",6000),
+ P(2021,"1532","Obres aparcaments i altres",5000),
+ P(2021,"1532","Mobiliari urbà i senyalització",5000),
+ P(2021,"342","3 pistes de petanca",4547.18,"CIM esports"),
+ P(2021,"1522","Càmeres de vigilància interior",4000),
+ P(2021,"920","Equips informàtics",2500),
+ P(2024,"1532","Pavimentació carrers",10000),
+ P(2024,"334","Equipaments culturals",8000,"CIM (7.904,16 €)"),
+ P(2024,"1532","Obres aparcaments i altres",7000),
+ P(2024,"1532","Mobiliari urbà i senyalització",6000),
+ P(2024,"1522","Aire condicionat 3a Edat i Policia Local",3000),
+ P(2024,"920","Equips informàtics",2500),
+ ...["Adquisició immoble per aparcaments|1532","Nou pou de reserva a Sa Cova (projecte i honoraris)|161","Rehabilitació dipòsit Sa Murtera (projecte i honoraris)|161","Pla de sanejament i cicle de l'aigua (honoraris)|161","Automatització del Punt Verd|1621","Adquisició agranadora viària|1621","Grades camp de futbol (projecte i revisió)|342","Aire condicionat i sistema elèctric Ajuntament|1522","Renovació comptadors electrònics d'aigua|161","Millora il·luminació de carrers|165"].map(s=>{const[n,p]=s.split("|");const dbl=/projecte i/.test(n);return {...P(2024,p,n,dbl?200:100,"Pendent de subvenció"),ph:true}})
+];
+const REC=[ // 2017,2018,2019,2020,2021,2024
+ ["Gestió del centre de dia","Contractista (pendent)",[112680.88,112680.88,144702.81,148401,148401,148401]],
+ ["Recollida i eliminació de residus","Mancomunitat des Raiguer",[135334.88,127563.69,97634.05,92335.44,90230.59,214508.60]],
+ ["Tots els serveis de la Mancomunitat","Mancomunitat des Raiguer",[231440.55,231147.08,201217.44,221946.22,240202.84,435397.35]],
+ ["Energia elèctrica (enllumenat)","Comercialitzadora (pendent)",[115000,110000,105000,105000,105000,112421.97]],
+ ["Festes populars","Diversos proveïdors",[60000,70000,70000,55000,55000,77177.29]],
+ ["Personal escola de música","Contractista (pendent)",[29000,29000,29000,29000,40000,40000]],
+ ["Escola d'estiu","Contractista (pendent)",[null,null,null,3000,null,45200]],
+ ["Recaptació de tributs","ATIB",[null,null,null,null,null,50000]],
+ ["Ordenació i digitalització de l'arxiu","Contractista (pendent)",[18000,18000,20000,2000,30230,30230]],
+ ["Assegurances","Asseguradora (pendent)",[25000,28000,28000,30000,30000,35400]],
+ ["Programari de gestió (ABSIS, Gestiona)","Proveïdors de programari",[4600,4600,10360,18602.02,19270.86,31045.11]]
+];
+
+// Liquidació per capítols, Comptes anuals 2017–2024 (2024 provisional). [inicial, definitiu, executat]
+const LIQ={
+ 2017:{d:{c1:[884460.07,903384.52,817899.34],c2:[868524.53,1078538.49,973723.11],c3:[3400,3500,3460.20],c4:[297675.67,304895.70,271600.05],c6:[193085.46,1163713.87,904445.88]},
+       i:{i1:[783208.91,783208.91,850944.71],i2:[80000,80000,47682.05],i3:[631299.17,672770.13,854782.59],i4:[734079.31,849741.38,853939.14],i5:[6200,6200,6000.26],i7:[12358.34,767938.25,605878.35],i8:[0,294173.91,0]},
+       rp:[248098.52,499181.44],rtUsat:278902.97,caixa:716381.57},
+ 2018:{d:{c1:[918694.77,969967.04,840932.19],c2:[965221.95,1089442.89,999832.66],c3:[3400,4708.37,4587.24],c4:[301492.37,316388.57,284375.87],c6:[588628.32,1432031.25,1023064.19]},
+       i:{i1:[797325.68,797325.68,863501.32],i2:[120000,120000,93709.04],i3:[794730.77,808654.10,813456.91],i4:[760440.84,934897.78,968594.58],i5:[6200,6200,6000.29],i7:[298740.12,1037163.89,674545.48],i8:[0,108596.67,0]},
+       rp:[267015.47,302798.00],rtUsat:47778.54,caixa:1497352.05},
+ 2019:{d:{c1:[998268.97,1015205.77,900126.63],c2:[937847.45,1114848.74,1169966.59],c3:[3400,3400,3185.46],c4:[271562.73,328135.29,295603.41],c6:[262071.39,1253353.41,1181430.68]},
+       i:{i1:[762325,762325,860728.60],i2:[200000,200000,79987.36],i3:[643500,643500,782581.45],i4:[816367.20,816367.20,904544.09],i5:[6200,6200,6000.27],i7:[44758.34,789512.47,757112.47],i8:[0,497038.54,0]},
+       rp:[-159358.53,288913.37],rtUsat:481058.60,caixa:635489.11},
+ 2020:{d:{c1:[1164812.71,1194306.16,1088513.86],c2:[1018525.15,1179124.19,1085244.24],c3:[3400,3400,3392.87],c4:[309791.53,308441.53,265366.90],c6:[291232.12,316906.66,100664.37]},
+       i:{i1:[762445.92,762445.92,860335.68],i2:[79987.36,79987.36,86181.18],i3:[776646.57,776646.57,775655.96],i4:[887678.13,924096.63,980814.44],i5:[6200,6200,6000],i7:[274803.54,274803.54,241570.51],i8:[0,177998.53,0]},
+       rp:[407375.53,381825.66],rtUsat:166381.09,caixa:1192849.35},
+ 2021:{d:{c1:[1235286.15,1331927.86,1216783.49],c2:[1083960.02,1303018.76,1237457.47],c3:[3400,6189.03,6175.52],c4:[334847.97,334847.97,304912.67],c6:[1237770.90,1622142.90,592885.37]},
+       i:{i1:[846649.21,846649.21,873193.97],i2:[86987.36,86987.36,204280.68],i3:[766922.61,766922.61,743549.94],i4:[1033691.22,1121901.36,1117020.30],i5:[6200,6200,6000],i7:[1154814.64,1218460.64,1105959.73],i8:[0,551005.34,0]},
+       rp:[691790.10,204391.97],rtUsat:209258.42,caixa:1549621.84},
+ 2022:{d:{c1:[1293387.03,1440330.09,1358053.09],c2:[1062556.74,1417254.17,1325272.09],c3:[8542.82,9522.25,9440.31],c4:[340401.19,345857.03,302324.41],c6:[824705.44,1989912.01,572735.00]},
+       i:{i1:[847724.21,847724.21,925901.36],i2:[92987.36,92987.36,142392.22],i3:[803458.45,803458.45,833502.17],i4:[1062474.40,1062474.40,1202096.08],i5:[6230,6230,3333.37],i7:[716718.80,716718.80,548723.01],i8:[0,1673282.33,0]},
+       rp:[88123.31,295320.29],rtUsat:540470.70,caixa:700878.82},
+ 2023:{d:{c1:[1277380.45,1387353.66,1313590.25],c2:[984672.58,1831058.87,1738523.28],c3:[8542.82,11467.55,10222.48],c4:[340401.19,388985.48,322518.70],c6:[18500,1322903.56,457337.33]},
+       i:{i1:[847724.21,847724.21,907299.34],i2:[92987.36,92987.36,120570.61],i3:[803458.45,803458.45,971198.21],i4:[939366.34,1078679.52,1113867.41],i5:[6230,6230,3675.61],i7:[19508.34,78216.28,71066.24],i8:[0,2114250.96,0]},
+       rp:[-654514.62,307540.25],rtUsat:693887.41,caixa:637748.52},
+ 2024:{d:{c1:[1446505.92,1748841.40,1437928.74],c2:[1214062.34,1752299.22,1581739.44],c3:[8600,8600,8548.53],c4:[504741.14,504741.14,376025.80],c6:[29800,2194108.04,659904.22]},
+       i:{i1:[912826.88,912826.88,1232155.91],i2:[94751.89,135200.54,142384.16],i3:[967511.93,967511.93,990654.91],i4:[1214704.54,1394007.75,1535259.25],i5:[6010,6010,3524.86],i7:[7904.16,1641340.63,1571940.63],i8:[0,1151692.07,0]},
+       rp:[1411772.99,965345.08],rtUsat:557989.33,caixa:1676789.23}
+};
+const RT={2016:[826892.57,1572119.01,374678.49,0,2024333.09,583349.13,4456.09,1436527.87],2017:[716381.57,1938082.42,382032.38,0,2272431.61,648664.64,4961.15,1618805.82],2018:[1497352.05,1823368.25,781274.06,0,2539446.24,681046.9,17578.89,1840820.45],2019:[635489.11,2186281.26,441682.66,0,2380087.71,776118.54,11617.44,1592351.73],2020:[1192849.35,2351027.27,484723.54,-271689.84,2787463.24,963358.83,203548.4,1620556.01],2021:[1549621.84,2651774.69,438558.05,-283585.14,3479253.34,1061273.22,901559.6,1516420.52],2022:[700878.82,2900151.17,388099.79,-190764.85,3022165.35,729450.55,1239639.55,1053075.25],2023:[637748.52,2057686.67,531005.23,189793.36,2354223.32,709734.21,911194.74,733294.37],2024:[1676789.23,2845489.64,756278.84,-3.72,3765996.31,814607.98,1938908.97,1012479.36]}; // 24.6 Romanent de tresoreria: [fons líquids, drets pendents, obligacions pendents, partides pendents, total, dubtós cobrament, excés finançament afectat, per a despeses generals]
+const LIQ_Y=Object.keys(LIQ).map(Number);
+const LIQ_N={c1:"Personal",c2:"Béns i serveis",c3:"Interessos i comissions",c4:"Transferències a tercers",c6:"Inversió",
+ i1:"Impostos directes",i2:"Impostos indirectes",i3:"Taxes i preus",i4:"Transferències corrents",i5:"Ingressos patrimonials",i7:"Subvencions de capital",i8:"Romanent incorporat"};
+const LIQ_WARN={
+ 2018:"La previsió definitiva d'ingressos publicada supera en 300 € la de despeses. Es mostra tal com surt als comptes.",
+ 2023:"Pressupost prorrogat del 2022: en prorrogar-lo s'eliminen les inversions finalistes, per això la inversió inicial és de només 18.500 € i els ingressos inicials (2,71 M€) no quadren amb les despeses (2,63 M€).",
+ 2024:"Comptes provisionals. \"Equipaments culturals\" (8.000 €) figura com a inversió a l'annex del pressupost però la liquidació la imputa al capítol 2, per això la inversió inicial difereix de la vista de pressupost."
+};
+
+// Procediments d'adjudicació, memòria apartat 22: [obert, negociat, adjudicació directa, total]
+const PROC={2017:[103934.01,349904.51,224167.79,678006.31],2018:[986233.36,273295.22,56566.65,1316095.23],2019:[157349.52,35785.97,36532.81,229668.30],2020:[242658.85,19706.40,0,262365.25],2021:[319803.87,0,61752.99,381556.86],2022:[125590.61,0,70949.29,196539.90],2023:[0,0,798154.58,798154.58],2024:[124993.00,0,445225.40,570218.40]};
+// Contractes de la Plataforma (NIF P0701200H)
+const PL="https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=";
+const CONTR=[
+ {any:2018,exp:"3-2018",obj:"Repavimentació de camí amb 10 cm de mescla bituminosa i reconstrucció del ferm",proc:"Obert",estat:"Adjudicat",adj:"Matias Arrom Bibiloni",nif:"B57465213",imp:202564.53,pres:242365*1.21,link:PL+"em7kuT7zakYBPRBxZ4nJ%2Fg%3D%3D",lligam:"Probable: pavimentació camí de na Pontons (1532.61901)",ok:false,proj:"Pavimentació camí de na Pontons"},
+ {any:2018,exp:"5-2018",obj:"Obres i activitats al Parc Verd: adequació dels terrenys, tancament, bàscula i contenidors",proc:"Obert simplificat",estat:"Adjudicat",adj:"Gestions Obres i Serveis Son Janer SL",nif:"B57858136",imp:70536.95,pres:63550.59*1.21,link:PL+"8XrjRMUcwNAuf4aBO%2BvQlQ%3D%3D",lligam:"Quadra al cèntim: partida 1621.63208, 70.536,95 € reconeguts el 2018",ok:true},
+ {any:2018,exp:"8-2018",obj:"Aparcament municipal exterior al carrer Major 22-24-26",proc:"Obert",estat:"Adjudicat",adj:"Vitrac Obra Pública SL",nif:"B57207714",imp:85675,pres:91012.93*1.21,link:PL+"lmXA9BgxsL%2Bmq21uxhbaVQ%3D%3D",lligam:"Probable: construcció aparcaments nucli urbà (1522.63205)",ok:false,proj:"Construcció aparcaments nucli urbà"},
+ {any:2018,exp:"6-2018",obj:"Reforma integral del pati del CEIP Llorenç Riber i dels banys de planta baixa",proc:"Obert",estat:"En avaluació; adjudicació no publicada",adj:null,nif:null,imp:null,pres:271636.52*1.21,link:PL+"Brlpy7Vkpycuf4aBO%2BvQlQ%3D%3D",lligam:"Executat el 2019 sense adjudicació publicada: partida 323.63202, 256.947 € reconeguts",ok:false},
+ {any:2018,exp:"7-2018",obj:"Reforma de l'edifici del carrer Major 26 per a la Policia Local",proc:"Obert",estat:"Desert",adj:null,nif:null,imp:null,pres:71199.97*1.21,link:PL+"%2FbNQIitoMqsuf4aBO%2BvQlQ%3D%3D",lligam:"Es torna a licitar com a 7-a/2018",ok:false},
+ {any:2018,exp:"7-a/2018",obj:"Reforma de l'edifici del carrer Major 26 per a la Policia Local (segona licitació)",proc:"Obert",estat:"En avaluació; adjudicació no publicada",adj:null,nif:null,imp:null,pres:71199.97*1.21,link:PL+"jIwcr9SeR7Uuf4aBO%2BvQlQ%3D%3D",lligam:"Sense adjudicació publicada fins al 2020",ok:false},
+ {any:2018,exp:"9-2018",obj:"Gestió integral del centre de dia per a persones grans (15 places), contracte plurianual",proc:"Obert",estat:"En avaluació; adjudicació no publicada",adj:null,nif:null,imp:null,pres:747005.18,link:PL+"aMKYoXIt%2BnF7h85%2Fpmmsfw%3D%3D",lligam:"Partida 231.22722 (contracte gestió centre de dia): 147.631 € reconeguts el 2019",ok:false},
+ {any:2019,exp:"1-2019",obj:"Renovació del primer tram de la canonada general des del dipòsit de sa Canova",proc:"Obert",estat:"En avaluació; adjudicació no publicada",adj:null,nif:null,imp:null,pres:137404*1.21,link:PL+"Xt06KApzpRIBPRBxZ4nJ%2Fg%3D%3D",lligam:"Probable: partida 161.63209 (subvenció CIM): 93.133 € reconeguts el 2019",ok:false},
+ {any:2019,exp:"2-2019",obj:"Pavimentació i eliminació de barreres arquitectòniques",proc:"Obert",estat:"En avaluació; adjudicació no publicada",adj:null,nif:null,imp:null,pres:73469.62*1.21,link:PL+"3ujrV3FFdyVvYnTkQN0%2FZA%3D%3D",lligam:"Probable: partida 1532.61901 (carrer Molins, CIM): 75.038 € reconeguts el 2019",ok:false},
+ {any:2019,exp:"3-2019-VEHICLE",obj:"Adquisició d'una furgoneta elèctrica",proc:"Obert",estat:"En avaluació; adjudicació no publicada",adj:null,nif:null,imp:null,pres:27125.21*1.21,link:PL+"%2Fl4BZ3216DmXQV0WE7lYPw%3D%3D",lligam:"Probable: partida 153.63400: 32.650 € reconeguts el 2019",ok:false},
+ {any:2020,exp:"01-2020",obj:"Renovació de diversos trams de la xarxa d'aigua potable",proc:"Obert",estat:"Publicat; adjudicació no publicada",adj:null,nif:null,imp:null,pres:62805*1.21,link:PL+"0BvScm7Il9lvYnTkQN0%2FZA%3D%3D",lligam:"Pressupost = crèdit de la partida 161.63208 (75.994,05 €, CIM): 26.847 € reconeguts el 2020",ok:false},
+ {any:2020,exp:"2/2020",obj:"Subministrament d'un camió per a la brigada municipal",proc:"Obert",estat:"Publicat; adjudicació no publicada",adj:null,nif:null,imp:null,pres:43370*1.21,link:PL+"jFCcE%2FaFmAtvYnTkQN0%2FZA%3D%3D",lligam:"Pressupost = crèdit de la partida 1532.63400 (52.477,70 €, CIM), reconegut íntegrament el 2021",ok:false},
+ {any:2020,exp:"3/2020",obj:"Serveis de l'escola de música municipal",proc:"Obert",estat:"Publicat; adjudicació no publicada",adj:null,nif:null,imp:null,pres:29000*1.21,link:PL+"uFRHtpk1t54uf4aBO%2BvQlQ%3D%3D",lligam:"Probable: partida 3322.22799, 30.723 € reconeguts el 2020",ok:false},
+ {any:2021,exp:"1/2021",obj:"Ampliació de la plaça Major",proc:"Obert",estat:"Adjudicat",adj:"Vip Property Integral Services SL",nif:"B57950735",imp:83167.69,pres:71995*1.21,link:PL+"VzhGiPnAbUWiEJrVRqloyA%3D%3D",lligam:"Quadra al cèntim: 83.167,69 € al projecte amb finançament afectat «Ampliació Plaça Major» (comptes 2022)",ok:true},
+ {any:2021,exp:"02/2021",obj:"Renovació de la gespa artificial dels camps de futbol 11 i futbol 7",proc:"Obert",estat:"Adjudicat",adj:"Fieldturf Poligras SA",nif:"A58653676",imp:207402,pres:176578.09*1.21,link:PL+"LGDN3h%2Fz4YsSugstABGr5A%3D%3D",lligam:"Quadra al cèntim: 207.402 € al projecte «Renovació gespa camp de futbol» (comptes 2021); partida 342.63212",ok:true},
+ {any:2021,exp:"03/2021",obj:"Vehicle turisme adaptat per a la Policia Local",proc:"Obert",estat:"Publicat; adjudicació no publicada",adj:null,nif:null,imp:null,pres:31900.83*1.21,link:PL+"AkYFHhVrPIGmq21uxhbaVQ%3D%3D",lligam:"Probable: partida 1532.63401 «Vehicle policia local»: 27.540 € reconeguts el 2021",ok:false},
+ {any:2021,exp:"4/2021",obj:"Reforma d'un local comercial i canvi d'ús a oficina de turisme",proc:"Obert",estat:"Publicat; adjudicació no publicada",adj:null,nif:null,imp:null,pres:199719.75*1.21,link:PL+"5V7oQKdRkA6iEJrVRqloyA%3D%3D",lligam:"Pendent de creuar",ok:false},
+ {any:2021,exp:"05/2021",obj:"Rehabilitació del camí del Sant Crist: ferm i nova capa de rodadura",proc:"Obert",estat:"Publicat; adjudicació no publicada",adj:null,nif:null,imp:null,pres:108313.99*1.21,link:PL+"jhfQtJTxaqOiEJrVRqloyA%3D%3D",lligam:"Pendent de creuar",ok:false},
+];
+// Estat de les dades obertes carregades: conjunt -> any -> "ok" | "zero" | "no" | "na"
+const COV_CT={"Contractes no menors":{2017:"zero",2018:"ok",2019:"ok",2020:"ok",2021:"ok",2022:"no",2023:"no",2024:"no"},
+ "Contractes menors":{2017:"na",2018:"zero",2019:"zero",2020:"zero",2021:"zero",2022:"zero",2023:"zero",2024:"zero"},
+ "Plataformes agregades":{2017:"zero",2018:"zero",2019:"zero",2020:"zero",2021:"zero",2022:"na",2023:"na",2024:"na"}};
+
+
+// Governs municipals (investidures: 15/06/2019 i 17/06/2023)
+const GOV=[
+ {from:2015.45,to:2019.455,partit:"MÉS per Campanet",curt:"MÉS · majoria absoluta",batle:"Magdalena Solivellas",tipus:"Majoria absoluta"},
+ {from:2019.455,to:2023.46,partit:"PSIB-PSOE",curt:"PSIB-PSOE · minoria",batle:"Rosa Maria Bestard",tipus:"En minoria; investida amb el suport d'El Pi i del PP"},
+ {from:2023.46,to:2027.45,partit:"MÉS per Campanet",curt:"MÉS · minoria",batle:"Guillem Rosselló",tipus:"En minoria"}];
+const govOf=y=>{const a=GOV.filter(g=>g.from<y+1&&g.to>y);return a;};
+function govText(y){const a=govOf(y);if(a.length===1)return `${a[0].partit} (${a[0].tipus.toLowerCase()}), batle: ${a[0].batle}`;
+  return a.map((g,i)=>`${g.partit} ${i===0?"fins al":"des del"} ${y===2019?"15/06":"17/06"} (batle: ${g.batle})`).join(" → ");}
+const govPlugin={id:"gov",beforeDatasetsDraw(ch,_a,o){
+  if(!o||!o.years)return;const xs=ch.scales.x,ca=ch.chartArea,ctx=ch.ctx,Y=o.years,n=Y.length;if(n<2)return;
+  const w=xs.getPixelForValue(1)-xs.getPixelForValue(0);
+  const px=y=>{const i=Math.floor(y)-Y[0];return Math.max(ca.left,Math.min(ca.right,xs.getPixelForValue(0)+(i-0.5+(y-Math.floor(y)))*w));};
+  ctx.save();
+  GOV.forEach((g,k)=>{const a=px(g.from),b=px(g.to);if(b-a<2)return;
+    if(k%2===1){ctx.fillStyle=css("--bg");ctx.fillRect(a,ca.top,b-a,ca.bottom-ca.top);}
+    ctx.fillStyle=css("--muted");ctx.font='600 11px "IBM Plex Sans Condensed",sans-serif';ctx.textAlign="center";ctx.textBaseline="bottom";
+    const lbl=(b-a)>150?g.curt:g.partit.replace(" per Campanet","");ctx.fillText(lbl,(a+b)/2,ca.top-4);
+    if(g.from>Y[0]-0.5&&g.from<Y[n-1]+0.5){ctx.strokeStyle=css("--muted");ctx.setLineDash([3,3]);ctx.beginPath();ctx.moveTo(a,ca.top-2);ctx.lineTo(a,ca.bottom);ctx.stroke();ctx.setLineDash([]);}
+  });
+  ctx.restore();}};
+Chart.register(govPlugin);
+const govOpt=years=>({gov:{years},});
+const eur=v=>v==null?"—":Math.round(v).toLocaleString("ca-ES")+" €";
+const M=v=>(v<0?"−":"")+(Math.abs(v)/1e6).toLocaleString("ca-ES",{minimumFractionDigits:2,maximumFractionDigits:2})+" M€";
+const Mfmt=v=>(v<0?"−":"")+(Math.abs(v)/1e6).toLocaleString("ca-ES",{maximumFractionDigits:1})+" M";
+const pct=v=>isFinite(v)?v.toLocaleString("ca-ES",{maximumFractionDigits:0})+"%":"—";
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const yLbl=y=>y===2023?"2023*":y===2024?"2024 (prov.)":String(y);
+const sgn=v=>v>=0?css("--pos"):css("--neg");
+const DCH=["c1","c2","c4","c6","c3"];
+const drn=(y,keys)=>keys.reduce((s,k)=>s+(LIQ[y].i[k]?LIQ[y].i[k][2]:0),0);
+const orn=(y,keys)=>keys.reduce((s,k)=>s+(LIQ[y].d[k]?LIQ[y].d[k][2]:0),0);
+const INC_ALL=["i1","i2","i3","i4","i5","i7"], INC_CORR=["i1","i2","i3","i4","i5"], EXP_CORR=["c1","c2","c3","c4"];
+let selY=2024, side="d";
+const charts={};
+function mk(id,cfg,govYears){if(govYears)withGov(cfg.options,govYears);charts[id]&&charts[id].destroy();charts[id]=new Chart(document.getElementById(id),cfg);return charts[id];}
+const baseOpts=(extra={})=>({maintainAspectRatio:false,animation:false,...extra});
+const withGov=(opts,years)=>{opts.plugins={...(opts.plugins||{}),gov:{years}};opts.layout={padding:{top:18}};return opts;};
+const tickC=()=>css("--muted"), gridC=()=>css("--line");
+function yAxis(fmt=Mfmt,extra={}){return {ticks:{callback:fmt,color:tickC()},grid:{color:c=>c.tick&&c.tick.value===0?css("--ink"):gridC(),lineWidth:c=>c.tick&&c.tick.value===0?2:1},...extra};}
+const xAxis=(extra={})=>({ticks:{color:tickC()},grid:{display:false},...extra});
+const legend={position:"bottom",labels:{color:css("--ink"),boxWidth:12}};
+
+/* ---------- Tabs ---------- */
+const drawn={};
+const TABS=["resum","diners","promes","salut","contractes","fonts"];
+function show(tab,push=true){
+  if(!TABS.includes(tab))tab="resum";
+  document.querySelectorAll('[role="tab"]').forEach(b=>{const on=b.dataset.tab===tab;b.setAttribute("aria-selected",on);b.tabIndex=on?0:-1;});
+  document.querySelectorAll('[role="tabpanel"]').forEach(p=>p.hidden=p.id!=="p-"+tab);
+  if(push)history.replaceState(null,"","#"+tab);
+  if(!drawn[tab]){drawn[tab]=true;DRAW[tab]();}
+}
+function initTabs(){
+  const list=document.querySelector('[role="tablist"]');
+  list.addEventListener("click",e=>{const b=e.target.closest('[role="tab"]');if(b)show(b.dataset.tab);});
+  list.addEventListener("keydown",e=>{const bs=[...list.querySelectorAll('[role="tab"]')];const i=bs.indexOf(document.activeElement);if(i<0)return;
+    let j=null;if(e.key==="ArrowRight")j=(i+1)%bs.length;if(e.key==="ArrowLeft")j=(i-1+bs.length)%bs.length;if(j!==null){bs[j].focus();show(bs[j].dataset.tab);e.preventDefault();}});
+  show((location.hash||"#resum").slice(1),false);
+}
+/* ---------- Year pills (shared) ---------- */
+function renderPills(){
+  document.querySelectorAll("[data-gov]").forEach(el=>el.innerHTML=`<b>Govern el ${selY}:</b> ${govText(selY)}`);
+  document.querySelectorAll("[data-years]").forEach(el=>{
+    el.innerHTML=LIQ_Y.map(y=>`<button aria-pressed="${y===selY}" data-y="${y}">${yLbl(y)}</button>`).join("");
+    el.onclick=e=>{const y=+e.target.dataset.y;if(!y)return;selY=y;renderPills();if(drawn.resum)drawSankey();if(drawn.diners)drawYearDiners();if(drawn.promes)drawExec();};
+  });
+}
+
+/* ---------- RESUM ---------- */
+function spark(id,type,data,colors,opts={}){
+  mk(id,{type,data:{labels:data.labels,datasets:[{data:data.values,backgroundColor:colors,borderColor:colors,borderWidth:type==="line"?2.5:0,pointRadius:0,tension:.3,fill:false}]},
+    options:baseOpts({plugins:{legend:{display:false},tooltip:{enabled:false}},scales:{x:{display:false},y:{display:false,...opts}}})});
+}
+function drawResum(){
+  const y=2024, rtY=Object.keys(RT).map(Number);
+  const inv=y2=>LIQ[y2].d.c6[2]/LIQ[y2].d.c6[1]*100;
+  const sal=y2=>drn(y2,INC_ALL)-orn(y2,["c1","c2","c3","c4","c6"]);
+  const dir=y2=>PROC[y2][2]/PROC[y2][3]*100;
+  const K=[
+    {id:"k1",tab:"salut",n:M(RT[y][7]),cls:"pos",h:"Estalvi lliure a 31/12/2024",p:`Romanent per a despeses generals. Màxim: ${M(Math.max(...rtY.map(a=>RT[a][7])))} (2018). Mínim: ${M(Math.min(...rtY.map(a=>RT[a][7])))} (2023).`,
+     sp:()=>spark("k1s","line",{labels:rtY,values:rtY.map(a=>RT[a][7])},css("--pos"),{min:0})},
+    {id:"k2",tab:"promes",n:pct(inv(y)),cls:"",h:"Inversió executada el 2024",p:`${M(LIQ[y].d.c6[2])} gastats d'un crèdit de ${M(LIQ[y].d.c6[1])}. El 2019 se n'executava el ${pct(inv(2019))}.`,
+     sp:()=>spark("k2s","bar",{labels:LIQ_Y,values:LIQ_Y.map(inv)},css("--real"),{min:0,max:100})},
+    {id:"k3",tab:"diners",n:(sal(y)>=0?"+":"")+M(sal(y)),cls:sal(y)>=0?"pos":"neg",h:"Saldo de l'any 2024",p:`Ingressos menys despeses reconeguts. Inclou ${M(LIQ[y].i.i7[2])} de subvencions per a obres encara no fetes.`,
+     sp:()=>spark("k3s","bar",{labels:LIQ_Y,values:LIQ_Y.map(sal)},LIQ_Y.map(a=>sgn(sal(a))))},
+    {id:"k4",tab:"contractes",n:pct(dir(y)),cls:"",h:"Adjudicació directa el 2024",p:`Part de l'import adjudicat sense concurrència d'ofertes. El 2023 va ser el ${pct(dir(2023))}.`,
+     sp:()=>spark("k4s","bar",{labels:LIQ_Y,values:LIQ_Y.map(dir)},css("--real"),{min:0,max:100})}
+  ];
+  document.getElementById("kpis").innerHTML=K.map(k=>`<article class="kpi"><div><h3>${k.h}</h3><div class="num ${k.cls}">${k.n}</div></div><div class="spark"><canvas id="${k.id}s" aria-hidden="true"></canvas></div><p>${k.p}</p><button class="go" data-go="${k.tab}">Veure el detall</button></article>`).join("");
+  K.forEach(k=>k.sp());
+  drawSankey();
+  const t0=2016,t1=2025;document.getElementById("mand").innerHTML=GOV.map(g=>{const a=Math.max(g.from,t0),b=Math.min(g.to,t1);
+    return `<div style="flex:${(b-a).toFixed(2)}"><b>${g.partit}</b>${Math.round(g.from)===2015?"2015":g.from<2020?"juny 2019":"juny 2023"}–${g.to>2027?"actualitat":g.to<2020?"juny 2019":"juny 2023"}<br>Batle: ${g.batle}<br><span class="note">${g.tipus}</span></div>`;}).join("");
+  document.getElementById("kpis").onclick=e=>{const g=e.target.dataset.go;if(g){show(g);document.getElementById("t-"+g).focus();}};
+}
+
+
+const SK_SUB={c1:"sous i seguretat social",c2:"subministraments, serveis, manteniment",c3:"comissions bancàries",c4:"Mancomunitat, consorcis, entitats",c6:"obres i equipaments",
+ i1:"IBI, vehicles, plusvàlua",i2:"impost de construccions",i3:"aigua, fems, escoleta, llicències",i4:"Estat, Govern, Consell",i5:"concessions i interessos",i7:"subvencions per a obres"};
+function drawSankey(){
+  const y=selY,L=LIQ[y],svg=document.getElementById("sankey"),NS="http://www.w3.org/2000/svg";
+  document.getElementById("skTitle").textContent=`D'on venen i a on van els diners, ${yLbl(y)}`;
+  const left=INC_ALL.filter(k=>L.i[k]&&L.i[k][2]>0).map(k=>({k,name:LIQ_N[k],sub:SK_SUB[k],v:L.i[k][2],col:css("--real"),soft:css("--real-mid")})).sort((a,b)=>b.v-a.v);
+  const right=["c1","c2","c4","c6","c3"].filter(k=>L.d[k]&&L.d[k][2]>0).map(k=>({k,name:LIQ_N[k],sub:SK_SUB[k],v:L.d[k][2],col:css("--real"),soft:css("--real-mid")})).sort((a,b)=>b.v-a.v);
+  const inc=left.reduce((a,b)=>a+b.v,0),exp=right.reduce((a,b)=>a+b.v,0),bal=inc-exp;
+  if(bal>=0)right.push({name:"Sobra",sub:"estalvi de l'any",v:bal,col:css("--pos"),soft:css("--pos")});
+  else left.push({name:"Estalvi d'anys anteriors",sub:"per cobrir el que falta",v:-bal,col:css("--neg"),soft:css("--neg")});
+  const total=Math.max(inc,exp),W=960,H=540,top=58,gap=12,nw=14;
+  const xs=[300,473,646];
+  const n=Math.max(left.length,right.length),sc=(H-top-10-gap*(n-1))/total;
+  const place=(arr,x)=>{let yy=top;const used=arr.reduce((a,b)=>a+b.v*sc,0)+gap*(arr.length-1);yy=top+((H-top-10)-used)/2;arr.forEach(d=>{d.x=x;d.y0=yy;d.h=Math.max(1,d.v*sc);yy+=d.h+gap;});};
+  place(left,xs[0]);place(right,xs[2]);
+  const cH=total*sc,cY=top+((H-top-10)-cH)/2;
+  svg.setAttribute("viewBox",`0 0 ${W} ${H}`);svg.innerHTML="";
+  const el=(tag,a,parent=svg)=>{const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);parent.appendChild(e);return e;};
+  const ribbon=(x0,y0,x1,y1,h,fill,title)=>{const m=(x0+x1)/2;const p=el("path",{d:`M${x0},${y0} C${m},${y0} ${m},${y1} ${x1},${y1} L${x1},${y1+h} C${m},${y1+h} ${m},${y0+h} ${x0},${y0+h} Z`,fill,"fill-opacity":"0.38"});el("title",{},p).textContent=title;};
+  const pctOf=v=>pct(v/total*100);
+  let cy=cY;left.forEach(d=>{ribbon(d.x+nw,d.y0,xs[1],cy,d.h,d.soft,`${d.name}: ${eur(d.v)} (${pctOf(d.v)})`);cy+=d.h;});
+  cy=cY;right.forEach(d=>{ribbon(xs[1]+nw,cy,d.x,d.y0,d.h,d.soft,`${d.name}: ${eur(d.v)} (${pctOf(d.v)})`);cy+=d.h;});
+  [...left,...right].forEach(d=>el("rect",{x:d.x,y:d.y0,width:nw,height:d.h,fill:d.col,rx:2}));
+  el("rect",{x:xs[1],y:cY,width:nw,height:cH,fill:css("--ink"),rx:2});
+  const t1=el("text",{x:xs[1]+nw/2,y:cY-26,"text-anchor":"middle","font-size":15,"font-weight":600});t1.textContent=`Pressupost executat`;
+  const t2=el("text",{x:xs[1]+nw/2,y:cY-10,"text-anchor":"middle","font-size":13,class:"amt"});t2.textContent=`${M(inc)} ingressats · ${M(exp)} gastats`;
+  const spread=arr=>{let prev=-1e9;arr.forEach(d=>{d.ly=Math.max(d.y0+d.h/2,prev+34);prev=d.ly;});return prev;};
+  const maxY=Math.max(spread(left),spread(right))+24;if(maxY>H)svg.setAttribute("viewBox",`0 0 ${W} ${maxY}`);
+  const label=(d,side)=>{const cyv=d.ly,x=side==="l"?d.x-8:d.x+nw+8,anc=side==="l"?"end":"start";
+    if(Math.abs(cyv-(d.y0+d.h/2))>2){const xn=side==="l"?d.x:d.x+nw;el("path",{d:`M${xn},${d.y0+d.h/2} L${x+(side==="l"?4:-4)},${cyv-6}`,stroke:css("--muted"),"stroke-width":1,fill:"none"});}
+    const a=el("text",{x,y:cyv-3,"text-anchor":anc,"font-size":13.5,"font-weight":600});a.textContent=`${d.name} · ${d.v<100000?Math.round(d.v/1000).toLocaleString("ca-ES")+" k€":M(d.v)}`;
+    const b=el("text",{x,y:cyv+13,"text-anchor":anc,"font-size":11.5,class:"amt"});b.textContent=`${d.v/total<0.005?"<1%":pctOf(d.v)} · ${d.sub}`;};
+  left.forEach(d=>label(d,"l"));right.forEach(d=>label(d,"r"));
+}
+/* ---------- DINERS ---------- */
+function drawDiners(){
+  const sal=LIQ_Y.map(y=>LIQ[y].rp[0]);
+  mk("chSaldo",{type:"bar",data:{labels:LIQ_Y.map(yLbl),datasets:[{label:"Saldo",data:sal,backgroundColor:sal.map(sgn),borderRadius:3}]},
+    options:withGov(baseOpts({plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`Saldo: ${eur(c.raw)}`,
+      afterLabel:c=>{const y=LIQ_Y[c.dataIndex];return [`Ingressos: ${eur(drn(y,INC_ALL))}`,`Despeses: ${eur(orn(y,["c1","c2","c3","c4","c6"]))}`];}}}},
+      scales:{x:xAxis(),y:yAxis()}}),LIQ_Y)});
+  const corr=LIQ_Y.map(y=>drn(y,INC_CORR)-orn(y,EXP_CORR));
+  mk("chCorr",{type:"bar",data:{labels:LIQ_Y.map(yLbl),datasets:[{label:"Saldo corrent",data:corr,backgroundColor:corr.map(sgn),borderRadius:3}]},
+    options:withGov(baseOpts({plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`Saldo corrent: ${eur(c.raw)}`,
+      afterLabel:c=>{const y=LIQ_Y[c.dataIndex];return [`Ingressos corrents: ${eur(drn(y,INC_CORR))}`,`Despeses corrents: ${eur(orn(y,EXP_CORR))}`];}}}},
+      scales:{x:xAxis(),y:yAxis()}}),LIQ_Y)});
+  drawYearDiners();
+}
+function drawYearDiners(){
+  const y=selY, L=LIQ[y];
+  document.getElementById("incTitle").textContent=`D'on venen els ingressos, ${yLbl(y)}`;
+  // ingressos per tipus
+  const ik=INC_ALL.filter(k=>L.i[k]).sort((a,b)=>L.i[b][2]-L.i[a][2]);
+  mk("chInc",{type:"bar",data:{labels:ik.map(k=>LIQ_N[k]),datasets:[{data:ik.map(k=>L.i[k][2]),backgroundColor:css("--real"),borderRadius:3}]},
+    options:baseOpts({indexAxis:"y",plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>eur(c.raw)}}},
+      scales:{x:{ticks:{callback:Mfmt,color:tickC()},grid:{color:gridC()}},y:{ticks:{color:css("--ink")},grid:{display:false}}}})});
+  drawPol();
+}
+function drawPol(){
+  const y=selY, has=POL[y], t=document.getElementById("polTitle"), n=document.getElementById("polNote");
+  let labels,data;
+  if(has){labels=POL_N;data=POL[y];n.textContent="Segons el pressupost inicial (previsió), per finalitat de la despesa.";}
+  else{labels=AREA_N;data=AREA[y]||[];n.textContent=data.length?"Segons el pressupost inicial (previsió). Per a aquest any només hi ha el detall per àrea.":"No hi ha detall per finalitat per a aquest any.";}
+  t.textContent=`En què es preveia gastar, ${yLbl(y)}`;
+  const o=labels.map((l,i)=>[l,data[i]||0]).filter(x=>x[1]>0).sort((a,b)=>b[1]-a[1]);
+  mk("chPol",{type:"bar",data:{labels:o.map(x=>x[0]),datasets:[{data:o.map(x=>x[1]),backgroundColor:css("--plan"),borderRadius:3}]},
+    options:baseOpts({indexAxis:"y",plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>eur(c.raw)}}},
+      scales:{x:{ticks:{callback:v=>(v/1000)+"k",color:tickC()},grid:{color:gridC()}},y:{ticks:{color:css("--ink"),font:{size:11}},grid:{display:false}}}})});
+}
+
+/* ---------- PROMES ---------- */
+function drawPromes(){
+  const seg=document.getElementById("side");
+  seg.onclick=e=>{const s=e.target.dataset.s;if(!s)return;side=s;seg.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.s===s));drawExec();};
+  drawExec();
+  const inv=LIQ_Y.map(y=>LIQ[y].d.c6[2]/LIQ[y].d.c6[1]*100);
+  mk("chInv",{type:"bar",data:{labels:LIQ_Y.map(yLbl),datasets:[{label:"% executat",data:inv,backgroundColor:css("--real"),borderRadius:3}]},
+    options:withGov(baseOpts({plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${pct(c.raw)} executat`,
+      afterLabel:c=>{const d=LIQ[LIQ_Y[c.dataIndex]].d.c6;return [`Crèdit definitiu: ${eur(d[1])}`,`Executat: ${eur(d[2])}`];}}}},
+      scales:{x:xAxis(),y:{min:0,max:100,ticks:{callback:v=>v+"%",color:tickC()},grid:{color:gridC()}}}}),LIQ_Y)});
+  initProjects();
+}
+function drawExec(){
+  const L=LIQ[selY][side], keys=Object.keys(L);
+  const w=document.getElementById("execWarn");
+  if(LIQ_WARN[selY]){w.hidden=false;w.textContent=LIQ_WARN[selY];}else w.hidden=true;
+  mk("chExec",{type:"bar",data:{labels:keys.map(k=>LIQ_N[k]),datasets:[
+    {label:"Inicial",data:keys.map(k=>L[k][0]),backgroundColor:css("--plan2"),borderRadius:2},
+    {label:"Definitiu",data:keys.map(k=>L[k][1]),backgroundColor:css("--plan"),borderRadius:2},
+    {label:"Executat",data:keys.map(k=>L[k][2]),backgroundColor:css("--real"),borderRadius:2}]},
+    options:baseOpts({plugins:{legend,tooltip:{callbacks:{label:c=>`${c.dataset.label}: ${eur(c.raw)}`}}},
+      scales:{x:xAxis({ticks:{color:css("--ink")}}),y:yAxis()}})});
+  let T=[0,0,0];
+  const rows=keys.map(k=>{const [a,b,c]=L[k];T=[T[0]+a,T[1]+b,T[2]+c];const d=c-a,rt=k==="i8";
+    return `<tr${rt?' class="muted"':""}><td>${LIQ_N[k]}${rt?' <span class="tag">estalvi previ, no és un ingrés nou</span>':""}</td><td class="r">${eur(a)}</td><td class="r">${eur(b)}</td><td class="r">${eur(c)}</td><td class="r">${rt?"—":pct(c/b*100)}</td><td class="r">${rt?"—":(d>=0?"+":"")+eur(d)}</td></tr>`;});
+  const dT=T[2]-T[0];
+  rows.push(`<tr class="tot"><td>Total</td><td class="r">${eur(T[0])}</td><td class="r">${eur(T[1])}</td><td class="r">${eur(T[2])}</td><td class="r">${pct(T[2]/T[1]*100)}</td><td class="r">${dT>=0?"+":""}${eur(dT)}</td></tr>`);
+  document.getElementById("execBody").innerHTML=rows.join("");
+}
+let sortK="imp",sortDir=-1;
+function projAdj(p){const c=CONTR.find(c=>c.proj&&c.any===p.any&&c.proj===p.nom);return c?`<a href="${c.link}" target="_blank" rel="noopener">${c.adj}</a> <span class="tag real">${c.exp}</span>`:'<span class="tag">sense contracte enllaçat</span>';}
+function projects(){
+  const sel=document.getElementById("projYear"), y=sel.value, q=document.getElementById("projSearch").value.toLowerCase();
+  let rows=PROJ.filter(p=>(y==="all"||p.any==+y)&&p.nom.toLowerCase().includes(q));
+  rows.sort((a,b)=>(a[sortK]>b[sortK]?1:a[sortK]<b[sortK]?-1:0)*sortDir);
+  const w=document.getElementById("projWarn");
+  if(y==="2024"){w.hidden=false;w.textContent="2024: molts projectes tenen una dotació simbòlica de 100 € a l'espera de subvencions. L'import real només apareix a les modificacions i a la liquidació.";}
+  else if(y==="all"){w.hidden=false;w.textContent="2022 no té detall de projectes (el PDF no és a la web) i de 2016 només hi ha totals.";}
+  else w.hidden=true;
+  document.getElementById("projSum").textContent=`${rows.length} projectes · ${eur(rows.reduce((s,r)=>s+r.imp,0))} previstos`;
+  document.getElementById("projBody").innerHTML=rows.map(p=>`<tr class="${p.ph?"muted":""}"><td>${p.any}</td><td>${p.nom}</td><td class="r">${eur(p.imp)}</td><td>${p.fin}</td><td>${projAdj(p)}</td></tr>`).join("");
+}
+function initProjects(){
+  const sel=document.getElementById("projYear"), yrs=[...new Set(PROJ.map(p=>p.any))];
+  sel.innerHTML=`<option value="all">Tots</option>`+yrs.map(y=>`<option ${y===2018?"selected":""}>${y}</option>`).join("");
+  sel.onchange=projects;document.getElementById("projSearch").oninput=projects;
+  document.querySelectorAll("#p-promes th button").forEach(b=>b.onclick=()=>{const k=b.dataset.k;sortDir=sortK===k?-sortDir:(k==="imp"?-1:1);sortK=k;projects();});
+  projects();
+}
+
+/* ---------- SALUT ---------- */
+function drawSalut(){
+  const Y=Object.keys(RT).map(Number), lbl=Y.map(y=>y===2024?"2024 (prov.)":String(y));
+  mk("chRT",{type:"bar",data:{labels:lbl,datasets:[
+    {label:"Estalvi lliure",data:Y.map(y=>RT[y][7]),backgroundColor:css("--pos"),stack:"s"},
+    {label:"Reservat per a obres concretes",data:Y.map(y=>RT[y][6]),backgroundColor:css("--pos-soft"),borderColor:css("--pos"),borderWidth:1,stack:"s"},
+    {label:"Deutes que no es preveu cobrar",data:Y.map(y=>RT[y][5]),backgroundColor:css("--neg"),stack:"s"}]},
+    options:baseOpts({interaction:{mode:"index",intersect:false},plugins:{legend,tooltip:{callbacks:{label:c=>`${c.dataset.label}: ${eur(c.raw)}`,footer:it=>`Total: ${eur(RT[Y[it[0].dataIndex]][4])}`}}},
+      scales:{x:{...xAxis(),stacked:true},y:{...yAxis(),stacked:true}}})},Y);
+  mk("chDeutes",{type:"bar",data:{labels:lbl,datasets:[
+    {label:"Pendent de cobrar (cobrable)",data:Y.map(y=>RT[y][1]-RT[y][5]),backgroundColor:css("--pos"),stack:"s"},
+    {label:"Pendent de pagar",data:Y.map(y=>-RT[y][2]),backgroundColor:css("--neg"),stack:"s"},
+    {label:"Deutes que no es preveu cobrar",data:Y.map(y=>-RT[y][5]),backgroundColor:css("--neg-soft"),borderColor:css("--neg"),borderWidth:1,stack:"s"}]},
+    options:baseOpts({interaction:{mode:"index",intersect:false},plugins:{legend,tooltip:{callbacks:{label:c=>`${c.dataset.label}: ${eur(Math.abs(c.raw))}`}}},
+      scales:{x:{...xAxis(),stacked:true},y:{...yAxis(),stacked:true}}})},Y);
+  const aj=LIQ_Y.map(y=>LIQ[y].rp[1]);
+  mk("chRP",{data:{labels:LIQ_Y.map(yLbl),datasets:[
+    {type:"bar",label:"Resultat ajustat",data:aj,backgroundColor:aj.map(sgn),borderRadius:3,order:2},
+    {type:"line",label:"Resultat sense ajustar",data:LIQ_Y.map(y=>LIQ[y].rp[0]),borderColor:"transparent",backgroundColor:css("--plan"),pointRadius:6,pointStyle:"circle",order:1}]},
+    options:baseOpts({interaction:{mode:"index",intersect:false},plugins:{legend,tooltip:{callbacks:{label:c=>`${c.dataset.label}: ${eur(c.raw)}`,footer:it=>`Despesa pagada amb estalvi previ: ${eur(LIQ[LIQ_Y[it[0].dataIndex]].rtUsat)}`}}},
+      scales:{x:xAxis(),y:yAxis()}})},LIQ_Y);
+  document.getElementById("rtBody").innerHTML=Y.map(y=>{const r=RT[y];return `<tr><td>${y}${y===2024?" (prov.)":""}</td><td class="r">${eur(r[0])}</td><td class="r">${eur(r[1])}</td><td class="r neg">${eur(r[2])}</td><td class="r">${eur(r[3])}</td><td class="r"><b>${eur(r[4])}</b></td><td class="r neg">${eur(r[5])}</td><td class="r">${eur(r[6])}</td><td class="r pos"><b>${eur(r[7])}</b></td></tr>`;}).join("");
+}
+
+/* ---------- CONTRACTES ---------- */
+function drawContractes(){
+  const Y=Object.keys(PROC).map(Number);
+  mk("chProc",{data:{labels:Y.map(yLbl),datasets:[
+    {type:"bar",label:"Procediment obert",data:Y.map(y=>PROC[y][0]),backgroundColor:css("--real"),stack:"s",yAxisID:"y",order:2},
+    {type:"bar",label:"Negociat",data:Y.map(y=>PROC[y][1]),backgroundColor:css("--real-mid"),stack:"s",yAxisID:"y",order:2},
+    {type:"bar",label:"Adjudicació directa",data:Y.map(y=>PROC[y][2]),backgroundColor:css("--real-soft"),borderColor:css("--real"),borderWidth:1,stack:"s",yAxisID:"y",order:2},
+    {type:"line",label:"% adjudicació directa",data:Y.map(y=>PROC[y][2]/PROC[y][3]*100),borderColor:css("--ink"),backgroundColor:css("--ink"),borderWidth:2,pointRadius:4,yAxisID:"y2",order:1}]},
+    options:baseOpts({interaction:{mode:"index",intersect:false},plugins:{legend,tooltip:{callbacks:{label:c=>c.dataset.yAxisID==="y2"?`${c.dataset.label}: ${pct(c.raw)}`:`${c.dataset.label}: ${eur(c.raw)}`}}},
+      scales:{x:{...xAxis(),stacked:true},y:{...yAxis(),stacked:true},y2:{position:"right",min:0,max:100,ticks:{callback:v=>v+"%",color:tickC()},grid:{display:false}}}})},Y);
+  const tbl=()=>{const q=document.getElementById("ctSearch").value.toLowerCase();
+    const rows=CONTR.filter(c=>[c.adj,c.nif,c.obj,c.exp].join(" ").toLowerCase().includes(q)).sort((a,b)=>b.any-a.any||(b.imp||0)-(a.imp||0));
+    const adj=rows.filter(r=>r.imp);document.getElementById("ctSum").textContent=`${rows.length} expedients · ${adj.length} adjudicats · ${eur(adj.reduce((s,r)=>s+r.imp,0))}`;
+    document.getElementById("ctBody").innerHTML=rows.map(c=>`<tr><td>${c.any}</td><td><a href="${c.link}" target="_blank" rel="noopener">${c.exp}</a></td><td>${c.obj}</td><td>${c.proc}</td><td>${c.estat}</td><td>${c.adj?`${c.adj}<br><span class="note">${c.nif}</span>`:"—"}</td><td class="r">${eur(c.imp)}</td><td>${c.ok?`<span class="tag ok">verificat</span> `:""}${c.lligam}</td></tr>`).join("");};
+  document.getElementById("ctSearch").oninput=tbl;tbl();
+  const agg={};CONTR.filter(c=>c.imp).forEach(c=>{agg[c.adj]=(agg[c.adj]||0)+c.imp;});
+  const top=Object.entries(agg).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  mk("chTop",{type:"bar",data:{labels:top.map(t=>t[0]),datasets:[{data:top.map(t=>t[1]),backgroundColor:css("--real"),borderRadius:3}]},
+    options:baseOpts({indexAxis:"y",plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>eur(c.raw)}}},
+      scales:{x:{ticks:{callback:v=>(v/1000)+"k",color:tickC()},grid:{color:gridC()}},y:{ticks:{color:css("--ink"),font:{size:11}},grid:{display:false}}}})});
+  const yrs=[2017,2018,2019,2020,2021,2022,2023,2024], txt={ok:"sí",zero:"0",no:"falta",na:"—"};
+  document.getElementById("ctCov").innerHTML=`<div class="h"></div>`+yrs.map(y=>`<div class="h" style="text-align:center">${String(y).slice(2)}</div>`).join("")+
+    Object.entries(COV_CT).map(([k,v])=>`<div class="h">${k}</div>`+yrs.map(y=>`<div class="${v[y]}" title="${k} ${y}">${txt[v[y]]}</div>`).join("")).join("");
+  document.getElementById("recBody").innerHTML=REC.map(r=>`<tr><td>${r[0]}</td><td>${r[1].includes("pendent")?`<span class="tag">${r[1]}</span>`:r[1]}</td>${r[2].map(v=>`<td class="r">${eur(v)}</td>`).join("")}</tr>`).join("");
+}
+
+/* ---------- FONTS ---------- */
+function drawFonts(){
+  const extra={2022:"El pressupost detallat no és a la web: els totals surten de la columna comparativa del pressupost 2024.",2016:"Només totals per capítol del pressupost i romanent (columna comparativa dels comptes 2017)."};
+  const all={...extra,...LIQ_WARN};
+  document.getElementById("warnBody").innerHTML=Object.keys(all).sort((a,b)=>b-a).map(y=>`<tr><td>${y}</td><td>${all[y]}</td></tr>`).join("");
+  const st={2016:"Només totals per capítol",2017:"Complet",2018:"Complet",2019:"Complet",2020:"Complet",2021:"Complet",2022:"Només totals per capítol",2023:"Prorrogat del 2022",2024:"Complet"};
+  document.getElementById("covBody").innerHTML=Object.entries(st).map(([y,s])=>`<tr><td>${y}</td><td>${s}</td></tr>`).join("");
+}
+
+const DRAW={resum:drawResum,diners:drawDiners,promes:drawPromes,salut:drawSalut,contractes:drawContractes,fonts:drawFonts};
+function init(){renderPills();initTabs();}
+if(window.Chart)init();else window.addEventListener("load",init);
+</script>
+</body>
+</html>

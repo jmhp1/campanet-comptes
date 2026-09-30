@@ -1,0 +1,97 @@
+any,costat,capitol,nom,inicial,definitiu,executat
+2017,despesa,c1,Personal,884460.07,903384.52,817899.34
+2017,despesa,c2,Béns i serveis,868524.53,1078538.49,973723.11
+2017,despesa,c3,Interessos i comissions,3400,3500,3460.2
+2017,despesa,c4,Transferències a tercers,297675.67,304895.7,271600.05
+2017,despesa,c6,Inversió,193085.46,1163713.87,904445.88
+2017,ingres,i1,Impostos directes,783208.91,783208.91,850944.71
+2017,ingres,i2,Impostos indirectes,80000,80000,47682.05
+2017,ingres,i3,Taxes i preus,631299.17,672770.13,854782.59
+2017,ingres,i4,Transferències corrents,734079.31,849741.38,853939.14
+2017,ingres,i5,Ingressos patrimonials,6200,6200,6000.26
+2017,ingres,i7,Subvencions de capital,12358.34,767938.25,605878.35
+2017,ingres,i8,Romanent incorporat,0,294173.91,0
+2018,despesa,c1,Personal,918694.77,969967.04,840932.19
+2018,despesa,c2,Béns i serveis,965221.95,1089442.89,999832.66
+2018,despesa,c3,Interessos i comissions,3400,4708.37,4587.24
+2018,despesa,c4,Transferències a tercers,301492.37,316388.57,284375.87
+2018,despesa,c6,Inversió,588628.32,1432031.25,1023064.19
+2018,ingres,i1,Impostos directes,797325.68,797325.68,863501.32
+2018,ingres,i2,Impostos indirectes,120000,120000,93709.04
+2018,ingres,i3,Taxes i preus,794730.77,808654.1,813456.91
+2018,ingres,i4,Transferències corrents,760440.84,934897.78,968594.58
+2018,ingres,i5,Ingressos patrimonials,6200,6200,6000.29
+2018,ingres,i7,Subvencions de capital,298740.12,1037163.89,674545.48
+2018,ingres,i8,Romanent incorporat,0,108596.67,0
+2019,despesa,c1,Personal,998268.97,1015205.77,900126.63
+2019,despesa,c2,Béns i serveis,937847.45,1114848.74,1169966.59
+2019,despesa,c3,Interessos i comissions,3400,3400,3185.46
+2019,despesa,c4,Transferències a tercers,271562.73,328135.29,295603.41
+2019,despesa,c6,Inversió,262071.39,1253353.41,1181430.68
+2019,ingres,i1,Impostos directes,762325,762325,860728.6
+2019,ingres,i2,Impostos indirectes,200000,200000,79987.36
+2019,ingres,i3,Taxes i preus,643500,643500,782581.45
+2019,ingres,i4,Transferències corrents,816367.2,816367.2,904544.09
+2019,ingres,i5,Ingressos patrimonials,6200,6200,6000.27
+2019,ingres,i7,Subvencions de capital,44758.34,789512.47,757112.47
+2019,ingres,i8,Romanent incorporat,0,497038.54,0
+2020,despesa,c1,Personal,1164812.71,1194306.16,1088513.86
+2020,despesa,c2,Béns i serveis,1018525.15,1179124.19,1085244.24
+2020,despesa,c3,Interessos i comissions,3400,3400,3392.87
+2020,despesa,c4,Transferències a tercers,309791.53,308441.53,265366.9
+2020,despesa,c6,Inversió,291232.12,316906.66,100664.37
+2020,ingres,i1,Impostos directes,762445.92,762445.92,860335.68
+2020,ingres,i2,Impostos indirectes,79987.36,79987.36,86181.18
+2020,ingres,i3,Taxes i preus,776646.57,776646.57,775655.96
+2020,ingres,i4,Transferències corrents,887678.13,924096.63,980814.44
+2020,ingres,i5,Ingressos patrimonials,6200,6200,6000
+2020,ingres,i7,Subvencions de capital,274803.54,274803.54,241570.51
+2020,ingres,i8,Romanent incorporat,0,177998.53,0
+2021,despesa,c1,Personal,1235286.15,1331927.86,1216783.49
+2021,despesa,c2,Béns i serveis,1083960.02,1303018.76,1237457.47
+2021,despesa,c3,Interessos i comissions,3400,6189.03,6175.52
+2021,despesa,c4,Transferències a tercers,334847.97,334847.97,304912.67
+2021,despesa,c6,Inversió,1237770.9,1622142.9,592885.37
+2021,ingres,i1,Impostos directes,846649.21,846649.21,873193.97
+2021,ingres,i2,Impostos indirectes,86987.36,86987.36,204280.68
+2021,ingres,i3,Taxes i preus,766922.61,766922.61,743549.94
+2021,ingres,i4,Transferències corrents,1033691.22,1121901.36,1117020.3
+2021,ingres,i5,Ingressos patrimonials,6200,6200,6000
+2021,ingres,i7,Subvencions de capital,1154814.64,1218460.64,1105959.73
+2021,ingres,i8,Romanent incorporat,0,551005.34,0
+2022,despesa,c1,Personal,1293387.03,1440330.09,1358053.09
+2022,despesa,c2,Béns i serveis,1062556.74,1417254.17,1325272.09
+2022,despesa,c3,Interessos i comissions,8542.82,9522.25,9440.31
+2022,despesa,c4,Transferències a tercers,340401.19,345857.03,302324.41
+2022,despesa,c6,Inversió,824705.44,1989912.01,572735
+2022,ingres,i1,Impostos directes,847724.21,847724.21,925901.36
+2022,ingres,i2,Impostos indirectes,92987.36,92987.36,142392.22
+2022,ingres,i3,Taxes i preus,803458.45,803458.45,833502.17
+2022,ingres,i4,Transferències corrents,1062474.4,1062474.4,1202096.08
+2022,ingres,i5,Ingressos patrimonials,6230,6230,3333.37
+2022,ingres,i7,Subvencions de capital,716718.8,716718.8,548723.01
+2022,ingres,i8,Romanent incorporat,0,1673282.33,0
+2023,despesa,c1,Personal,1277380.45,1387353.66,1313590.25
+2023,despesa,c2,Béns i serveis,984672.58,1831058.87,1738523.28
+2023,despesa,c3,Interessos i comissions,8542.82,11467.55,10222.48
+2023,despesa,c4,Transferències a tercers,340401.19,388985.48,322518.7
+2023,despesa,c6,Inversió,18500,1322903.56,457337.33
+2023,ingres,i1,Impostos directes,847724.21,847724.21,907299.34
+2023,ingres,i2,Impostos indirectes,92987.36,92987.36,120570.61
+2023,ingres,i3,Taxes i preus,803458.45,803458.45,971198.21
+2023,ingres,i4,Transferències corrents,939366.34,1078679.52,1113867.41
+2023,ingres,i5,Ingressos patrimonials,6230,6230,3675.61
+2023,ingres,i7,Subvencions de capital,19508.34,78216.28,71066.24
+2023,ingres,i8,Romanent incorporat,0,2114250.96,0
+2024,despesa,c1,Personal,1446505.92,1748841.4,1437928.74
+2024,despesa,c2,Béns i serveis,1214062.34,1752299.22,1581739.44
+2024,despesa,c3,Interessos i comissions,8600,8600,8548.53
+2024,despesa,c4,Transferències a tercers,504741.14,504741.14,376025.8
+2024,despesa,c6,Inversió,29800,2194108.04,659904.22
+2024,ingres,i1,Impostos directes,912826.88,912826.88,1232155.91
+2024,ingres,i2,Impostos indirectes,94751.89,135200.54,142384.16
+2024,ingres,i3,Taxes i preus,967511.93,967511.93,990654.91
+2024,ingres,i4,Transferències corrents,1214704.54,1394007.75,1535259.25
+2024,ingres,i5,Ingressos patrimonials,6010,6010,3524.86
+2024,ingres,i7,Subvencions de capital,7904.16,1641340.63,1571940.63
+2024,ingres,i8,Romanent incorporat,0,1151692.07,0

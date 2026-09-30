@@ -1,0 +1,133 @@
+any,nivell,nom,import_eur
+2017,politica,Seguretat i policia,172096.06
+2017,politica,"Habitatge i urbanisme (vies, edificis)",419274.98
+2017,politica,"Aigua, residus, enllumenat",358718.47
+2017,politica,Medi ambient,9000
+2017,politica,Serveis socials,298541.87
+2017,politica,Educació,159374.67
+2017,politica,Cultura i festes,157728.74
+2017,politica,Esports,42834.89
+2017,politica,Comerç i turisme,15280.85
+2017,politica,Òrgans de govern,91014.43
+2017,politica,Administració general,493786.98
+2017,politica,Mancomunitat i altres ens,26093.78
+2017,politica,Deute,3400
+2018,politica,Seguretat i policia,207961.47
+2018,politica,"Habitatge i urbanisme (vies, edificis)",790047.15
+2018,politica,"Aigua, residus, enllumenat",350234.14
+2018,politica,Medi ambient,12000
+2018,politica,Serveis socials,304867.81
+2018,politica,Educació,160136.93
+2018,politica,Cultura i festes,208124.39
+2018,politica,Esports,69423.24
+2018,politica,Comerç i turisme,8000
+2018,politica,Òrgans de govern,92891.4
+2018,politica,Administració general,533905.9
+2018,politica,Mancomunitat i altres ens,30444.98
+2018,politica,Deute,3400
+2019,politica,Seguretat i policia,217171.71
+2019,politica,"Habitatge i urbanisme (vies, edificis)",489441.09
+2019,politica,"Aigua, residus, enllumenat",329631.31
+2019,politica,Medi ambient,8000
+2019,politica,Serveis socials,362351.55
+2019,politica,Educació,171747.56
+2019,politica,Cultura i festes,211299.08
+2019,politica,Esports,55585.71
+2019,politica,Comerç i turisme,6000
+2019,politica,Òrgans de govern,95164.94
+2019,politica,Administració general,492912.61
+2019,politica,Mancomunitat i altres ens,30444.98
+2019,politica,Deute,3400
+2020,politica,Seguretat i policia,223433.83
+2020,politica,"Habitatge i urbanisme (vies, edificis)",527051.81
+2020,politica,"Aigua, residus, enllumenat",457985.07
+2020,politica,Medi ambient,6000
+2020,politica,Serveis socials,429613.93
+2020,politica,Educació,189189.53
+2020,politica,Cultura i festes,152496.45
+2020,politica,Esports,50234.12
+2020,politica,Comerç i turisme,35500
+2020,politica,Òrgans de govern,93557.45
+2020,politica,Administració general,572183.78
+2020,politica,Mancomunitat i altres ens,47115.55
+2020,politica,Deute,3400
+2021,politica,Seguretat i policia,208181.21
+2021,politica,"Habitatge i urbanisme (vies, edificis)",656942.94
+2021,politica,"Aigua, residus, enllumenat",829599.94
+2021,politica,Medi ambient,36213.25
+2021,politica,Serveis socials,480280.35
+2021,politica,Educació,198911.88
+2021,politica,Cultura i festes,222297.44
+2021,politica,Esports,444023.59
+2021,politica,Comerç i turisme,77165.09
+2021,politica,Òrgans de govern,93557.45
+2021,politica,Administració general,605672.57
+2021,politica,Mancomunitat i altres ens,39019.33
+2021,politica,Deute,3400
+2024,politica,Seguretat i policia,186426.82
+2024,politica,"Habitatge i urbanisme (vies, edificis)",502925.69
+2024,politica,"Aigua, residus, enllumenat",486792.55
+2024,politica,Medi ambient,31481.42
+2024,politica,Serveis socials,463235.35
+2024,politica,Educació,334897.88
+2024,politica,Cultura i festes,223808.54
+2024,politica,Esports,36481.16
+2024,politica,Comerç i turisme,5000
+2024,politica,Òrgans de govern,96304.37
+2024,politica,Administració general,752058
+2024,politica,Mancomunitat i altres ens,75697.62
+2024,politica,Deute,8600
+2016,area,Serveis públics bàsics,890286.29
+2016,area,Protecció i promoció social,293405.75
+2016,area,"Béns públics preferents (educació, cultura, esport)",363674.14
+2016,area,Actuacions econòmiques,15375.5
+2016,area,Actuacions de caràcter general,550507.89
+2016,area,Deute públic,95935.92
+2017,area,Serveis públics bàsics,959089.51
+2017,area,Protecció i promoció social,298541.87
+2017,area,"Béns públics preferents (educació, cultura, esport)",359938.3
+2017,area,Actuacions econòmiques,15280.85
+2017,area,Actuacions de caràcter general,610895.19
+2017,area,Deute públic,3400
+2018,area,Serveis públics bàsics,1366242.76
+2018,area,Protecció i promoció social,304867.81
+2018,area,"Béns públics preferents (educació, cultura, esport)",437684.56
+2018,area,Actuacions econòmiques,8000
+2018,area,Actuacions de caràcter general,657242.28
+2018,area,Deute públic,3400
+2019,area,Serveis públics bàsics,1044244.12
+2019,area,Protecció i promoció social,362351.55
+2019,area,"Béns públics preferents (educació, cultura, esport)",438632.34
+2019,area,Actuacions econòmiques,6000
+2019,area,Actuacions de caràcter general,618522.53
+2019,area,Deute públic,3400
+2020,area,Serveis públics bàsics,1214470.71
+2020,area,Protecció i promoció social,429613.93
+2020,area,"Béns públics preferents (educació, cultura, esport)",391920.1
+2020,area,Actuacions econòmiques,35500
+2020,area,Actuacions de caràcter general,712856.78
+2020,area,Deute públic,3400
+2021,area,Serveis públics bàsics,1730937.34
+2021,area,Protecció i promoció social,480280.35
+2021,area,"Béns públics preferents (educació, cultura, esport)",865232.91
+2021,area,Actuacions econòmiques,77165.09
+2021,area,Actuacions de caràcter general,738249.35
+2021,area,Deute públic,3400
+2022,area,Serveis públics bàsics,1702079.36
+2022,area,Protecció i promoció social,450594.23
+2022,area,"Béns públics preferents (educació, cultura, esport)",553103.68
+2022,area,Actuacions econòmiques,11600
+2022,area,Actuacions de caràcter general,803673.13
+2022,area,Deute públic,8542.82
+2023,area,Serveis públics bàsics,1702079.36
+2023,area,Protecció i promoció social,450594.23
+2023,area,"Béns públics preferents (educació, cultura, esport)",553103.68
+2023,area,Actuacions econòmiques,11600
+2023,area,Actuacions de caràcter general,803673.13
+2023,area,Deute públic,8542.82
+2024,area,Serveis públics bàsics,1207626.48
+2024,area,Protecció i promoció social,463235.35
+2024,area,"Béns públics preferents (educació, cultura, esport)",595187.58
+2024,area,Actuacions econòmiques,5000
+2024,area,Actuacions de caràcter general,924059.99
+2024,area,Deute públic,8600
