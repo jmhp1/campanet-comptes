@@ -312,11 +312,21 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
 
 <!-- ALTRES MUNICIPIS -->
 <div id="p-altres" hidden>
-  <div class="warn">Dades preliminars del <a href="https://serviciostelematicosext.hacienda.gob.es/SGFAL/CONPREL" rel="noopener" target="_blank">Ministeri d'Hisenda</a> (liquidació de pressuposts de les entitats locals), sense verificar partida per partida com les de Campanet. Poden faltar anys si el municipi no els va reportar. Vista senzilla, de moment sense romanent, contractació ni resultat pressupostari.</div>
+  <div class="warn">Dades preliminars del <a href="https://serviciostelematicosext.hacienda.gob.es/SGFAL/CONPREL" rel="noopener" target="_blank">Ministeri d'Hisenda</a> (liquidació de pressuposts de les entitats locals), sense verificar partida per partida com les de Campanet. Poden faltar anys si el municipi no els va reportar. Vista senzilla, de moment sense contractació.</div>
   <section class="panel">
     <h2 id="altresTitle">Municipi</h2>
     <p class="note" id="altresPob"></p>
     <div class="controls"><span>Any</span><div class="pills" id="altresYears"></div></div>
+  </section>
+  <section class="panel">
+    <h2 id="altresSkTitle">D'on venen i a on van els diners</h2>
+    <p class="note">Dades executades de l'any. L'amplada de cada flux és proporcional als euros.</p>
+    <div class="sk-wrap"><svg id="altresSankey" role="img" aria-labelledby="altresSkTitle"></svg></div>
+  </section>
+  <section class="panel">
+    <h2>Quant ha sobrat o faltat cada any</h2>
+    <p class="note">Ingressos reconeguts menys despeses reconegudes (resultat pressupostari, sense ajustar).</p>
+    <div class="chartbox short"><canvas id="chAltresSaldo" aria-label="Saldo anual"></canvas></div>
   </section>
   <div class="grid2">
     <section class="panel">
@@ -328,6 +338,11 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
       <div class="chartbox"><canvas id="chAltresIng" aria-label="Ingressos per capítol"></canvas></div>
     </section>
   </div>
+  <section class="panel" id="altresSalutPanel" hidden>
+    <h2>Estalvi acumulat a 31 de desembre</h2>
+    <p class="note">Romanent de tresoreria. Només la part verda es pot gastar lliurement.</p>
+    <div class="chartbox tall"><canvas id="chAltresRT" aria-label="Composició del romanent de tresoreria"></canvas></div>
+  </section>
 </div>
 
 <footer>Totes les xifres en euros corrents. 2023* és el pressupost de 2022 prorrogat. Fet amb dades públiques; cada xifra es pot comprovar al document enllaçat a «Fonts i mètode».</footer>
@@ -867,6 +882,67 @@ function drawAltresCharts(){
   }
   panel("chAltresDesp",DCH2);
   panel("chAltresIng",ICH2);
+  drawAltresSankey();
+  drawAltresSaldo();
+  drawAltresRT();
+}
+function drawAltresSankey(){
+  const codi=altresMunicipiActual, y=altresYearSel, data=((altresData.liquidacio[codi]||{})[y])||{};
+  const svg=document.getElementById("altresSankey"), NS="http://www.w3.org/2000/svg";
+  document.getElementById("altresSkTitle").textContent=`D'on venen i a on van els diners, ${y}`;
+  const left=ICH2.filter(k=>data[k]&&data[k].executat>0).map(k=>({name:ALTRES_CAP_NOM[k],v:data[k].executat,col:css("--real"),soft:css("--real-mid")})).sort((a,b)=>b.v-a.v);
+  const right=DCH2.filter(k=>data[k]&&data[k].executat>0).map(k=>({name:ALTRES_CAP_NOM[k],v:data[k].executat,col:css("--real"),soft:css("--real-mid")})).sort((a,b)=>b.v-a.v);
+  if(!left.length&&!right.length){svg.innerHTML="";return;}
+  const inc=left.reduce((a,b)=>a+b.v,0),exp=right.reduce((a,b)=>a+b.v,0),bal=inc-exp;
+  if(bal>=0)right.push({name:"Sobra",v:bal,col:css("--pos"),soft:css("--pos")});
+  else left.push({name:"Estalvi d'anys anteriors",v:-bal,col:css("--neg"),soft:css("--neg")});
+  const total=Math.max(inc,exp),W=960,H=460,top=40,gap=12,nw=14;
+  const xs=[300,473,646];
+  const n=Math.max(left.length,right.length),sc=(H-top-10-gap*(n-1))/total;
+  const place=(arr,x)=>{let yy=top;const used=arr.reduce((a,b)=>a+b.v*sc,0)+gap*(arr.length-1);yy=top+((H-top-10)-used)/2;arr.forEach(d=>{d.x=x;d.y0=yy;d.h=Math.max(1,d.v*sc);yy+=d.h+gap;});};
+  place(left,xs[0]);place(right,xs[2]);
+  const cH=total*sc,cY=top+((H-top-10)-cH)/2;
+  svg.setAttribute("viewBox",`0 0 ${W} ${H}`);svg.innerHTML="";
+  const el=(tag,a,parent=svg)=>{const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);parent.appendChild(e);return e;};
+  const ribbon=(x0,y0,x1,y1,h,fill,title)=>{const m=(x0+x1)/2;const p=el("path",{d:`M${x0},${y0} C${m},${y0} ${m},${y1} ${x1},${y1} L${x1},${y1+h} C${m},${y1+h} ${m},${y0+h} ${x0},${y0+h} Z`,fill,"fill-opacity":"0.38"});el("title",{},p).textContent=title;};
+  const pctOf=v=>pct(v/total*100);
+  let cy=cY;left.forEach(d=>{ribbon(d.x+nw,d.y0,xs[1],cy,d.h,d.soft,`${d.name}: ${eur(d.v)} (${pctOf(d.v)})`);cy+=d.h;});
+  cy=cY;right.forEach(d=>{ribbon(xs[1]+nw,cy,d.x,d.y0,d.h,d.soft,`${d.name}: ${eur(d.v)} (${pctOf(d.v)})`);cy+=d.h;});
+  [...left,...right].forEach(d=>el("rect",{x:d.x,y:d.y0,width:nw,height:d.h,fill:d.col,rx:2}));
+  el("rect",{x:xs[1],y:cY,width:nw,height:cH,fill:css("--ink"),rx:2});
+  const spread=arr=>{let prev=-1e9;arr.forEach(d=>{d.ly=Math.max(d.y0+d.h/2,prev+30);prev=d.ly;});return prev;};
+  const maxY=Math.max(spread(left),spread(right))+20;if(maxY>H)svg.setAttribute("viewBox",`0 0 ${W} ${maxY}`);
+  const label=(d,side)=>{const cyv=d.ly,x=side==="l"?d.x-8:d.x+nw+8,anc=side==="l"?"end":"start";
+    if(Math.abs(cyv-(d.y0+d.h/2))>2){const xn=side==="l"?d.x:d.x+nw;el("path",{d:`M${xn},${d.y0+d.h/2} L${x+(side==="l"?4:-4)},${cyv-6}`,stroke:css("--muted"),"stroke-width":1,fill:"none"});}
+    const a=el("text",{x,y:cyv-3,"text-anchor":anc,"font-size":13,"font-weight":600});a.textContent=`${d.name} · ${d.v<100000?Math.round(d.v/1000).toLocaleString("ca-ES")+" k€":M(d.v)}`;
+    const b=el("text",{x,y:cyv+13,"text-anchor":anc,"font-size":11,class:"amt"});b.textContent=`${pctOf(d.v)}`;};
+  left.forEach(d=>label(d,"l"));right.forEach(d=>label(d,"r"));
+}
+function drawAltresSaldo(){
+  const codi=altresMunicipiActual;
+  const years=Object.keys(altresData.liquidacio[codi]||{}).sort();
+  const saldo=years.map(y=>{
+    const d=altresData.liquidacio[codi][y];
+    let inc=0,exp=0;
+    ICH2.forEach(k=>{if(d[k]&&d[k].executat!=null)inc+=d[k].executat;});
+    DCH2.forEach(k=>{if(d[k]&&d[k].executat!=null)exp+=d[k].executat;});
+    return inc-exp;
+  });
+  mk("chAltresSaldo",{type:"bar",data:{labels:years,datasets:[{data:saldo,backgroundColor:saldo.map(sgn),borderRadius:3}]},
+    options:baseOpts({plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`Saldo: ${eur(c.raw)}`}}},scales:{x:xAxis(),y:yAxis()}})});
+}
+function drawAltresRT(){
+  const codi=altresMunicipiActual, rt=(altresData.romanent||{})[codi];
+  const panel=document.getElementById("altresSalutPanel");
+  if(!rt||!Object.keys(rt).length){panel.hidden=true;return;}
+  panel.hidden=false;
+  const years=Object.keys(rt).sort();
+  mk("chAltresRT",{type:"bar",data:{labels:years,datasets:[
+    {label:"Estalvi lliure",data:years.map(y=>rt[y].despeses_generals),backgroundColor:css("--pos"),stack:"s"},
+    {label:"Reservat per a obres concretes",data:years.map(y=>rt[y].exces_financament_afectat),backgroundColor:css("--pos-soft"),borderColor:css("--pos"),borderWidth:1,stack:"s"},
+    {label:"Deutes que no es preveu cobrar",data:years.map(y=>rt[y].saldos_dubtos_cobrament),backgroundColor:css("--neg"),stack:"s"}]},
+    options:baseOpts({interaction:{mode:"index",intersect:false},plugins:{legend:{position:"bottom",labels:{color:css("--ink")}},tooltip:{callbacks:{label:c=>`${c.dataset.label}: ${eur(c.raw)}`,footer:it=>`Total: ${eur(rt[years[it[0].dataIndex]].total)}`}}},
+      scales:{x:{...xAxis(),stacked:true},y:{...yAxis(),stacked:true}}})});
 }
 
 const DRAW={resum:drawResum,diners:drawDiners,promes:drawPromes,salut:drawSalut,contractes:drawContractes,fonts:drawFonts};

@@ -1,1101 +1,4 @@
 any,codente,nom,costat,capitol,inicial
-2024,07006AA000,Artà,despesa,5,88681.44
-2024,07010AA000,Bunyola,despesa,1,2496132.00
-2024,07010AA000,Bunyola,ingres,4,2458872.18
-2024,07014AO001,F. Castell de Capdepera,despesa,6,40000.00
-2024,07016AA000,Consell,despesa,1,1607398.70
-2024,07020AA000,Esporles,despesa,2,2121656.32
-2024,07020AA000,Esporles,ingres,5,2100.00
-2024,07026AA000,Eivissa,despesa,1,28898966.30
-2024,07026AA000,Eivissa,despesa,4,10680599.19
-2024,07026AA000,Eivissa,ingres,3,17641557.44
-2024,07026AA000,Eivissa,ingres,4,20072185.79
-2024,07026AA000,Eivissa,ingres,6,10.00
-2024,07026AV001,P. M. Deportes,despesa,6,40000.00
-2024,07026AV001,P. M. Deportes,ingres,7,40000.00
-2024,07028AA000,Lloret de Vistalegre,despesa,2,611255.00
-2024,07028AA000,Lloret de Vistalegre,ingres,7,358460.00
-2024,07029AA000,Lloseta,ingres,4,2328189.55
-2024,07029AA000,Lloseta,ingres,5,55020.00
-2024,07031AA000,Llucmajor,ingres,2,2610500.00
-2024,07032AA000,Maó,despesa,1,17469628.00
-2024,07032AA000,Maó,ingres,1,18526979.00
-2024,07034AA000,Mancor de la Vall,ingres,3,317250.00
-2024,07041AA000,Petra,ingres,7,23135.75
-2024,07045AA000,Puigpunyent,despesa,1,1357757.32
-2024,07045AA000,Puigpunyent,despesa,2,1659188.56
-2024,07045AA000,Puigpunyent,despesa,3,15339.19
-2024,07045AA000,Puigpunyent,ingres,7,1220714.78
-2024,07048AA000,Sant Josep de sa Talaia,despesa,6,4061223.82
-2024,07055AA000,Santa Margalida,despesa,3,50.00
-2024,07055AA000,Santa Margalida,ingres,2,230000.00
-2024,07058AA000,Selva,despesa,1,1812550.00
-2024,07058AA000,Selva,despesa,4,566285.78
-2024,07061AA000,Sóller,ingres,2,892825.19
-2024,07061AA000,Sóller,ingres,3,6331438.24
-2024,07061AA000,Sóller,ingres,4,4908564.50
-2024,07063AA000,Valldemossa,ingres,2,100000.00
-2024,07005AA000,Andratx,despesa,1,11163051.14
-2024,07040AA000,Palma,ingres,4,138481769.43
-2024,07040AV002,P. M. d'Escoles d'Infants,despesa,8,6200.00
-2024,07040AV002,P. M. d'Escoles d'Infants,ingres,3,390000.00
-2024,07040AV004,P. M. l'Habitatge,despesa,6,210000.00
-2024,07039AA000,Muro,ingres,5,1556594.04
-2024,07049AA000,Sant Joan,ingres,4,736962.03
-2024,07059AA000,Salines (Ses),despesa,1,3431574.22
-2024,07059AA000,Salines (Ses),despesa,4,917929.66
-2024,07059AA000,Salines (Ses),ingres,2,695000.00
-2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",ingres,4,9843309.04
-2024,07002AA000,Alaior,despesa,2,6424181.17
-2024,07002AA000,Alaior,despesa,6,5028164.67
-2024,07002AA000,Alaior,despesa,7,532983.75
-2024,07002AA000,Alaior,ingres,9,2550313.20
-2024,07011AA000,Calvià,despesa,9,1004979.08
-2024,07011AA000,Calvià,ingres,4,29998207.43
-2024,07011AA000,Calvià,ingres,7,396830.00
-2024,07011AA000,Calvià,ingres,8,310000.00
-2024,07033AA000,Manacor,despesa,4,1666948.38
-2024,07033AO001,Institut Públic del Teatre Municipal,ingres,3,230240.00
-2024,07044AA000,Pobla (Sa),ingres,2,500000.00
-2024,07901AA000,Ariany,ingres,3,179411.00
-2024,07017AA000,Costitx,despesa,3,1800.00
-2024,07018AA000,Deià,despesa,3,7000.00
-2024,07025AA000,Fornalutx,ingres,2,30345.00
-2024,07027AA000,Inca,ingres,1,10732264.47
-2024,07007AA000,Banyalbufar,despesa,3,10000.00
-2024,07007AA000,Banyalbufar,ingres,3,327171.41
-2024,07021AA000,Estellencs,despesa,3,3600.00
-2024,07021AA000,Estellencs,ingres,1,189307.15
-2024,07022AA000,Felanitx,ingres,4,6066620.00
-2024,07022AA000,Felanitx,ingres,5,1132600.00
-2024,07022AA000,Felanitx,ingres,8,1280.00
-2024,07022AA000,Felanitx,ingres,9,550000.00
-2024,07038AA000,Montuïri,despesa,2,908329.18
-2024,07038AA000,Montuïri,despesa,9,280000.00
-2024,07038AA000,Montuïri,ingres,2,248900.00
-2024,07053AA000,Santa Eugènia,despesa,4,246061.21
-2024,07053AA000,Santa Eugènia,ingres,2,90761.54
-2024,07065AA000,Vilafranca de Bonany,despesa,3,20585.00
-2024,07065AA000,Vilafranca de Bonany,despesa,6,461800.00
-2024,07001AA000,Alaró,ingres,6,5000.00
-2024,07015AV003,P. Esc. Infantiles,despesa,1,580300.00
-2024,07023AA000,Ferreries,despesa,2,3868906.00
-2024,07023AA000,Ferreries,despesa,3,19000.00
-2024,07023AA000,Ferreries,despesa,4,506512.00
-2024,07023AA000,Ferreries,despesa,8,40000.00
-2024,07042AA000,Pollença,despesa,1,11461008.61
-2024,07042AA000,Pollença,ingres,1,11692743.57
-2024,07043AA000,Porreres,despesa,1,2079901.93
-2024,07043AA000,Porreres,ingres,1,1951481.60
-2024,07043AA000,Porreres,ingres,5,35000.00
-2024,07051AA000,Sant Llorenç des Cardassar,ingres,3,4949000.00
-2024,07052AA000,Sant Lluís,despesa,2,5633791.05
-2024,07052AA000,Sant Lluís,despesa,4,717240.00
-2024,07052AA000,Sant Lluís,despesa,5,150000.00
-2024,07052AA000,Sant Lluís,ingres,3,3507998.60
-2024,07052AA000,Sant Lluís,ingres,5,404937.00
-2024,07054AA000,Santa Eulària des Riu,ingres,1,20540784.90
-2024,07056AA000,Santa María del Camí,despesa,3,19250.00
-2024,07056AA000,Santa María del Camí,ingres,8,350000.00
-2024,07057AA000,Santanyí,despesa,2,10915223.96
-2024,07057AA000,Santanyí,despesa,6,270953.39
-2024,07057AA000,Santanyí,ingres,3,6057997.84
-2024,07902AA000,Migjorn Gran (Es),despesa,6,559523.09
-2024,07902AA000,Migjorn Gran (Es),despesa,8,1000.00
-2024,07902AA000,Migjorn Gran (Es),ingres,5,180100.00
-2024,07001DD000,Consejo Insular de Ibiza,despesa,9,100000.00
-2024,07001DD000,Consejo Insular de Ibiza,ingres,7,9704405.02
-2024,07002DD000,Consejo Insular de Mallorca,despesa,2,90145443.60
-2024,07002DV001,Inst. l'Esport Hipic,despesa,6,474000.00
-2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,ingres,3,2848595.10
-2024,07002DV003,Inst.  Mallorquí d'Afers Socials,despesa,1,103896864.56
-2024,07002DV003,Inst.  Mallorquí d'Afers Socials,despesa,7,425000.00
-2024,07002DV003,Inst.  Mallorquí d'Afers Socials,ingres,4,273202816.17
-2024,07002DV003,Inst.  Mallorquí d'Afers Socials,ingres,8,120000.00
-2024,07003DD000,Consejo Insular de Menorca,despesa,2,20683175.65
-2024,07001MM000,Mc. Es Raiguer,despesa,3,12000.00
-2024,07003MM000,Mc. Migjorn de Mallorca,despesa,4,600.00
-2024,07006AA000,Artà,despesa,3,9000.00
-2024,07006AA000,Artà,despesa,4,341671.20
-2024,07006AA000,Artà,ingres,1,5178199.06
-2024,07006AA000,Artà,ingres,7,1378103.14
-2024,07009AA000,Búger,despesa,3,7200.00
-2024,07010AA000,Bunyola,despesa,3,48500.00
-2024,07012AA000,Campanet,ingres,1,847724.21
-2024,07014AA000,Capdepera,despesa,3,28000.00
-2024,07014AA000,Capdepera,ingres,3,7826417.72
-2024,07014AA000,Capdepera,ingres,4,3750000.00
-2024,07016AA000,Consell,despesa,3,15050.00
-2024,07026AV001,P. M. Deportes,ingres,8,10.00
-2024,07026AV002,P. M. Música,ingres,3,65010.00
-2024,07030AA000,Llubí,despesa,6,50751.00
-2024,07030AA000,Llubí,ingres,1,717327.00
-2024,07030AA000,Llubí,ingres,2,200000.00
-2024,07031AA000,Llucmajor,ingres,5,1004700.00
-2024,07031AV001,P. Res. Personas Mayores,despesa,5,9399.10
-2024,07031AV001,P. Res. Personas Mayores,ingres,3,205100.00
-2024,07032AA000,Maó,ingres,9,1127132.00
-2024,07036AA000,Marratxí,despesa,1,17501610.32
-2024,07036AA000,Marratxí,despesa,3,40000.00
-2024,07036AA000,Marratxí,ingres,2,2075000.00
-2024,07037AA000,Mercadal (Es),despesa,7,2100.00
-2024,07041AA000,Petra,ingres,1,823942.00
-2024,07041AO001,F. Escuela Municipal de Música de Petra,ingres,4,26000.00
-2024,07045AA000,Puigpunyent,despesa,4,188125.14
-2024,07045AA000,Puigpunyent,despesa,5,30000.00
-2024,07045AA000,Puigpunyent,ingres,2,385500.00
-2024,07046AA000,Sant Antoni de Portmany,despesa,6,3250303.76
-2024,07048AA000,Sant Josep de sa Talaia,despesa,4,4022004.60
-2024,07048AA000,Sant Josep de sa Talaia,ingres,1,16630324.00
-2024,07055AA000,Santa Margalida,despesa,4,521200.00
-2024,07055AA000,Santa Margalida,ingres,3,4488420.00
-2024,07061AA000,Sóller,despesa,4,422150.00
-2024,07064AA000,Castell (Es),despesa,7,284510.64
-2024,07040AA000,Palma,despesa,9,21731939.04
-2024,07040AA000,Palma,ingres,1,189500233.12
-2024,07040AV001,Inst. M. l'Esport,despesa,4,350000.00
-2024,07040AV002,P. M. d'Escoles d'Infants,despesa,2,5190758.08
-2024,07040AV004,P. M. l'Habitatge,despesa,8,10000.00
-2024,07040AV009,Inst. M. Form. Ocupacional i Feina,ingres,3,60000.00
-2024,07040AV009,Inst. M. Form. Ocupacional i Feina,ingres,7,106000.00
-2024,07062AA000,Son Servera,despesa,2,9415321.54
-2024,07062AA000,Son Servera,despesa,8,60000.00
-2024,07062AA000,Son Servera,ingres,3,3880369.82
-2024,07062AA000,Son Servera,ingres,4,3602257.51
-2024,07049AA000,Sant Joan,despesa,1,812537.54
-2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",despesa,1,6792201.40
-2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",despesa,6,294003.00
-2024,07002AA000,Alaior,despesa,3,111175.65
-2024,07011AA000,Calvià,despesa,8,310000.00
-2024,07033AV002,P. l'Escola M. de Mallorqui,ingres,3,25500.00
-2024,07033AO002,Institució Pública Antoni M. Alcover,despesa,2,69000.00
-2024,07044AA000,Pobla (Sa),despesa,9,255751.31
-2024,07044AA000,Pobla (Sa),ingres,5,57888.96
-2024,07047AA000,Sencelles,ingres,1,1141800.00
-2024,07901AA000,Ariany,despesa,1,337689.29
-2024,07008AA000,Binissalem,despesa,1,3057599.99
-2024,07008AA000,Binissalem,despesa,4,834268.25
-2024,07008AA000,Binissalem,ingres,5,232000.00
-2024,07017AA000,Costitx,ingres,5,18100.00
-2024,07018AA000,Deià,ingres,1,1136000.00
-2024,07025AA000,Fornalutx,ingres,1,509725.00
-2024,07021AA000,Estellencs,despesa,2,395988.36
-2024,07021AA000,Estellencs,ingres,2,88454.82
-2024,07022AV001,Ctro. Cultural,despesa,2,5000.00
-2024,07038AA000,Montuïri,despesa,1,1198621.60
-2024,07038AA000,Montuïri,despesa,5,50836.22
-2024,07053AA000,Santa Eugènia,ingres,3,416186.56
-2024,07065AA000,Vilafranca de Bonany,ingres,2,150000.00
-2024,07065AA000,Vilafranca de Bonany,ingres,5,2000.00
-2024,07001AA000,Alaró,despesa,2,1395281.30
-2024,07001AA000,Alaró,ingres,7,371985.44
-2024,07015AV003,P. Esc. Infantiles,despesa,2,1149327.96
-2024,07023AA000,Ferreries,despesa,5,15000.00
-2024,07043AA000,Porreres,despesa,6,18000.00
-2024,07043AA000,Porreres,ingres,3,350188.37
-2024,07056AV001,P. Res. Pers. Majors. Cas Metge Rei,ingres,3,549399.00
-2024,07057AA000,Santanyí,ingres,1,11277971.74
-2024,07057AA000,Santanyí,ingres,2,1330000.00
-2024,07902AA000,Migjorn Gran (Es),despesa,2,1326454.94
-2024,07902AA000,Migjorn Gran (Es),despesa,4,428704.32
-2024,07902AA000,Migjorn Gran (Es),despesa,9,75000.00
-2024,07001DD000,Consejo Insular de Ibiza,despesa,8,350000.00
-2024,07002DD000,Consejo Insular de Mallorca,despesa,3,929100.00
-2024,07002DV001,Inst. l'Esport Hipic,despesa,4,1235800.00
-2024,07002DV003,Inst.  Mallorquí d'Afers Socials,despesa,3,55000.00
-2024,07002DV003,Inst.  Mallorquí d'Afers Socials,despesa,8,120000.00
-2024,07003DD000,Consejo Insular de Menorca,ingres,1,1636174.32
-2024,07001MM000,Mc. Es Raiguer,despesa,2,4268489.05
-2024,07003MM000,Mc. Migjorn de Mallorca,despesa,6,318120.76
-2024,07003MM000,Mc. Migjorn de Mallorca,ingres,5,50000.00
-2024,07004AA000,Algaida,despesa,3,3600.00
-2024,07004AA000,Algaida,ingres,3,440384.64
-2024,07009AA000,Búger,ingres,3,322634.34
-2024,07012AA000,Campanet,despesa,3,8542.82
-2024,07012AA000,Campanet,ingres,3,803458.45
-2024,07013AA000,Campos,despesa,4,222044.80
-2024,07013AA000,Campos,ingres,4,4429272.87
-2024,07014AA000,Capdepera,despesa,5,140000.00
-2024,07014AA000,Capdepera,despesa,6,1383900.00
-2024,07016AA000,Consell,ingres,3,1378266.18
-2024,07020AA000,Esporles,despesa,1,2849432.75
-2024,07020AA000,Esporles,ingres,1,1981370.00
-2024,07026AA000,Eivissa,despesa,2,36146847.27
-2024,07026AV001,P. M. Deportes,despesa,3,4000.00
-2024,07026AV002,P. M. Música,despesa,4,2000.00
-2024,07028AA000,Lloret de Vistalegre,ingres,5,6695.44
-2024,07029AA000,Lloseta,despesa,4,785283.73
-2024,07029AA000,Lloseta,despesa,9,101147.14
-2024,07031AA000,Llucmajor,despesa,3,155000.00
-2024,07031AA000,Llucmajor,ingres,8,55000.00
-2024,07034AA000,Mancor de la Vall,ingres,2,40250.00
-2024,07035AA000,Maria de la Salut,despesa,1,891736.84
-2024,07036AA000,Marratxí,despesa,4,11447434.15
-2024,07037AA000,Mercadal (Es),ingres,2,247750.00
-2024,07041AA000,Petra,despesa,4,229746.46
-2024,07041AA000,Petra,ingres,6,6.00
-2024,07046AA000,Sant Antoni de Portmany,despesa,1,10794392.05
-2024,07046AA000,Sant Antoni de Portmany,ingres,7,1155000.00
-2024,07048AA000,Sant Josep de sa Talaia,despesa,5,210000.00
-2024,07048AA000,Sant Josep de sa Talaia,ingres,4,10309805.68
-2024,07050AA000,Sant Joan de Labritja,ingres,5,71000.00
-2024,07055AA000,Santa Margalida,despesa,1,6154620.00
-2024,07061AA000,Sóller,despesa,1,9035416.02
-2024,07061AA000,Sóller,despesa,3,325050.05
-2024,07061AA000,Sóller,despesa,7,195000.00
-2024,07005AA000,Andratx,despesa,2,12464680.53
-2024,07005AA000,Andratx,ingres,2,2600000.00
-2024,07040AA000,Palma,despesa,4,109429070.17
-2024,07040AV001,Inst. M. l'Esport,ingres,8,90000.00
-2024,07040AV002,P. M. d'Escoles d'Infants,despesa,4,430000.00
-2024,07040AV002,P. M. d'Escoles d'Infants,ingres,4,9135958.08
-2024,07040AV002,P. M. d'Escoles d'Infants,ingres,7,21500.00
-2024,07040AV004,P. M. l'Habitatge,despesa,1,1879583.63
-2024,07040AV004,P. M. l'Habitatge,ingres,4,1262471.01
-2024,07040AV009,Inst. M. Form. Ocupacional i Feina,despesa,1,8024610.34
-2024,07040AV009,Inst. M. Form. Ocupacional i Feina,despesa,8,20000.00
-2024,07040AV009,Inst. M. Form. Ocupacional i Feina,ingres,4,9640505.70
-2024,07062AA000,Son Servera,ingres,5,774313.23
-2024,07003AA000,Alcúdia,ingres,3,6740823.00
-2024,07003AA000,Alcúdia,ingres,4,7219545.29
-2024,07039AA000,Muro,ingres,2,700000.00
-2024,07059AA000,Salines (Ses),ingres,4,2072078.10
-2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",despesa,3,700.00
-2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",ingres,7,294003.00
-2024,07002AA000,Alaior,despesa,4,776747.26
-2024,07002AA000,Alaior,ingres,2,227598.66
-2024,07033AA000,Manacor,ingres,5,488104.81
-2024,07033AO001,Institut Públic del Teatre Municipal,despesa,2,480240.00
-2024,07033AO001,Institut Públic del Teatre Municipal,ingres,7,50000.00
-2024,07033AV003,P. M. d'Esports,ingres,5,44280.68
-2024,07033AO002,Institució Pública Antoni M. Alcover,despesa,1,39500.00
-2024,07033AO002,Institució Pública Antoni M. Alcover,ingres,7,5000.00
-2024,07044AA000,Pobla (Sa),despesa,3,51948.90
-2024,07044AA000,Pobla (Sa),despesa,4,319938.39
-2024,07047AA000,Sencelles,despesa,4,298700.00
-2024,07901AA000,Ariany,ingres,1,402165.93
-2024,07011AO002,Oficina Municipal de Tributos de Calvià,despesa,2,613010.00
-2024,07008AA000,Binissalem,ingres,6,185000.00
-2024,07017AA000,Costitx,ingres,3,82400.00
-2024,07025AA000,Fornalutx,ingres,4,422525.12
-2024,07007AA000,Banyalbufar,despesa,4,13650.00
-2024,07024AA000,Formentera,despesa,4,2499600.00
-2024,07024AA000,Formentera,despesa,6,4520400.00
-2024,07038AA000,Montuïri,despesa,3,4400.00
-2024,07038AA000,Montuïri,ingres,1,1149739.51
-2024,07065AA000,Vilafranca de Bonany,despesa,9,80555.00
-2024,07001AA000,Alaró,ingres,4,2424741.72
-2024,07015AA000,Ciutadella de Menorca,ingres,7,1756789.13
-2024,07015AV002,Hospital Municipal,despesa,2,775396.52
-2024,07042AA000,Pollença,despesa,3,20000.00
-2024,07043AA000,Porreres,despesa,3,15000.00
-2024,07051AA000,Sant Llorenç des Cardassar,despesa,8,10000.00
-2024,07054AA000,Santa Eulària des Riu,despesa,7,308500.00
-2024,07054AA000,Santa Eulària des Riu,ingres,7,50.00
-2024,07056AA000,Santa María del Camí,despesa,2,2537595.15
-2024,07056AA000,Santa María del Camí,despesa,4,1025095.69
-2024,07056AA000,Santa María del Camí,ingres,3,2919003.02
-2024,07056AV001,P. Res. Pers. Majors. Cas Metge Rei,ingres,4,584780.97
-2024,07056AV001,P. Res. Pers. Majors. Cas Metge Rei,ingres,5,10.00
-2024,07057AA000,Santanyí,despesa,1,10452947.75
-2024,07057AA000,Santanyí,despesa,3,5800.00
-2024,07057AA000,Santanyí,ingres,5,1319651.54
-2024,07001DD000,Consejo Insular de Ibiza,ingres,8,250000.00
-2024,07001DV003,P. Esc. Turismo,despesa,6,25000.00
-2024,07001DV003,P. Esc. Turismo,ingres,4,633000.00
-2024,07002DD000,Consejo Insular de Mallorca,despesa,4,302545450.74
-2024,07002DD000,Consejo Insular de Mallorca,despesa,7,49278963.35
-2024,07002DV001,Inst. l'Esport Hipic,despesa,8,5000.00
-2024,07002DV003,Inst.  Mallorquí d'Afers Socials,despesa,6,4201347.59
-2024,07003DD000,Consejo Insular de Menorca,despesa,1,28599276.79
-2024,07003DD000,Consejo Insular de Menorca,ingres,2,2132537.16
-2024,07003DD000,Consejo Insular de Menorca,ingres,3,3560200.85
-2024,07003DD000,Consejo Insular de Menorca,ingres,7,15639915.80
-2024,07002MM000,Mc. Pla de Mallorca,ingres,4,8102488.43
-2024,07001MM000,Mc. Es Raiguer,ingres,3,984011.82
-2024,07003MM000,Mc. Migjorn de Mallorca,despesa,1,876516.74
-2024,07004AA000,Algaida,despesa,4,136620.00
-2024,07006AA000,Artà,ingres,2,651500.00
-2024,07009AA000,Búger,despesa,2,499524.78
-2024,07009AA000,Búger,despesa,4,281300.00
-2024,07009AA000,Búger,despesa,6,918565.79
-2024,07010AA000,Bunyola,despesa,4,958537.08
-2024,07014AA000,Capdepera,ingres,1,10900000.00
-2024,07016AA000,Consell,despesa,2,1720954.18
-2024,07026AA000,Eivissa,ingres,2,2200000.00
-2024,07026AA000,Eivissa,ingres,5,7662010.00
-2024,07026AA000,Eivissa,ingres,8,10.00
-2024,07026AV003,Museo de Arte Contemporáneo,despesa,8,10.00
-2024,07028AA000,Lloret de Vistalegre,ingres,3,94944.56
-2024,07029AA000,Lloseta,ingres,2,200000.00
-2024,07030AA000,Llubí,despesa,7,2000.00
-2024,07030AA000,Llubí,ingres,4,791633.00
-2024,07031AA000,Llucmajor,despesa,4,1927118.39
-2024,07035AA000,Maria de la Salut,ingres,3,343685.00
-2024,07041AA000,Petra,despesa,2,988100.00
-2024,07041AA000,Petra,ingres,2,121004.00
-2024,07041AO001,F. Escuela Municipal de Música de Petra,despesa,2,2122.11
-2024,07041AO002,Fundación Teatro y Acción Socio-Cultural de Petra,despesa,2,29054.00
-2024,07046AA000,Sant Antoni de Portmany,despesa,2,19893988.38
-2024,07046AA000,Sant Antoni de Portmany,ingres,3,10344900.00
-2024,07048AA000,Sant Josep de sa Talaia,ingres,5,5090502.52
-2024,07055AA000,Santa Margalida,ingres,1,6930100.00
-2024,07061AA000,Sóller,despesa,6,85361.15
-2024,07061AA000,Sóller,despesa,9,714665.50
-2024,07061AA000,Sóller,ingres,5,270526.08
-2024,07063AA000,Valldemossa,despesa,1,2339033.06
-2024,07063AA000,Valldemossa,despesa,2,1939956.89
-2024,07063AA000,Valldemossa,ingres,1,1733366.83
-2024,07063AA000,Valldemossa,ingres,4,798321.13
-2024,07064AA000,Castell (Es),despesa,3,7000.00
-2024,07064AA000,Castell (Es),ingres,6,250000.00
-2024,07064AA000,Castell (Es),ingres,7,4477500.00
-2024,07005AA000,Andratx,despesa,4,739100.00
-2024,07005AA000,Andratx,ingres,1,12177000.00
-2024,07005AA000,Andratx,ingres,4,4439000.00
-2024,07040AA000,Palma,despesa,1,183890181.00
-2024,07040AA000,Palma,despesa,7,9125366.63
-2024,07040AV001,Inst. M. l'Esport,ingres,5,190850.32
-2024,07040AV004,P. M. l'Habitatge,ingres,7,210000.00
-2024,07040AV006,Instituto Municipal Innovación  (IMI),ingres,4,5862553.74
-2024,07040AV009,Inst. M. Form. Ocupacional i Feina,despesa,3,300.00
-2024,07062AA000,Son Servera,ingres,7,168435.30
-2024,07003AA000,Alcúdia,despesa,2,20187041.00
-2024,07003AA000,Alcúdia,despesa,3,16000.00
-2024,07003AA000,Alcúdia,despesa,4,2726329.29
-2024,07049AA000,Sant Joan,ingres,1,729000.00
-2024,07059AA000,Salines (Ses),despesa,6,296502.00
-2024,07059AA000,Salines (Ses),ingres,1,3277792.79
-2024,07002AA000,Alaior,ingres,4,4684121.23
-2024,07011AA000,Calvià,despesa,6,11582073.87
-2024,07011AA000,Calvià,ingres,2,8001700.00
-2024,07033AA000,Manacor,despesa,1,19585358.12
-2024,07044AA000,Pobla (Sa),despesa,2,6645674.36
-2024,07047AA000,Sencelles,ingres,4,1113500.00
-2024,07008AA000,Binissalem,ingres,2,250000.00
-2024,07008AA000,Binissalem,ingres,3,1347434.25
-2024,07017AA000,Costitx,despesa,2,582262.18
-2024,07027AA000,Inca,ingres,4,12717847.95
-2024,07007AA000,Banyalbufar,ingres,5,50481.00
-2024,07022AA000,Felanitx,despesa,1,9045359.00
-2024,07024AA000,Formentera,despesa,2,18198500.00
-2024,07053AA000,Santa Eugènia,ingres,8,10000.00
-2024,07065AA000,Vilafranca de Bonany,ingres,1,857250.00
-2024,07065AA000,Vilafranca de Bonany,ingres,3,393760.00
-2024,07001AA000,Alaró,despesa,6,705824.12
-2024,07015AA000,Ciutadella de Menorca,despesa,6,2472389.13
-2024,07015AA000,Ciutadella de Menorca,ingres,1,15624000.00
-2024,07015AV002,Hospital Municipal,despesa,6,3000.00
-2024,07015AV003,P. Esc. Infantiles,ingres,7,30000.00
-2024,07023AA000,Ferreries,despesa,6,1250194.66
-2024,07023AA000,Ferreries,ingres,2,134612.00
-2024,07023AA000,Ferreries,ingres,3,1162568.49
-2024,07042AA000,Pollença,despesa,6,568017.93
-2024,07042AA000,Pollença,ingres,3,7782599.00
-2024,07042AA000,Pollença,ingres,4,5686436.00
-2024,07043AA000,Porreres,despesa,2,2437858.07
-2024,07051AA000,Sant Llorenç des Cardassar,despesa,6,485000.00
-2024,07052AA000,Sant Lluís,ingres,1,6189859.56
-2024,07054AA000,Santa Eulària des Riu,despesa,1,14858645.87
-2024,07054AA000,Santa Eulària des Riu,despesa,3,66010.00
-2024,07054AA000,Santa Eulària des Riu,ingres,3,15267205.00
-2024,07056AV001,P. Res. Pers. Majors. Cas Metge Rei,despesa,1,794658.84
-2024,07902AA000,Migjorn Gran (Es),ingres,3,831520.00
-2024,07001DD000,Consejo Insular de Ibiza,despesa,4,33084075.36
-2024,07001DD000,Consejo Insular de Ibiza,despesa,5,800000.00
-2024,07001DD000,Consejo Insular de Ibiza,despesa,6,14041739.87
-2024,07001DD000,Consejo Insular de Ibiza,ingres,1,3916318.40
-2024,07001DD000,Consejo Insular de Ibiza,ingres,4,103380641.86
-2024,07001DD000,Consejo Insular de Ibiza,ingres,5,3560000.00
-2024,07001DV003,P. Esc. Turismo,despesa,4,30000.00
-2024,07002DD000,Consejo Insular de Mallorca,ingres,7,54866174.05
-2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,ingres,4,870000.00
-2024,07003DD000,Consejo Insular de Menorca,ingres,5,31100.00
-2024,07003DD000,Consejo Insular de Menorca,ingres,8,350000.00
-2024,07003DV001,Inst. Menorquín de Estudios,despesa,6,7000.00
-2024,07003DV001,Inst. Menorquín de Estudios,ingres,4,1567083.54
-2024,07003DV002,Consell Economic i Social,ingres,4,29250.00
-2024,07001MM000,Mc. Es Raiguer,despesa,1,1723945.24
-2024,07006AA000,Artà,ingres,4,3144373.91
-2024,07010AA000,Bunyola,despesa,2,3485052.61
-2024,07010AA000,Bunyola,despesa,6,155183.80
-2024,07010AA000,Bunyola,ingres,2,934274.22
-2024,07012AA000,Campanet,despesa,1,1277380.45
-2024,07012AA000,Campanet,despesa,6,18500.00
-2024,07012AA000,Campanet,ingres,7,12358.34
-2024,07014AO001,F. Castell de Capdepera,ingres,3,220000.00
-2024,07016AA000,Consell,despesa,4,591289.13
-2024,07016AA000,Consell,despesa,6,544300.00
-2024,07016AA000,Consell,ingres,2,240000.00
-2024,07020AA000,Esporles,despesa,6,13995.00
-2024,07026AV001,P. M. Deportes,ingres,4,2915990.00
-2024,07026AV003,Museo de Arte Contemporáneo,despesa,5,60000.00
-2024,07026AV003,Museo de Arte Contemporáneo,ingres,4,484790.00
-2024,07026AV003,Museo de Arte Contemporáneo,ingres,8,10.00
-2024,07026AV002,P. M. Música,despesa,3,1500.00
-2024,07026AV002,P. M. Música,despesa,6,5000.00
-2024,07028AA000,Lloret de Vistalegre,despesa,6,402300.00
-2024,07029AA000,Lloseta,ingres,9,80720.00
-2024,07032AA000,Maó,despesa,3,120980.00
-2024,07032AA000,Maó,despesa,4,5401225.00
-2024,07032AA000,Maó,ingres,4,13642584.00
-2024,07032AA000,Maó,ingres,5,376200.00
-2024,07034AA000,Mancor de la Vall,despesa,2,683415.00
-2024,07035AA000,Maria de la Salut,despesa,2,790945.09
-2024,07037AA000,Mercadal (Es),despesa,2,5583800.00
-2024,07041AA000,Petra,despesa,5,20000.00
-2024,07041AA000,Petra,ingres,3,379518.00
-2024,07046AA000,Sant Antoni de Portmany,ingres,4,8698745.90
-2024,07050AA000,Sant Joan de Labritja,despesa,1,2705642.00
-2024,07050AA000,Sant Joan de Labritja,ingres,7,2279788.00
-2024,07058AA000,Selva,ingres,2,220000.00
-2024,07040AA000,Palma,despesa,2,145747802.48
-2024,07040AA000,Palma,despesa,3,6545678.34
-2024,07040AA000,Palma,despesa,6,55436270.54
-2024,07040AV001,Inst. M. l'Esport,despesa,8,90000.00
-2024,07040AV002,P. M. d'Escoles d'Infants,ingres,8,10000.00
-2024,07040AV004,P. M. l'Habitatge,despesa,3,1500.00
-2024,07040AV004,P. M. l'Habitatge,despesa,4,6500.00
-2024,07040AV006,Instituto Municipal Innovación  (IMI),despesa,2,904071.71
-2024,07062AA000,Son Servera,despesa,1,7010266.73
-2024,07062AA000,Son Servera,ingres,2,338377.41
-2024,07003AA000,Alcúdia,ingres,2,600000.00
-2024,07039AA000,Muro,despesa,1,5614027.01
-2024,07002AA000,Alaior,ingres,7,2686835.22
-2024,07011AA000,Calvià,despesa,1,43475948.67
-2024,07033AA000,Manacor,despesa,8,60100.00
-2024,07033AV002,P. l'Escola M. de Mallorqui,despesa,3,31.00
-2024,07033AV002,P. l'Escola M. de Mallorqui,ingres,7,4500.00
-2024,07033AV003,P. M. d'Esports,despesa,2,312150.00
-2024,07044AA000,Pobla (Sa),despesa,5,5000.00
-2024,07044AA000,Pobla (Sa),despesa,6,1353047.33
-2024,07047AA000,Sencelles,despesa,1,1486330.00
-2024,07047AA000,Sencelles,despesa,9,79600.00
-2024,07901AA000,Ariany,ingres,7,90.00
-2024,07008AA000,Binissalem,despesa,5,47000.00
-2024,07017AA000,Costitx,despesa,1,357676.22
-2024,07017AA000,Costitx,ingres,4,528519.36
-2024,07018AA000,Deià,despesa,4,187697.92
-2024,07018AA000,Deià,despesa,6,155888.10
-2024,07018AA000,Deià,ingres,2,60000.00
-2024,07025AA000,Fornalutx,ingres,3,307227.00
-2024,07027AA000,Inca,despesa,7,150000.00
-2024,07027AA000,Inca,despesa,8,35000.00
-2024,07027AA000,Inca,ingres,2,418531.72
-2024,07021AA000,Estellencs,despesa,1,326418.98
-2024,07024AA000,Formentera,despesa,1,18001500.00
-2024,07024AA000,Formentera,ingres,3,9755000.00
-2024,07038AA000,Montuïri,despesa,6,56400.00
-2024,07053AA000,Santa Eugènia,despesa,6,128972.54
-2024,07053AA000,Santa Eugènia,despesa,8,10000.00
-2024,07065AA000,Vilafranca de Bonany,despesa,5,5000.00
-2024,07065AA000,Vilafranca de Bonany,ingres,7,7700.00
-2024,07001AA000,Alaró,despesa,7,6100.00
-2024,07001AA000,Alaró,ingres,2,351100.00
-2024,07015AA000,Ciutadella de Menorca,despesa,2,16351260.71
-2024,07015AA000,Ciutadella de Menorca,ingres,2,1203300.00
-2024,07015AA000,Ciutadella de Menorca,ingres,4,11028306.58
-2024,07023AA000,Ferreries,despesa,1,2767860.72
-2024,07023AA000,Ferreries,ingres,5,1064800.00
-2024,07042AA000,Pollença,despesa,4,3887300.00
-2024,07051AA000,Sant Llorenç des Cardassar,ingres,4,3637000.00
-2024,07052AA000,Sant Lluís,despesa,6,2664437.94
-2024,07052AA000,Sant Lluís,ingres,7,1772713.75
-2024,07054AA000,Santa Eulària des Riu,despesa,4,4230039.13
-2024,07054AA000,Santa Eulària des Riu,despesa,5,75000.00
-2024,07054AA000,Santa Eulària des Riu,ingres,2,6750355.00
-2024,07054AA000,Santa Eulària des Riu,ingres,6,20.00
-2024,07054AA000,Santa Eulària des Riu,ingres,8,361768.24
-2024,07054AA000,Santa Eulària des Riu,ingres,9,20.00
-2024,07056AA000,Santa María del Camí,despesa,6,1168918.19
-2024,07057AA000,Santanyí,despesa,7,135965.13
-2024,07902AA000,Migjorn Gran (Es),ingres,7,492223.09
-2024,07001DD000,Consejo Insular de Ibiza,despesa,7,7552010.83
-2024,07001DD000,Consejo Insular de Ibiza,ingres,2,4506279.00
-2024,07002DD000,Consejo Insular de Mallorca,ingres,2,20980930.00
-2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,despesa,5,66617.24
-2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,despesa,6,72550.52
-2024,07003DD000,Consejo Insular de Menorca,despesa,7,20818501.94
-2024,07003DD000,Consejo Insular de Menorca,despesa,8,675000.00
-2024,07003DV001,Inst. Menorquín de Estudios,despesa,5,7860.41
-2024,07003DV002,Consell Economic i Social,despesa,4,16000.00
-2024,07002MM000,Mc. Pla de Mallorca,despesa,1,1323315.89
-2024,07002MM000,Mc. Pla de Mallorca,despesa,6,12000.00
-2024,07004AA000,Algaida,despesa,1,2748407.93
-2024,07004AA000,Algaida,ingres,9,3800000.00
-2024,07006AA000,Artà,ingres,3,4680651.89
-2024,07012AA000,Campanet,ingres,5,6230.00
-2024,07013AA000,Campos,despesa,1,6551936.21
-2024,07013AA000,Campos,ingres,2,927894.81
-2024,07014AO001,F. Castell de Capdepera,despesa,2,84175.18
-2024,07016AA000,Consell,ingres,4,1546440.17
-2024,07020AA000,Esporles,ingres,3,1095830.00
-2024,07026AV001,P. M. Deportes,despesa,4,769350.00
-2024,07026AV002,P. M. Música,despesa,5,160000.00
-2024,07026AV002,P. M. Música,despesa,8,10.00
-2024,07028AA000,Lloret de Vistalegre,despesa,4,34725.00
-2024,07028AA000,Lloret de Vistalegre,ingres,2,73100.00
-2024,07028AA000,Lloret de Vistalegre,ingres,4,762800.00
-2024,07030AA000,Llubí,despesa,1,1048483.00
-2024,07030AA000,Llubí,despesa,4,87950.00
-2024,07031AA000,Llucmajor,despesa,5,273494.73
-2024,07031AA000,Llucmajor,despesa,6,1080300.00
-2024,07031AA000,Llucmajor,ingres,3,12445100.00
-2024,07031AA000,Llucmajor,ingres,4,11093700.00
-2024,07032AA000,Maó,despesa,5,231000.00
-2024,07034AA000,Mancor de la Vall,despesa,3,4000.00
-2024,07034AA000,Mancor de la Vall,ingres,1,618000.00
-2024,07034AA000,Mancor de la Vall,ingres,5,7600.00
-2024,07035AA000,Maria de la Salut,ingres,5,15924.72
-2024,07036AA000,Marratxí,despesa,2,6965385.26
-2024,07037AA000,Mercadal (Es),despesa,1,3142710.00
-2024,07037AA000,Mercadal (Es),despesa,5,250000.00
-2024,07037AA000,Mercadal (Es),ingres,4,2785500.00
-2024,07037AA000,Mercadal (Es),ingres,8,20000.00
-2024,07041AA000,Petra,despesa,6,565506.25
-2024,07041AA000,Petra,ingres,4,870596.20
-2024,07048AA000,Sant Josep de sa Talaia,despesa,1,12857603.39
-2024,07050AA000,Sant Joan de Labritja,ingres,3,3112845.00
-2024,07055AA000,Santa Margalida,despesa,2,8069650.00
-2024,07055AA000,Santa Margalida,ingres,4,3836847.00
-2024,07058AA000,Selva,ingres,3,687165.02
-2024,07058AA000,Selva,ingres,5,74510.00
-2024,07064AA000,Castell (Es),despesa,4,1003272.72
-2024,07064AA000,Castell (Es),ingres,2,180000.00
-2024,07005AA000,Andratx,despesa,5,100.00
-2024,07040AA000,Palma,despesa,5,536866.76
-2024,07040AA000,Palma,ingres,8,3210000.00
-2024,07040AV001,Inst. M. l'Esport,despesa,1,6497632.12
-2024,07040AV006,Instituto Municipal Innovación  (IMI),despesa,3,1100.00
-2024,07040AV009,Inst. M. Form. Ocupacional i Feina,despesa,6,6000.00
-2024,07040AV009,Inst. M. Form. Ocupacional i Feina,despesa,7,100000.00
-2024,07062AA000,Son Servera,despesa,6,68439.79
-2024,07003AA000,Alcúdia,ingres,7,795943.00
-2024,07039AA000,Muro,despesa,2,7067341.77
-2024,07039AA000,Muro,ingres,3,4296959.80
-2024,07039AA000,Muro,ingres,4,2661041.68
-2024,07049AA000,Sant Joan,ingres,2,108000.00
-2024,07059AA000,Salines (Ses),despesa,3,12000.00
-2024,07059AA000,Salines (Ses),despesa,7,5000.00
-2024,07059AA000,Salines (Ses),ingres,3,2022586.00
-2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",despesa,9,12000.00
-2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",ingres,3,559480.00
-2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",ingres,8,22000.00
-2024,07033AA000,Manacor,ingres,8,60000.00
-2024,07033AV002,P. l'Escola M. de Mallorqui,despesa,2,85669.00
-2024,07033AV003,P. M. d'Esports,ingres,4,257361.32
-2024,07044AA000,Pobla (Sa),despesa,1,7210152.11
-2024,07044AA000,Pobla (Sa),despesa,7,38815.69
-2024,07044AA000,Pobla (Sa),ingres,4,4946015.62
-2024,07047AA000,Sencelles,despesa,2,1383250.00
-2024,07047AA000,Sencelles,ingres,3,647800.00
-2024,07901AA000,Ariany,ingres,2,60000.00
-2024,07011AO002,Oficina Municipal de Tributos de Calvià,despesa,8,10000.00
-2024,07011AO002,Oficina Municipal de Tributos de Calvià,ingres,3,120000.00
-2024,07011AO002,Oficina Municipal de Tributos de Calvià,ingres,8,10000.00
-2024,07008AA000,Binissalem,despesa,3,18000.00
-2024,07027AA000,Inca,despesa,1,16224051.65
-2024,07027AA000,Inca,ingres,5,242725.54
-2024,07022AA000,Felanitx,despesa,2,10741600.00
-2024,07022AA000,Felanitx,despesa,8,8000.00
-2024,07024AA000,Formentera,despesa,3,30000.00
-2024,07001AA000,Alaró,ingres,1,1876000.00
-2024,07015AA000,Ciutadella de Menorca,despesa,5,430040.64
-2024,07015AA000,Ciutadella de Menorca,despesa,7,253021.51
-2024,07015AA000,Ciutadella de Menorca,ingres,5,989527.64
-2024,07015AV003,P. Esc. Infantiles,despesa,6,45000.00
-2024,07042AA000,Pollença,ingres,5,18100.00
-2024,07043AA000,Porreres,ingres,2,376021.90
-2024,07051AA000,Sant Llorenç des Cardassar,despesa,1,7604892.99
-2024,07052AA000,Sant Lluís,despesa,1,5688995.19
-2024,07052AA000,Sant Lluís,ingres,2,450000.00
-2024,07056AA000,Santa María del Camí,despesa,1,5161734.50
-2024,07056AA000,Santa María del Camí,ingres,1,3197833.16
-2024,07056AA000,Santa María del Camí,ingres,5,5.00
-2024,07902AA000,Migjorn Gran (Es),ingres,1,1065000.00
-2024,07001DD000,Consejo Insular de Ibiza,despesa,2,34023621.96
-2024,07002DD000,Consejo Insular de Mallorca,despesa,1,98804106.30
-2024,07002DD000,Consejo Insular de Mallorca,despesa,6,74270951.75
-2024,07002DD000,Consejo Insular de Mallorca,ingres,3,22950995.01
-2024,07002DD000,Consejo Insular de Mallorca,ingres,5,9193557.36
-2024,07002DD000,Consejo Insular de Mallorca,ingres,9,12125000.00
-2024,07002DV001,Inst. l'Esport Hipic,ingres,3,282900.00
-2024,07002DV001,Inst. l'Esport Hipic,ingres,8,5000.00
-2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,despesa,3,7000.00
-2024,07002DV003,Inst.  Mallorquí d'Afers Socials,ingres,7,4626347.59
-2024,07003DV001,Inst. Menorquín de Estudios,despesa,1,888744.64
-2024,07001MM000,Mc. Es Raiguer,ingres,4,5185194.29
-2024,07003MM000,Mc. Migjorn de Mallorca,ingres,3,2117070.48
-2024,07006AA000,Artà,despesa,6,2569337.55
-2024,07006AA000,Artà,despesa,7,1.00
-2024,07006AA000,Artà,ingres,5,48901.00
-2024,07010AA000,Bunyola,ingres,1,2519824.72
-2024,07013AA000,Campos,despesa,7,100000.00
-2024,07013AA000,Campos,ingres,1,5156933.64
-2024,07014AO001,F. Castell de Capdepera,despesa,1,90824.82
-2024,07026AV001,P. M. Deportes,despesa,5,240000.00
-2024,07026AV001,P. M. Deportes,ingres,3,345000.00
-2024,07026AV002,P. M. Música,despesa,1,617261.85
-2024,07026AV002,P. M. Música,despesa,2,304228.15
-2024,07028AA000,Lloret de Vistalegre,despesa,1,667720.00
-2024,07028AA000,Lloret de Vistalegre,ingres,1,424000.00
-2024,07029AA000,Lloseta,despesa,2,2228231.96
-2024,07030AA000,Llubí,despesa,2,632826.00
-2024,07031AV001,P. Res. Personas Mayores,ingres,4,1665018.39
-2024,07032AA000,Maó,ingres,8,60000.00
-2024,07034AA000,Mancor de la Vall,despesa,6,29500.00
-2024,07036AA000,Marratxí,ingres,1,14947000.00
-2024,07036AA000,Marratxí,ingres,3,8234400.00
-2024,07037AA000,Mercadal (Es),despesa,6,5650310.00
-2024,07037AA000,Mercadal (Es),ingres,7,2901310.00
-2024,07041AA000,Petra,ingres,5,433416.00
-2024,07041AO002,Fundación Teatro y Acción Socio-Cultural de Petra,ingres,4,56500.00
-2024,07045AA000,Puigpunyent,despesa,9,49935.39
-2024,07046AA000,Sant Antoni de Portmany,despesa,4,3287961.71
-2024,07046AA000,Sant Antoni de Portmany,ingres,2,2300000.00
-2024,07048AA000,Sant Josep de sa Talaia,ingres,2,2000000.00
-2024,07050AA000,Sant Joan de Labritja,despesa,2,6638970.00
-2024,07050AA000,Sant Joan de Labritja,despesa,3,18100.00
-2024,07055AA000,Santa Margalida,ingres,6,250000.00
-2024,07063AA000,Valldemossa,despesa,3,4000.00
-2024,07063AA000,Valldemossa,despesa,4,90810.00
-2024,07063AA000,Valldemossa,despesa,6,269535.35
-2024,07063AA000,Valldemossa,ingres,5,130000.00
-2024,07064AA000,Castell (Es),ingres,5,40000.00
-2024,07005AA000,Andratx,ingres,3,5958530.00
-2024,07040AA000,Palma,ingres,9,37960374.96
-2024,07040AV001,Inst. M. l'Esport,despesa,2,15790473.92
-2024,07040AV004,P. M. l'Habitatge,ingres,5,950000.00
-2024,07040AV004,P. M. l'Habitatge,ingres,8,10000.00
-2024,07040AV006,Instituto Municipal Innovación  (IMI),despesa,8,60000.00
-2024,07040AV006,Instituto Municipal Innovación  (IMI),ingres,7,487866.63
-2024,07062AA000,Son Servera,despesa,9,100000.00
-2024,07062AA000,Son Servera,ingres,8,60000.00
-2024,07003AA000,Alcúdia,despesa,7,199250.00
-2024,07039AA000,Muro,ingres,1,4872533.96
-2024,07049AA000,Sant Joan,ingres,5,38498.49
-2024,07059AA000,Salines (Ses),ingres,5,556143.11
-2024,07002AA000,Alaior,despesa,1,5929906.88
-2024,07002AA000,Alaior,ingres,3,1951480.24
-2024,07011AA000,Calvià,despesa,3,1018250.72
-2024,07033AA000,Manacor,despesa,2,20795728.68
-2024,07033AV003,P. M. d'Esports,ingres,3,10508.00
-2024,07033AV003,P. M. d'Esports,ingres,7,80000.00
-2024,07901AA000,Ariany,despesa,6,69090.00
-2024,07901AA000,Ariany,ingres,4,481724.22
-2024,07901AA000,Ariany,ingres,5,20.00
-2024,07011AO002,Oficina Municipal de Tributos de Calvià,despesa,1,1440666.00
-2024,07011AO002,Oficina Municipal de Tributos de Calvià,ingres,4,1934676.00
-2024,07008AA000,Binissalem,ingres,4,2722777.77
-2024,07017AA000,Costitx,ingres,2,44200.00
-2024,07025AA000,Fornalutx,despesa,1,523554.00
-2024,07025AA000,Fornalutx,ingres,5,12244.19
-2024,07027AA000,Inca,despesa,6,2662016.37
-2024,07007AA000,Banyalbufar,despesa,1,530080.00
-2024,07007AA000,Banyalbufar,despesa,9,42500.00
-2024,07022AA000,Felanitx,ingres,1,8297000.00
-2024,07065AA000,Vilafranca de Bonany,despesa,1,549460.00
-2024,07065AA000,Vilafranca de Bonany,despesa,2,796160.00
-2024,07065AA000,Vilafranca de Bonany,despesa,4,1098250.00
-2024,07065AA000,Vilafranca de Bonany,ingres,4,1329100.00
-2024,07001AA000,Alaró,despesa,9,31481.97
-2024,07015AA000,Ciutadella de Menorca,despesa,1,13868180.19
-2024,07015AV002,Hospital Municipal,despesa,5,48582.18
-2024,07015AV003,P. Esc. Infantiles,despesa,5,14372.04
-2024,07023AA000,Ferreries,ingres,4,2715922.23
-2024,07042AA000,Pollença,despesa,2,10443592.03
-2024,07051AA000,Sant Llorenç des Cardassar,despesa,4,6489279.59
-2024,07051AA000,Sant Llorenç des Cardassar,despesa,9,440000.00
-2024,07051AA000,Sant Llorenç des Cardassar,ingres,2,903000.00
-2024,07052AA000,Sant Lluís,despesa,3,166967.59
-2024,07052AA000,Sant Lluís,despesa,8,25000.00
-2024,07056AV001,P. Res. Pers. Majors. Cas Metge Rei,despesa,2,264331.13
-2024,07056AV001,P. Res. Pers. Majors. Cas Metge Rei,despesa,3,200.00
-2024,07002DD000,Consejo Insular de Mallorca,ingres,1,19277670.00
-2024,07002DV001,Inst. l'Esport Hipic,ingres,7,474000.00
-2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,despesa,8,6000.00
-2024,07003DD000,Consejo Insular de Menorca,despesa,5,480000.00
-2024,07003DV001,Inst. Menorquín de Estudios,despesa,4,600.00
-2024,07003DV001,Inst. Menorquín de Estudios,despesa,7,82000.00
-2024,07003DV001,Inst. Menorquín de Estudios,despesa,8,1000.00
-2024,07003DV001,Inst. Menorquín de Estudios,ingres,3,100000.00
-2024,07002MM000,Mc. Pla de Mallorca,ingres,3,1704210.68
-2024,07004AA000,Algaida,despesa,6,3802000.00
-2024,07004AA000,Algaida,ingres,1,2000767.56
-2024,07009AA000,Búger,despesa,1,542456.43
-2024,07009AA000,Búger,ingres,1,496400.00
-2024,07009AA000,Búger,ingres,2,66000.00
-2024,07009AA000,Búger,ingres,4,621114.00
-2024,07010AA000,Bunyola,despesa,5,75728.97
-2024,07012AA000,Campanet,despesa,4,340401.19
-2024,07012AA000,Campanet,ingres,2,92987.36
-2024,07013AA000,Campos,despesa,3,6000.00
-2024,07014AA000,Capdepera,ingres,2,750000.00
-2024,07014AO001,F. Castell de Capdepera,despesa,3,7000.00
-2024,07016AA000,Consell,ingres,5,90374.00
-2024,07026AA000,Eivissa,ingres,7,1721510.00
-2024,07026AV001,P. M. Deportes,despesa,1,1480605.87
-2024,07026AV003,Museo de Arte Contemporáneo,ingres,7,13200.00
-2024,07026AV002,P. M. Música,ingres,7,5000.00
-2024,07031AA000,Llucmajor,despesa,1,24492544.32
-2024,07031AA000,Llucmajor,ingres,1,18231100.00
-2024,07031AV001,P. Res. Personas Mayores,despesa,3,1000.00
-2024,07031AV001,P. Res. Personas Mayores,ingres,8,12000.00
-2024,07031AV002,P. Molí d'En Gaspar,ingres,4,1.00
-2024,07032AA000,Maó,despesa,6,6394277.00
-2024,07032AA000,Maó,despesa,7,582972.00
-2024,07032AA000,Maó,despesa,8,60000.00
-2024,07032AA000,Maó,despesa,9,1206940.00
-2024,07035AA000,Maria de la Salut,despesa,3,5000.00
-2024,07035AA000,Maria de la Salut,ingres,1,646699.41
-2024,07036AA000,Marratxí,ingres,5,955000.00
-2024,07037AA000,Mercadal (Es),despesa,4,1189200.00
-2024,07041AA000,Petra,despesa,1,841253.24
-2024,07041AA000,Petra,despesa,3,7006.00
-2024,07046AA000,Sant Antoni de Portmany,despesa,3,32000.00
-2024,07046AA000,Sant Antoni de Portmany,ingres,5,800000.00
-2024,07048AA000,Sant Josep de sa Talaia,despesa,2,28805696.00
-2024,07050AA000,Sant Joan de Labritja,ingres,2,1076067.00
-2024,07061AA000,Sóller,despesa,2,10973241.73
-2024,07064AA000,Castell (Es),ingres,4,3649630.33
-2024,07040AA000,Palma,despesa,8,1200000.00
-2024,07040AV001,Inst. M. l'Esport,ingres,7,3140000.00
-2024,07040AV006,Instituto Municipal Innovación  (IMI),ingres,8,60000.00
-2024,07003AA000,Alcúdia,ingres,5,5858605.00
-2024,07039AA000,Muro,despesa,3,12500.00
-2024,07039AA000,Muro,despesa,6,2289301.73
-2024,07039AA000,Muro,ingres,7,1297836.90
-2024,07049AA000,Sant Joan,despesa,3,3530.00
-2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",despesa,2,3159386.64
-2024,07002AA000,Alaior,ingres,8,10000.00
-2024,07011AA000,Calvià,ingres,1,54970000.00
-2024,07011AA000,Calvià,ingres,9,10000000.00
-2024,07033AA000,Manacor,ingres,3,11892002.40
-2024,07901AA000,Ariany,despesa,3,3510.00
-2024,07025AA000,Fornalutx,despesa,4,54660.00
-2024,07007AA000,Banyalbufar,despesa,2,910513.59
-2024,07021AA000,Estellencs,ingres,4,310879.69
-2024,07021AA000,Estellencs,ingres,5,100.00
-2024,07022AV001,Ctro. Cultural,ingres,4,5000.00
-2024,07024AA000,Formentera,ingres,2,800000.00
-2024,07053AA000,Santa Eugènia,ingres,5,16280.68
-2024,07001AA000,Alaró,despesa,1,3197492.50
-2024,07001AA000,Alaró,ingres,3,880650.00
-2024,07001AA000,Alaró,ingres,5,77548.00
-2024,07015AA000,Ciutadella de Menorca,despesa,4,6879045.54
-2024,07015AV002,Hospital Municipal,ingres,4,2778675.37
-2024,07023AA000,Ferreries,ingres,7,1105570.66
-2024,07043AA000,Porreres,ingres,4,2192308.13
-2024,07051AA000,Sant Llorenç des Cardassar,ingres,1,10190000.00
-2024,07051AA000,Sant Llorenç des Cardassar,ingres,5,1107000.00
-2024,07052AA000,Sant Lluís,despesa,9,621181.97
-2024,07054AA000,Santa Eulària des Riu,despesa,2,28211005.00
-2024,07054AA000,Santa Eulària des Riu,despesa,8,35020.00
-2024,07054AA000,Santa Eulària des Riu,ingres,4,10983070.00
-2024,07902AA000,Migjorn Gran (Es),despesa,1,1357210.44
-2024,07001DV003,P. Esc. Turismo,despesa,5,20000.00
-2024,07001DV003,P. Esc. Turismo,ingres,3,107000.00
-2024,07002DD000,Consejo Insular de Mallorca,ingres,4,478678043.67
-2024,07002DV001,Inst. l'Esport Hipic,ingres,4,3000000.00
-2024,07002DV001,Inst. l'Esport Hipic,ingres,5,264000.00
-2024,07002DV003,Inst.  Mallorquí d'Afers Socials,despesa,4,25075760.02
-2024,07002DV003,Inst.  Mallorquí d'Afers Socials,ingres,3,9342912.05
-2024,07003DD000,Consejo Insular de Menorca,despesa,3,95000.00
-2024,07003DD000,Consejo Insular de Menorca,despesa,4,42714518.48
-2024,07002MM000,Mc. Pla de Mallorca,despesa,3,500.00
-2024,07002MM000,Mc. Pla de Mallorca,despesa,4,302204.94
-2024,07001MM000,Mc. Es Raiguer,despesa,6,142771.82
-2024,07003MM000,Mc. Migjorn de Mallorca,despesa,3,2500.00
-2024,07004AA000,Algaida,ingres,2,321942.37
-2024,07006AA000,Artà,despesa,1,5912095.50
-2024,07009AA000,Búger,ingres,7,819214.66
-2024,07013AA000,Campos,despesa,6,137050.00
-2024,07013AA000,Campos,ingres,3,6058282.02
-2024,07013AA000,Campos,ingres,5,432638.52
-2024,07020AA000,Esporles,ingres,2,196000.00
-2024,07026AA000,Eivissa,despesa,6,10493710.57
-2024,07026AA000,Eivissa,despesa,8,10.00
-2024,07026AV003,Museo de Arte Contemporáneo,despesa,1,280526.57
-2024,07026AV002,P. M. Música,ingres,4,1019980.00
-2024,07029AA000,Lloseta,ingres,3,1898070.45
-2024,07030AA000,Llubí,despesa,9,45290.00
-2024,07031AV001,P. Res. Personas Mayores,despesa,2,246100.00
-2024,07031AV001,P. Res. Personas Mayores,despesa,8,12000.00
-2024,07031AV001,P. Res. Personas Mayores,ingres,5,100.00
-2024,07034AA000,Mancor de la Vall,despesa,1,973585.00
-2024,07036AA000,Marratxí,ingres,4,10986600.00
-2024,07036AO001,Institut Municipal Comunicació,despesa,2,299000.00
-2024,07037AA000,Mercadal (Es),ingres,1,5129000.00
-2024,07037AA000,Mercadal (Es),ingres,3,4322560.00
-2024,07037AA000,Mercadal (Es),ingres,5,451000.00
-2024,07041AA000,Petra,despesa,7,6.00
-2024,07045AA000,Puigpunyent,ingres,1,1171340.33
-2024,07045AA000,Puigpunyent,ingres,4,1007253.65
-2024,07048AA000,Sant Josep de sa Talaia,despesa,3,3750.00
-2024,07048AA000,Sant Josep de sa Talaia,ingres,7,2672569.67
-2024,07050AA000,Sant Joan de Labritja,despesa,6,3018288.00
-2024,07058AA000,Selva,despesa,3,2000.00
-2024,07064AA000,Castell (Es),despesa,1,5285996.97
-2024,07064AA000,Castell (Es),despesa,6,5520000.00
-2024,07005AA000,Andratx,despesa,8,10000.00
-2024,07005AA000,Andratx,ingres,5,790000.00
-2024,07040AV001,Inst. M. l'Esport,ingres,3,4488285.78
-2024,07040AV002,P. M. d'Escoles d'Infants,despesa,3,1000.00
-2024,07040AV009,Inst. M. Form. Ocupacional i Feina,despesa,4,131530.00
-2024,07059AA000,Salines (Ses),despesa,2,3960594.12
-2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",despesa,4,450501.00
-2024,07002AA000,Alaior,ingres,5,1370899.26
-2024,07011AA000,Calvià,despesa,4,39860323.74
-2024,07033AA000,Manacor,ingres,1,18835618.67
-2024,07033AA000,Manacor,ingres,7,55059.12
-2024,07033AO001,Institut Públic del Teatre Municipal,ingres,4,250000.00
-2024,07033AO002,Institució Pública Antoni M. Alcover,ingres,4,108500.00
-2024,07044AA000,Pobla (Sa),ingres,1,4832000.00
-2024,07044AA000,Pobla (Sa),ingres,7,406438.38
-2024,07017AA000,Costitx,despesa,6,161381.76
-2024,07018AA000,Deià,despesa,1,937239.08
-2024,07018AA000,Deià,despesa,2,1153741.61
-2024,07018AA000,Deià,despesa,5,48887.14
-2024,07018AA000,Deià,ingres,4,408550.00
-2024,07025AA000,Fornalutx,despesa,2,703352.31
-2024,07027AA000,Inca,despesa,2,15354311.15
-2024,07027AA000,Inca,ingres,8,35000.00
-2024,07007AA000,Banyalbufar,ingres,1,402716.17
-2024,07007AA000,Banyalbufar,ingres,2,304520.07
-2024,07021AA000,Estellencs,ingres,3,169796.48
-2024,07022AA000,Felanitx,despesa,3,33500.00
-2024,07022AA000,Felanitx,despesa,4,1259041.00
-2024,07022AA000,Felanitx,ingres,2,903000.00
-2024,07024AA000,Formentera,ingres,4,18779000.00
-2024,07024AA000,Formentera,ingres,7,4740785.00
-2024,07038AA000,Montuïri,ingres,4,1032098.90
-2024,07038AA000,Montuïri,ingres,5,9800.00
-2024,07038AA000,Montuïri,ingres,7,127000.00
-2024,07053AA000,Santa Eugènia,ingres,1,723133.07
-2024,07065AA000,Vilafranca de Bonany,ingres,9,272000.00
-2024,07015AV003,P. Esc. Infantiles,ingres,3,65000.00
-2024,07042AA000,Pollença,ingres,2,1200040.00
-2024,07001DD000,Consejo Insular de Ibiza,despesa,1,43120213.24
-2024,07001DD000,Consejo Insular de Ibiza,ingres,3,7761257.83
-2024,07001DV003,P. Esc. Turismo,despesa,3,800.00
-2024,07002DD000,Consejo Insular de Mallorca,despesa,8,1100000.00
-2024,07002DV001,Inst. l'Esport Hipic,despesa,1,1253383.57
-2024,07002DV001,Inst. l'Esport Hipic,despesa,2,1045716.43
-2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,despesa,1,3189007.03
-2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,ingres,8,6000.00
-2024,07002DV003,Inst.  Mallorquí d'Afers Socials,ingres,5,61274.60
-2024,07003DV002,Consell Economic i Social,despesa,2,13250.00
-2024,07004AA000,Algaida,despesa,2,1953749.91
-2024,07004AA000,Algaida,ingres,5,28500.00
-2024,07014AA000,Capdepera,despesa,1,8810778.49
-2024,07014AA000,Capdepera,despesa,4,349000.00
-2024,07016AA000,Consell,ingres,1,1223911.66
-2024,07020AA000,Esporles,despesa,4,102400.00
-2024,07020AA000,Esporles,ingres,4,1905903.07
-2024,07026AA000,Eivissa,despesa,3,405000.00
-2024,07026AA000,Eivissa,ingres,9,8109110.77
-2024,07026AV001,P. M. Deportes,despesa,8,10.00
-2024,07028AA000,Lloret de Vistalegre,despesa,3,4000.00
-2024,07029AA000,Lloseta,despesa,1,3458682.86
-2024,07030AA000,Llubí,despesa,3,17510.00
-2024,07030AA000,Llubí,ingres,3,158150.00
-2024,07031AV002,P. Molí d'En Gaspar,despesa,3,1.00
-2024,07032AA000,Maó,ingres,3,6898270.00
-2024,07034AA000,Mancor de la Vall,ingres,7,20000.00
-2024,07036AA000,Marratxí,despesa,6,1243570.27
-2024,07036AA000,Marratxí,despesa,8,16000.00
-2024,07036AO001,Institut Municipal Comunicació,despesa,3,1000.00
-2024,07037AA000,Mercadal (Es),despesa,3,19000.00
-2024,07037AA000,Mercadal (Es),despesa,8,20000.00
-2024,07045AA000,Puigpunyent,despesa,6,1230386.41
-2024,07045AA000,Puigpunyent,ingres,3,740703.25
-2024,07046AA000,Sant Antoni de Portmany,ingres,1,13960000.00
-2024,07050AA000,Sant Joan de Labritja,ingres,1,3955000.00
-2024,07055AA000,Santa Margalida,ingres,5,914663.00
-2024,07058AA000,Selva,ingres,1,1574000.00
-2024,07058AA000,Selva,ingres,4,1200324.98
-2024,07063AA000,Valldemossa,ingres,3,1881647.34
-2024,07064AA000,Castell (Es),ingres,3,1323400.00
-2024,07005AA000,Andratx,despesa,3,18000.00
-2024,07040AA000,Palma,ingres,2,32121192.61
-2024,07040AA000,Palma,ingres,3,121231326.79
-2024,07040AV001,Inst. M. l'Esport,ingres,4,17963969.94
-2024,07040AV002,P. M. d'Escoles d'Infants,despesa,6,21500.00
-2024,07040AV004,P. M. l'Habitatge,despesa,2,445894.38
-2024,07040AV004,P. M. l'Habitatge,ingres,3,121007.00
-2024,07040AV006,Instituto Municipal Innovación  (IMI),despesa,1,4960275.03
-2024,07040AV006,Instituto Municipal Innovación  (IMI),ingres,3,2893.00
-2024,07040AV009,Inst. M. Form. Ocupacional i Feina,despesa,2,1550365.36
-2024,07040AV009,Inst. M. Form. Ocupacional i Feina,ingres,5,6300.00
-2024,07062AA000,Son Servera,ingres,1,8186280.22
-2024,07003AA000,Alcúdia,ingres,1,17213800.00
-2024,07039AA000,Muro,despesa,4,373795.87
-2024,07039AA000,Muro,despesa,7,28000.00
-2024,07049AA000,Sant Joan,despesa,4,141310.89
-2024,07049AA000,Sant Joan,despesa,6,82800.00
-2024,07002AA000,Alaior,ingres,1,5331911.57
-2024,07011AA000,Calvià,despesa,2,30628888.28
-2024,07011AA000,Calvià,despesa,7,544823.00
-2024,07011AA000,Calvià,ingres,5,8278749.93
-2024,07011AA000,Calvià,ingres,6,1905000.00
-2024,07033AA000,Manacor,despesa,3,576476.83
-2024,07033AA000,Manacor,ingres,2,1404797.00
-2024,07033AA000,Manacor,ingres,4,13932449.99
-2024,07033AV002,P. l'Escola M. de Mallorqui,ingres,4,60200.00
-2024,07044AA000,Pobla (Sa),ingres,9,664500.00
-2024,07047AA000,Sencelles,despesa,3,6120.00
-2024,07047AA000,Sencelles,ingres,2,323200.00
-2024,07901AA000,Ariany,despesa,4,157270.00
-2024,07011AO002,Oficina Municipal de Tributos de Calvià,despesa,3,1000.00
-2024,07008AA000,Binissalem,despesa,2,2416727.10
-2024,07008AA000,Binissalem,ingres,1,2624000.00
-2024,07017AA000,Costitx,despesa,4,61099.20
-2024,07018AA000,Deià,ingres,3,869903.85
-2024,07025AA000,Fornalutx,despesa,3,500.00
-2024,07027AA000,Inca,despesa,4,1435996.80
-2024,07027AA000,Inca,ingres,3,11301563.46
-2024,07027AA000,Inca,ingres,7,1558334.77
-2024,07007AA000,Banyalbufar,ingres,4,421854.94
-2024,07022AA000,Felanitx,despesa,6,804500.00
-2024,07024AA000,Formentera,ingres,1,9475000.00
-2024,07038AA000,Montuïri,despesa,4,378460.00
-2024,07038AA000,Montuïri,ingres,3,389602.00
-2024,07053AA000,Santa Eugènia,despesa,1,912274.20
-2024,07053AA000,Santa Eugènia,despesa,2,593169.67
-2024,07053AA000,Santa Eugènia,despesa,9,51551.44
-2024,07015AA000,Ciutadella de Menorca,despesa,3,195492.43
-2024,07015AA000,Ciutadella de Menorca,ingres,3,10105103.42
-2024,07015AV002,Hospital Municipal,despesa,1,2637672.06
-2024,07023AA000,Ferreries,ingres,8,40000.00
-2024,07051AA000,Sant Llorenç des Cardassar,despesa,3,129497.92
-2024,07052AA000,Sant Lluís,ingres,8,25000.00
-2024,07054AA000,Santa Eulària des Riu,despesa,6,8215780.00
-2024,07056AA000,Santa María del Camí,ingres,4,2955752.35
-2024,07056AV001,P. Res. Pers. Majors. Cas Metge Rei,despesa,6,75000.00
-2024,07057AA000,Santanyí,ingres,4,4814378.88
-2024,07902AA000,Migjorn Gran (Es),despesa,3,5500.00
-2024,07902AA000,Migjorn Gran (Es),ingres,4,1093449.70
-2024,07902AA000,Migjorn Gran (Es),ingres,8,1000.00
-2024,07001DD000,Consejo Insular de Ibiza,despesa,3,207240.85
-2024,07002DD000,Consejo Insular de Mallorca,despesa,5,2098354.35
-2024,07003DD000,Consejo Insular de Menorca,ingres,4,88756112.35
-2024,07002MM000,Mc. Pla de Mallorca,despesa,2,8298895.86
-2024,07002MM000,Mc. Pla de Mallorca,ingres,7,130217.58
-2024,07003MM000,Mc. Migjorn de Mallorca,despesa,2,969332.98
-2024,07004AA000,Algaida,ingres,4,2052783.27
-2024,07006AA000,Artà,despesa,2,6160942.31
-2024,07009AA000,Búger,despesa,9,85000.00
-2024,07009AA000,Búger,ingres,5,8684.00
-2024,07010AA000,Bunyola,despesa,9,353763.00
-2024,07010AA000,Bunyola,ingres,3,1598126.34
-2024,07010AA000,Bunyola,ingres,5,61800.00
-2024,07012AA000,Campanet,despesa,2,984672.58
-2024,07012AA000,Campanet,ingres,4,946516.34
-2024,07013AA000,Campos,despesa,2,9987990.85
-2024,07014AA000,Capdepera,despesa,2,14381344.71
-2024,07014AA000,Capdepera,ingres,5,1866605.48
-2024,07014AO001,F. Castell de Capdepera,ingres,4,2000.00
-2024,07020AA000,Esporles,despesa,3,14980.00
-2024,07020AA000,Esporles,despesa,9,78739.00
-2024,07026AA000,Eivissa,despesa,5,500000.00
-2024,07026AA000,Eivissa,despesa,7,524866.67
-2024,07026AA000,Eivissa,ingres,1,30243606.00
-2024,07026AV001,P. M. Deportes,despesa,2,767034.13
-2024,07026AV003,Museo de Arte Contemporáneo,despesa,2,143316.58
-2024,07026AV003,Museo de Arte Contemporáneo,despesa,3,946.85
-2024,07026AV003,Museo de Arte Contemporáneo,despesa,6,13200.00
-2024,07026AV002,P. M. Música,ingres,8,10.00
-2024,07029AA000,Lloseta,despesa,3,40934.31
-2024,07029AA000,Lloseta,despesa,6,80720.00
-2024,07029AA000,Lloseta,ingres,1,2133000.00
-2024,07030AA000,Llubí,ingres,5,17700.00
-2024,07031AA000,Llucmajor,despesa,2,16761951.50
-2024,07031AA000,Llucmajor,despesa,8,55000.00
-2024,07031AV001,P. Res. Personas Mayores,despesa,1,1613719.29
-2024,07032AA000,Maó,despesa,2,13839924.00
-2024,07032AA000,Maó,ingres,2,875520.00
-2024,07032AA000,Maó,ingres,7,3800261.00
-2024,07034AA000,Mancor de la Vall,despesa,4,314950.00
-2024,07034AA000,Mancor de la Vall,ingres,4,1002350.00
-2024,07035AA000,Maria de la Salut,despesa,4,117373.09
-2024,07035AA000,Maria de la Salut,ingres,2,115000.00
-2024,07035AA000,Maria de la Salut,ingres,4,725679.19
-2024,07036AA000,Marratxí,ingres,8,16000.00
-2024,07036AO001,Institut Municipal Comunicació,ingres,4,300000.00
-2024,07041AO001,F. Escuela Municipal de Música de Petra,despesa,1,64821.83
-2024,07041AO001,F. Escuela Municipal de Música de Petra,despesa,3,821.81
-2024,07041AO001,F. Escuela Municipal de Música de Petra,ingres,3,41765.75
-2024,07041AO002,Fundación Teatro y Acción Socio-Cultural de Petra,despesa,1,41652.00
-2024,07041AO002,Fundación Teatro y Acción Socio-Cultural de Petra,ingres,3,14206.00
-2024,07045AA000,Puigpunyent,ingres,5,5220.00
-2024,07048AA000,Sant Josep de sa Talaia,ingres,3,13257075.94
-2024,07050AA000,Sant Joan de Labritja,despesa,4,494000.00
-2024,07050AA000,Sant Joan de Labritja,ingres,4,2379300.00
-2024,07050AA000,Sant Joan de Labritja,ingres,6,1000.00
-2024,07055AA000,Santa Margalida,despesa,6,1904510.00
-2024,07058AA000,Selva,despesa,2,1240618.22
-2024,07061AA000,Sóller,ingres,1,9347530.44
-2024,07064AA000,Castell (Es),despesa,2,2051250.00
-2024,07064AA000,Castell (Es),ingres,1,4231500.00
-2024,07005AA000,Andratx,despesa,6,1424598.33
-2024,07005AA000,Andratx,despesa,7,145000.00
-2024,07040AA000,Palma,ingres,5,11138278.05
-2024,07040AV001,Inst. M. l'Esport,despesa,3,5000.00
-2024,07040AV001,Inst. M. l'Esport,despesa,6,3140000.00
-2024,07040AV002,P. M. d'Escoles d'Infants,despesa,1,3908000.00
-2024,07040AV006,Instituto Municipal Innovación  (IMI),despesa,6,487866.63
-2024,07040AV009,Inst. M. Form. Ocupacional i Feina,ingres,8,20000.00
-2024,07062AA000,Son Servera,despesa,3,7000.00
-2024,07062AA000,Son Servera,despesa,4,349005.43
-2024,07003AA000,Alcúdia,despesa,1,14732161.00
-2024,07003AA000,Alcúdia,despesa,6,567935.00
-2024,07049AA000,Sant Joan,despesa,2,1148342.11
-2024,07049AA000,Sant Joan,ingres,3,577848.07
-2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",despesa,8,10000.00
-2024,07002AA000,Alaior,despesa,8,10000.00
-2024,07011AA000,Calvià,ingres,3,14564800.00
-2024,07033AA000,Manacor,despesa,7,247275.37
-2024,07044AA000,Pobla (Sa),ingres,3,4473485.13
-2024,07047AA000,Sencelles,ingres,5,27700.00
-2024,07901AA000,Ariany,despesa,2,555851.86
-2024,07011AO002,Oficina Municipal de Tributos de Calvià,despesa,6,3000.00
-2024,07011AO002,Oficina Municipal de Tributos de Calvià,ingres,7,3000.00
-2024,07008AA000,Binissalem,despesa,9,705000.00
-2024,07017AA000,Costitx,ingres,1,491000.00
-2024,07018AA000,Deià,ingres,5,16000.00
-2024,07021AA000,Estellencs,despesa,4,17980.80
-2024,07022AA000,Felanitx,despesa,7,50000.00
-2024,07022AA000,Felanitx,ingres,3,4991500.00
-2024,07024AA000,Formentera,despesa,7,310000.00
-2024,07024AA000,Formentera,ingres,5,10215.00
-2024,07053AA000,Santa Eugènia,despesa,3,17703.90
-2024,07053AA000,Santa Eugènia,ingres,4,703371.11
-2024,07001AA000,Alaró,despesa,3,20245.27
-2024,07001AA000,Alaró,despesa,4,630600.00
-2024,07015AA000,Ciutadella de Menorca,despesa,9,257596.62
-2024,07015AV002,Hospital Municipal,ingres,3,685975.39
-2024,07015AV003,P. Esc. Infantiles,ingres,4,1694000.00
-2024,07023AA000,Ferreries,ingres,1,2244000.00
-2024,07043AA000,Porreres,despesa,4,354240.00
-2024,07051AA000,Sant Llorenç des Cardassar,despesa,2,5627329.50
-2024,07052AA000,Sant Lluís,ingres,4,3317104.83
-2024,07054AA000,Santa Eulària des Riu,ingres,5,2096726.86
-2024,07056AA000,Santa María del Camí,ingres,2,490000.00
-2024,07057AA000,Santanyí,despesa,4,3019109.77
-2024,07902AA000,Migjorn Gran (Es),despesa,7,600.00
-2024,07902AA000,Migjorn Gran (Es),ingres,2,90700.00
-2024,07001DD000,Consejo Insular de Ibiza,ingres,9,200000.00
-2024,07001DV003,P. Esc. Turismo,despesa,1,539731.96
-2024,07001DV003,P. Esc. Turismo,despesa,2,124468.04
-2024,07002DD000,Consejo Insular de Mallorca,ingres,8,1100000.00
-2024,07002DV001,Inst. l'Esport Hipic,despesa,3,12000.00
-2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,despesa,2,383420.31
-2024,07002DV003,Inst.  Mallorquí d'Afers Socials,despesa,2,153579378.24
-2024,07003DD000,Consejo Insular de Menorca,despesa,6,28510567.62
-2024,07003DD000,Consejo Insular de Menorca,ingres,9,30470000.00
-2024,07003DV001,Inst. Menorquín de Estudios,despesa,2,679878.49
-2024,07001MM000,Mc. Es Raiguer,despesa,4,28000.00
-2024,07001MM000,Mc. Es Raiguer,ingres,5,6000.00
 2016,07001DD000,Consejo Insular de Ibiza,ingres,3,5578561.83
 2016,07001DD000,Consejo Insular de Ibiza,despesa,1,28037693.46
 2016,07001DV003,P. Esc. Turismo,ingres,5,100.00
@@ -9842,3 +8745,1100 @@ any,codente,nom,costat,capitol,inicial
 2023,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,despesa,3,5000.00
 2023,07001MM000,Mc. Es Raiguer,ingres,4,3981713.32
 2023,07003MM000,Mc. Migjorn de Mallorca,ingres,3,1992200.00
+2024,07006AA000,Artà,despesa,5,88681.44
+2024,07010AA000,Bunyola,despesa,1,2496132.00
+2024,07010AA000,Bunyola,ingres,4,2458872.18
+2024,07014AO001,F. Castell de Capdepera,despesa,6,40000.00
+2024,07016AA000,Consell,despesa,1,1607398.70
+2024,07020AA000,Esporles,despesa,2,2121656.32
+2024,07020AA000,Esporles,ingres,5,2100.00
+2024,07026AA000,Eivissa,despesa,1,28898966.30
+2024,07026AA000,Eivissa,despesa,4,10680599.19
+2024,07026AA000,Eivissa,ingres,3,17641557.44
+2024,07026AA000,Eivissa,ingres,4,20072185.79
+2024,07026AA000,Eivissa,ingres,6,10.00
+2024,07026AV001,P. M. Deportes,despesa,6,40000.00
+2024,07026AV001,P. M. Deportes,ingres,7,40000.00
+2024,07028AA000,Lloret de Vistalegre,despesa,2,611255.00
+2024,07028AA000,Lloret de Vistalegre,ingres,7,358460.00
+2024,07029AA000,Lloseta,ingres,4,2328189.55
+2024,07029AA000,Lloseta,ingres,5,55020.00
+2024,07031AA000,Llucmajor,ingres,2,2610500.00
+2024,07032AA000,Maó,despesa,1,17469628.00
+2024,07032AA000,Maó,ingres,1,18526979.00
+2024,07034AA000,Mancor de la Vall,ingres,3,317250.00
+2024,07041AA000,Petra,ingres,7,23135.75
+2024,07045AA000,Puigpunyent,despesa,1,1357757.32
+2024,07045AA000,Puigpunyent,despesa,2,1659188.56
+2024,07045AA000,Puigpunyent,despesa,3,15339.19
+2024,07045AA000,Puigpunyent,ingres,7,1220714.78
+2024,07048AA000,Sant Josep de sa Talaia,despesa,6,4061223.82
+2024,07055AA000,Santa Margalida,despesa,3,50.00
+2024,07055AA000,Santa Margalida,ingres,2,230000.00
+2024,07058AA000,Selva,despesa,1,1812550.00
+2024,07058AA000,Selva,despesa,4,566285.78
+2024,07061AA000,Sóller,ingres,2,892825.19
+2024,07061AA000,Sóller,ingres,3,6331438.24
+2024,07061AA000,Sóller,ingres,4,4908564.50
+2024,07063AA000,Valldemossa,ingres,2,100000.00
+2024,07005AA000,Andratx,despesa,1,11163051.14
+2024,07040AA000,Palma,ingres,4,138481769.43
+2024,07040AV002,P. M. d'Escoles d'Infants,despesa,8,6200.00
+2024,07040AV002,P. M. d'Escoles d'Infants,ingres,3,390000.00
+2024,07040AV004,P. M. l'Habitatge,despesa,6,210000.00
+2024,07039AA000,Muro,ingres,5,1556594.04
+2024,07049AA000,Sant Joan,ingres,4,736962.03
+2024,07059AA000,Salines (Ses),despesa,1,3431574.22
+2024,07059AA000,Salines (Ses),despesa,4,917929.66
+2024,07059AA000,Salines (Ses),ingres,2,695000.00
+2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",ingres,4,9843309.04
+2024,07002AA000,Alaior,despesa,2,6424181.17
+2024,07002AA000,Alaior,despesa,6,5028164.67
+2024,07002AA000,Alaior,despesa,7,532983.75
+2024,07002AA000,Alaior,ingres,9,2550313.20
+2024,07011AA000,Calvià,despesa,9,1004979.08
+2024,07011AA000,Calvià,ingres,4,29998207.43
+2024,07011AA000,Calvià,ingres,7,396830.00
+2024,07011AA000,Calvià,ingres,8,310000.00
+2024,07033AA000,Manacor,despesa,4,1666948.38
+2024,07033AO001,Institut Públic del Teatre Municipal,ingres,3,230240.00
+2024,07044AA000,Pobla (Sa),ingres,2,500000.00
+2024,07901AA000,Ariany,ingres,3,179411.00
+2024,07017AA000,Costitx,despesa,3,1800.00
+2024,07018AA000,Deià,despesa,3,7000.00
+2024,07025AA000,Fornalutx,ingres,2,30345.00
+2024,07027AA000,Inca,ingres,1,10732264.47
+2024,07007AA000,Banyalbufar,despesa,3,10000.00
+2024,07007AA000,Banyalbufar,ingres,3,327171.41
+2024,07021AA000,Estellencs,despesa,3,3600.00
+2024,07021AA000,Estellencs,ingres,1,189307.15
+2024,07022AA000,Felanitx,ingres,4,6066620.00
+2024,07022AA000,Felanitx,ingres,5,1132600.00
+2024,07022AA000,Felanitx,ingres,8,1280.00
+2024,07022AA000,Felanitx,ingres,9,550000.00
+2024,07038AA000,Montuïri,despesa,2,908329.18
+2024,07038AA000,Montuïri,despesa,9,280000.00
+2024,07038AA000,Montuïri,ingres,2,248900.00
+2024,07053AA000,Santa Eugènia,despesa,4,246061.21
+2024,07053AA000,Santa Eugènia,ingres,2,90761.54
+2024,07065AA000,Vilafranca de Bonany,despesa,3,20585.00
+2024,07065AA000,Vilafranca de Bonany,despesa,6,461800.00
+2024,07001AA000,Alaró,ingres,6,5000.00
+2024,07015AV003,P. Esc. Infantiles,despesa,1,580300.00
+2024,07023AA000,Ferreries,despesa,2,3868906.00
+2024,07023AA000,Ferreries,despesa,3,19000.00
+2024,07023AA000,Ferreries,despesa,4,506512.00
+2024,07023AA000,Ferreries,despesa,8,40000.00
+2024,07042AA000,Pollença,despesa,1,11461008.61
+2024,07042AA000,Pollença,ingres,1,11692743.57
+2024,07043AA000,Porreres,despesa,1,2079901.93
+2024,07043AA000,Porreres,ingres,1,1951481.60
+2024,07043AA000,Porreres,ingres,5,35000.00
+2024,07051AA000,Sant Llorenç des Cardassar,ingres,3,4949000.00
+2024,07052AA000,Sant Lluís,despesa,2,5633791.05
+2024,07052AA000,Sant Lluís,despesa,4,717240.00
+2024,07052AA000,Sant Lluís,despesa,5,150000.00
+2024,07052AA000,Sant Lluís,ingres,3,3507998.60
+2024,07052AA000,Sant Lluís,ingres,5,404937.00
+2024,07054AA000,Santa Eulària des Riu,ingres,1,20540784.90
+2024,07056AA000,Santa María del Camí,despesa,3,19250.00
+2024,07056AA000,Santa María del Camí,ingres,8,350000.00
+2024,07057AA000,Santanyí,despesa,2,10915223.96
+2024,07057AA000,Santanyí,despesa,6,270953.39
+2024,07057AA000,Santanyí,ingres,3,6057997.84
+2024,07902AA000,Migjorn Gran (Es),despesa,6,559523.09
+2024,07902AA000,Migjorn Gran (Es),despesa,8,1000.00
+2024,07902AA000,Migjorn Gran (Es),ingres,5,180100.00
+2024,07001DD000,Consejo Insular de Ibiza,despesa,9,100000.00
+2024,07001DD000,Consejo Insular de Ibiza,ingres,7,9704405.02
+2024,07002DD000,Consejo Insular de Mallorca,despesa,2,90145443.60
+2024,07002DV001,Inst. l'Esport Hipic,despesa,6,474000.00
+2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,ingres,3,2848595.10
+2024,07002DV003,Inst.  Mallorquí d'Afers Socials,despesa,1,103896864.56
+2024,07002DV003,Inst.  Mallorquí d'Afers Socials,despesa,7,425000.00
+2024,07002DV003,Inst.  Mallorquí d'Afers Socials,ingres,4,273202816.17
+2024,07002DV003,Inst.  Mallorquí d'Afers Socials,ingres,8,120000.00
+2024,07003DD000,Consejo Insular de Menorca,despesa,2,20683175.65
+2024,07001MM000,Mc. Es Raiguer,despesa,3,12000.00
+2024,07003MM000,Mc. Migjorn de Mallorca,despesa,4,600.00
+2024,07006AA000,Artà,despesa,3,9000.00
+2024,07006AA000,Artà,despesa,4,341671.20
+2024,07006AA000,Artà,ingres,1,5178199.06
+2024,07006AA000,Artà,ingres,7,1378103.14
+2024,07009AA000,Búger,despesa,3,7200.00
+2024,07010AA000,Bunyola,despesa,3,48500.00
+2024,07012AA000,Campanet,ingres,1,847724.21
+2024,07014AA000,Capdepera,despesa,3,28000.00
+2024,07014AA000,Capdepera,ingres,3,7826417.72
+2024,07014AA000,Capdepera,ingres,4,3750000.00
+2024,07016AA000,Consell,despesa,3,15050.00
+2024,07026AV001,P. M. Deportes,ingres,8,10.00
+2024,07026AV002,P. M. Música,ingres,3,65010.00
+2024,07030AA000,Llubí,despesa,6,50751.00
+2024,07030AA000,Llubí,ingres,1,717327.00
+2024,07030AA000,Llubí,ingres,2,200000.00
+2024,07031AA000,Llucmajor,ingres,5,1004700.00
+2024,07031AV001,P. Res. Personas Mayores,despesa,5,9399.10
+2024,07031AV001,P. Res. Personas Mayores,ingres,3,205100.00
+2024,07032AA000,Maó,ingres,9,1127132.00
+2024,07036AA000,Marratxí,despesa,1,17501610.32
+2024,07036AA000,Marratxí,despesa,3,40000.00
+2024,07036AA000,Marratxí,ingres,2,2075000.00
+2024,07037AA000,Mercadal (Es),despesa,7,2100.00
+2024,07041AA000,Petra,ingres,1,823942.00
+2024,07041AO001,F. Escuela Municipal de Música de Petra,ingres,4,26000.00
+2024,07045AA000,Puigpunyent,despesa,4,188125.14
+2024,07045AA000,Puigpunyent,despesa,5,30000.00
+2024,07045AA000,Puigpunyent,ingres,2,385500.00
+2024,07046AA000,Sant Antoni de Portmany,despesa,6,3250303.76
+2024,07048AA000,Sant Josep de sa Talaia,despesa,4,4022004.60
+2024,07048AA000,Sant Josep de sa Talaia,ingres,1,16630324.00
+2024,07055AA000,Santa Margalida,despesa,4,521200.00
+2024,07055AA000,Santa Margalida,ingres,3,4488420.00
+2024,07061AA000,Sóller,despesa,4,422150.00
+2024,07064AA000,Castell (Es),despesa,7,284510.64
+2024,07040AA000,Palma,despesa,9,21731939.04
+2024,07040AA000,Palma,ingres,1,189500233.12
+2024,07040AV001,Inst. M. l'Esport,despesa,4,350000.00
+2024,07040AV002,P. M. d'Escoles d'Infants,despesa,2,5190758.08
+2024,07040AV004,P. M. l'Habitatge,despesa,8,10000.00
+2024,07040AV009,Inst. M. Form. Ocupacional i Feina,ingres,3,60000.00
+2024,07040AV009,Inst. M. Form. Ocupacional i Feina,ingres,7,106000.00
+2024,07062AA000,Son Servera,despesa,2,9415321.54
+2024,07062AA000,Son Servera,despesa,8,60000.00
+2024,07062AA000,Son Servera,ingres,3,3880369.82
+2024,07062AA000,Son Servera,ingres,4,3602257.51
+2024,07049AA000,Sant Joan,despesa,1,812537.54
+2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",despesa,1,6792201.40
+2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",despesa,6,294003.00
+2024,07002AA000,Alaior,despesa,3,111175.65
+2024,07011AA000,Calvià,despesa,8,310000.00
+2024,07033AV002,P. l'Escola M. de Mallorqui,ingres,3,25500.00
+2024,07033AO002,Institució Pública Antoni M. Alcover,despesa,2,69000.00
+2024,07044AA000,Pobla (Sa),despesa,9,255751.31
+2024,07044AA000,Pobla (Sa),ingres,5,57888.96
+2024,07047AA000,Sencelles,ingres,1,1141800.00
+2024,07901AA000,Ariany,despesa,1,337689.29
+2024,07008AA000,Binissalem,despesa,1,3057599.99
+2024,07008AA000,Binissalem,despesa,4,834268.25
+2024,07008AA000,Binissalem,ingres,5,232000.00
+2024,07017AA000,Costitx,ingres,5,18100.00
+2024,07018AA000,Deià,ingres,1,1136000.00
+2024,07025AA000,Fornalutx,ingres,1,509725.00
+2024,07021AA000,Estellencs,despesa,2,395988.36
+2024,07021AA000,Estellencs,ingres,2,88454.82
+2024,07022AV001,Ctro. Cultural,despesa,2,5000.00
+2024,07038AA000,Montuïri,despesa,1,1198621.60
+2024,07038AA000,Montuïri,despesa,5,50836.22
+2024,07053AA000,Santa Eugènia,ingres,3,416186.56
+2024,07065AA000,Vilafranca de Bonany,ingres,2,150000.00
+2024,07065AA000,Vilafranca de Bonany,ingres,5,2000.00
+2024,07001AA000,Alaró,despesa,2,1395281.30
+2024,07001AA000,Alaró,ingres,7,371985.44
+2024,07015AV003,P. Esc. Infantiles,despesa,2,1149327.96
+2024,07023AA000,Ferreries,despesa,5,15000.00
+2024,07043AA000,Porreres,despesa,6,18000.00
+2024,07043AA000,Porreres,ingres,3,350188.37
+2024,07056AV001,P. Res. Pers. Majors. Cas Metge Rei,ingres,3,549399.00
+2024,07057AA000,Santanyí,ingres,1,11277971.74
+2024,07057AA000,Santanyí,ingres,2,1330000.00
+2024,07902AA000,Migjorn Gran (Es),despesa,2,1326454.94
+2024,07902AA000,Migjorn Gran (Es),despesa,4,428704.32
+2024,07902AA000,Migjorn Gran (Es),despesa,9,75000.00
+2024,07001DD000,Consejo Insular de Ibiza,despesa,8,350000.00
+2024,07002DD000,Consejo Insular de Mallorca,despesa,3,929100.00
+2024,07002DV001,Inst. l'Esport Hipic,despesa,4,1235800.00
+2024,07002DV003,Inst.  Mallorquí d'Afers Socials,despesa,3,55000.00
+2024,07002DV003,Inst.  Mallorquí d'Afers Socials,despesa,8,120000.00
+2024,07003DD000,Consejo Insular de Menorca,ingres,1,1636174.32
+2024,07001MM000,Mc. Es Raiguer,despesa,2,4268489.05
+2024,07003MM000,Mc. Migjorn de Mallorca,despesa,6,318120.76
+2024,07003MM000,Mc. Migjorn de Mallorca,ingres,5,50000.00
+2024,07004AA000,Algaida,despesa,3,3600.00
+2024,07004AA000,Algaida,ingres,3,440384.64
+2024,07009AA000,Búger,ingres,3,322634.34
+2024,07012AA000,Campanet,despesa,3,8542.82
+2024,07012AA000,Campanet,ingres,3,803458.45
+2024,07013AA000,Campos,despesa,4,222044.80
+2024,07013AA000,Campos,ingres,4,4429272.87
+2024,07014AA000,Capdepera,despesa,5,140000.00
+2024,07014AA000,Capdepera,despesa,6,1383900.00
+2024,07016AA000,Consell,ingres,3,1378266.18
+2024,07020AA000,Esporles,despesa,1,2849432.75
+2024,07020AA000,Esporles,ingres,1,1981370.00
+2024,07026AA000,Eivissa,despesa,2,36146847.27
+2024,07026AV001,P. M. Deportes,despesa,3,4000.00
+2024,07026AV002,P. M. Música,despesa,4,2000.00
+2024,07028AA000,Lloret de Vistalegre,ingres,5,6695.44
+2024,07029AA000,Lloseta,despesa,4,785283.73
+2024,07029AA000,Lloseta,despesa,9,101147.14
+2024,07031AA000,Llucmajor,despesa,3,155000.00
+2024,07031AA000,Llucmajor,ingres,8,55000.00
+2024,07034AA000,Mancor de la Vall,ingres,2,40250.00
+2024,07035AA000,Maria de la Salut,despesa,1,891736.84
+2024,07036AA000,Marratxí,despesa,4,11447434.15
+2024,07037AA000,Mercadal (Es),ingres,2,247750.00
+2024,07041AA000,Petra,despesa,4,229746.46
+2024,07041AA000,Petra,ingres,6,6.00
+2024,07046AA000,Sant Antoni de Portmany,despesa,1,10794392.05
+2024,07046AA000,Sant Antoni de Portmany,ingres,7,1155000.00
+2024,07048AA000,Sant Josep de sa Talaia,despesa,5,210000.00
+2024,07048AA000,Sant Josep de sa Talaia,ingres,4,10309805.68
+2024,07050AA000,Sant Joan de Labritja,ingres,5,71000.00
+2024,07055AA000,Santa Margalida,despesa,1,6154620.00
+2024,07061AA000,Sóller,despesa,1,9035416.02
+2024,07061AA000,Sóller,despesa,3,325050.05
+2024,07061AA000,Sóller,despesa,7,195000.00
+2024,07005AA000,Andratx,despesa,2,12464680.53
+2024,07005AA000,Andratx,ingres,2,2600000.00
+2024,07040AA000,Palma,despesa,4,109429070.17
+2024,07040AV001,Inst. M. l'Esport,ingres,8,90000.00
+2024,07040AV002,P. M. d'Escoles d'Infants,despesa,4,430000.00
+2024,07040AV002,P. M. d'Escoles d'Infants,ingres,4,9135958.08
+2024,07040AV002,P. M. d'Escoles d'Infants,ingres,7,21500.00
+2024,07040AV004,P. M. l'Habitatge,despesa,1,1879583.63
+2024,07040AV004,P. M. l'Habitatge,ingres,4,1262471.01
+2024,07040AV009,Inst. M. Form. Ocupacional i Feina,despesa,1,8024610.34
+2024,07040AV009,Inst. M. Form. Ocupacional i Feina,despesa,8,20000.00
+2024,07040AV009,Inst. M. Form. Ocupacional i Feina,ingres,4,9640505.70
+2024,07062AA000,Son Servera,ingres,5,774313.23
+2024,07003AA000,Alcúdia,ingres,3,6740823.00
+2024,07003AA000,Alcúdia,ingres,4,7219545.29
+2024,07039AA000,Muro,ingres,2,700000.00
+2024,07059AA000,Salines (Ses),ingres,4,2072078.10
+2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",despesa,3,700.00
+2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",ingres,7,294003.00
+2024,07002AA000,Alaior,despesa,4,776747.26
+2024,07002AA000,Alaior,ingres,2,227598.66
+2024,07033AA000,Manacor,ingres,5,488104.81
+2024,07033AO001,Institut Públic del Teatre Municipal,despesa,2,480240.00
+2024,07033AO001,Institut Públic del Teatre Municipal,ingres,7,50000.00
+2024,07033AV003,P. M. d'Esports,ingres,5,44280.68
+2024,07033AO002,Institució Pública Antoni M. Alcover,despesa,1,39500.00
+2024,07033AO002,Institució Pública Antoni M. Alcover,ingres,7,5000.00
+2024,07044AA000,Pobla (Sa),despesa,3,51948.90
+2024,07044AA000,Pobla (Sa),despesa,4,319938.39
+2024,07047AA000,Sencelles,despesa,4,298700.00
+2024,07901AA000,Ariany,ingres,1,402165.93
+2024,07011AO002,Oficina Municipal de Tributos de Calvià,despesa,2,613010.00
+2024,07008AA000,Binissalem,ingres,6,185000.00
+2024,07017AA000,Costitx,ingres,3,82400.00
+2024,07025AA000,Fornalutx,ingres,4,422525.12
+2024,07007AA000,Banyalbufar,despesa,4,13650.00
+2024,07024AA000,Formentera,despesa,4,2499600.00
+2024,07024AA000,Formentera,despesa,6,4520400.00
+2024,07038AA000,Montuïri,despesa,3,4400.00
+2024,07038AA000,Montuïri,ingres,1,1149739.51
+2024,07065AA000,Vilafranca de Bonany,despesa,9,80555.00
+2024,07001AA000,Alaró,ingres,4,2424741.72
+2024,07015AA000,Ciutadella de Menorca,ingres,7,1756789.13
+2024,07015AV002,Hospital Municipal,despesa,2,775396.52
+2024,07042AA000,Pollença,despesa,3,20000.00
+2024,07043AA000,Porreres,despesa,3,15000.00
+2024,07051AA000,Sant Llorenç des Cardassar,despesa,8,10000.00
+2024,07054AA000,Santa Eulària des Riu,despesa,7,308500.00
+2024,07054AA000,Santa Eulària des Riu,ingres,7,50.00
+2024,07056AA000,Santa María del Camí,despesa,2,2537595.15
+2024,07056AA000,Santa María del Camí,despesa,4,1025095.69
+2024,07056AA000,Santa María del Camí,ingres,3,2919003.02
+2024,07056AV001,P. Res. Pers. Majors. Cas Metge Rei,ingres,4,584780.97
+2024,07056AV001,P. Res. Pers. Majors. Cas Metge Rei,ingres,5,10.00
+2024,07057AA000,Santanyí,despesa,1,10452947.75
+2024,07057AA000,Santanyí,despesa,3,5800.00
+2024,07057AA000,Santanyí,ingres,5,1319651.54
+2024,07001DD000,Consejo Insular de Ibiza,ingres,8,250000.00
+2024,07001DV003,P. Esc. Turismo,despesa,6,25000.00
+2024,07001DV003,P. Esc. Turismo,ingres,4,633000.00
+2024,07002DD000,Consejo Insular de Mallorca,despesa,4,302545450.74
+2024,07002DD000,Consejo Insular de Mallorca,despesa,7,49278963.35
+2024,07002DV001,Inst. l'Esport Hipic,despesa,8,5000.00
+2024,07002DV003,Inst.  Mallorquí d'Afers Socials,despesa,6,4201347.59
+2024,07003DD000,Consejo Insular de Menorca,despesa,1,28599276.79
+2024,07003DD000,Consejo Insular de Menorca,ingres,2,2132537.16
+2024,07003DD000,Consejo Insular de Menorca,ingres,3,3560200.85
+2024,07003DD000,Consejo Insular de Menorca,ingres,7,15639915.80
+2024,07002MM000,Mc. Pla de Mallorca,ingres,4,8102488.43
+2024,07001MM000,Mc. Es Raiguer,ingres,3,984011.82
+2024,07003MM000,Mc. Migjorn de Mallorca,despesa,1,876516.74
+2024,07004AA000,Algaida,despesa,4,136620.00
+2024,07006AA000,Artà,ingres,2,651500.00
+2024,07009AA000,Búger,despesa,2,499524.78
+2024,07009AA000,Búger,despesa,4,281300.00
+2024,07009AA000,Búger,despesa,6,918565.79
+2024,07010AA000,Bunyola,despesa,4,958537.08
+2024,07014AA000,Capdepera,ingres,1,10900000.00
+2024,07016AA000,Consell,despesa,2,1720954.18
+2024,07026AA000,Eivissa,ingres,2,2200000.00
+2024,07026AA000,Eivissa,ingres,5,7662010.00
+2024,07026AA000,Eivissa,ingres,8,10.00
+2024,07026AV003,Museo de Arte Contemporáneo,despesa,8,10.00
+2024,07028AA000,Lloret de Vistalegre,ingres,3,94944.56
+2024,07029AA000,Lloseta,ingres,2,200000.00
+2024,07030AA000,Llubí,despesa,7,2000.00
+2024,07030AA000,Llubí,ingres,4,791633.00
+2024,07031AA000,Llucmajor,despesa,4,1927118.39
+2024,07035AA000,Maria de la Salut,ingres,3,343685.00
+2024,07041AA000,Petra,despesa,2,988100.00
+2024,07041AA000,Petra,ingres,2,121004.00
+2024,07041AO001,F. Escuela Municipal de Música de Petra,despesa,2,2122.11
+2024,07041AO002,Fundación Teatro y Acción Socio-Cultural de Petra,despesa,2,29054.00
+2024,07046AA000,Sant Antoni de Portmany,despesa,2,19893988.38
+2024,07046AA000,Sant Antoni de Portmany,ingres,3,10344900.00
+2024,07048AA000,Sant Josep de sa Talaia,ingres,5,5090502.52
+2024,07055AA000,Santa Margalida,ingres,1,6930100.00
+2024,07061AA000,Sóller,despesa,6,85361.15
+2024,07061AA000,Sóller,despesa,9,714665.50
+2024,07061AA000,Sóller,ingres,5,270526.08
+2024,07063AA000,Valldemossa,despesa,1,2339033.06
+2024,07063AA000,Valldemossa,despesa,2,1939956.89
+2024,07063AA000,Valldemossa,ingres,1,1733366.83
+2024,07063AA000,Valldemossa,ingres,4,798321.13
+2024,07064AA000,Castell (Es),despesa,3,7000.00
+2024,07064AA000,Castell (Es),ingres,6,250000.00
+2024,07064AA000,Castell (Es),ingres,7,4477500.00
+2024,07005AA000,Andratx,despesa,4,739100.00
+2024,07005AA000,Andratx,ingres,1,12177000.00
+2024,07005AA000,Andratx,ingres,4,4439000.00
+2024,07040AA000,Palma,despesa,1,183890181.00
+2024,07040AA000,Palma,despesa,7,9125366.63
+2024,07040AV001,Inst. M. l'Esport,ingres,5,190850.32
+2024,07040AV004,P. M. l'Habitatge,ingres,7,210000.00
+2024,07040AV006,Instituto Municipal Innovación  (IMI),ingres,4,5862553.74
+2024,07040AV009,Inst. M. Form. Ocupacional i Feina,despesa,3,300.00
+2024,07062AA000,Son Servera,ingres,7,168435.30
+2024,07003AA000,Alcúdia,despesa,2,20187041.00
+2024,07003AA000,Alcúdia,despesa,3,16000.00
+2024,07003AA000,Alcúdia,despesa,4,2726329.29
+2024,07049AA000,Sant Joan,ingres,1,729000.00
+2024,07059AA000,Salines (Ses),despesa,6,296502.00
+2024,07059AA000,Salines (Ses),ingres,1,3277792.79
+2024,07002AA000,Alaior,ingres,4,4684121.23
+2024,07011AA000,Calvià,despesa,6,11582073.87
+2024,07011AA000,Calvià,ingres,2,8001700.00
+2024,07033AA000,Manacor,despesa,1,19585358.12
+2024,07044AA000,Pobla (Sa),despesa,2,6645674.36
+2024,07047AA000,Sencelles,ingres,4,1113500.00
+2024,07008AA000,Binissalem,ingres,2,250000.00
+2024,07008AA000,Binissalem,ingres,3,1347434.25
+2024,07017AA000,Costitx,despesa,2,582262.18
+2024,07027AA000,Inca,ingres,4,12717847.95
+2024,07007AA000,Banyalbufar,ingres,5,50481.00
+2024,07022AA000,Felanitx,despesa,1,9045359.00
+2024,07024AA000,Formentera,despesa,2,18198500.00
+2024,07053AA000,Santa Eugènia,ingres,8,10000.00
+2024,07065AA000,Vilafranca de Bonany,ingres,1,857250.00
+2024,07065AA000,Vilafranca de Bonany,ingres,3,393760.00
+2024,07001AA000,Alaró,despesa,6,705824.12
+2024,07015AA000,Ciutadella de Menorca,despesa,6,2472389.13
+2024,07015AA000,Ciutadella de Menorca,ingres,1,15624000.00
+2024,07015AV002,Hospital Municipal,despesa,6,3000.00
+2024,07015AV003,P. Esc. Infantiles,ingres,7,30000.00
+2024,07023AA000,Ferreries,despesa,6,1250194.66
+2024,07023AA000,Ferreries,ingres,2,134612.00
+2024,07023AA000,Ferreries,ingres,3,1162568.49
+2024,07042AA000,Pollença,despesa,6,568017.93
+2024,07042AA000,Pollença,ingres,3,7782599.00
+2024,07042AA000,Pollença,ingres,4,5686436.00
+2024,07043AA000,Porreres,despesa,2,2437858.07
+2024,07051AA000,Sant Llorenç des Cardassar,despesa,6,485000.00
+2024,07052AA000,Sant Lluís,ingres,1,6189859.56
+2024,07054AA000,Santa Eulària des Riu,despesa,1,14858645.87
+2024,07054AA000,Santa Eulària des Riu,despesa,3,66010.00
+2024,07054AA000,Santa Eulària des Riu,ingres,3,15267205.00
+2024,07056AV001,P. Res. Pers. Majors. Cas Metge Rei,despesa,1,794658.84
+2024,07902AA000,Migjorn Gran (Es),ingres,3,831520.00
+2024,07001DD000,Consejo Insular de Ibiza,despesa,4,33084075.36
+2024,07001DD000,Consejo Insular de Ibiza,despesa,5,800000.00
+2024,07001DD000,Consejo Insular de Ibiza,despesa,6,14041739.87
+2024,07001DD000,Consejo Insular de Ibiza,ingres,1,3916318.40
+2024,07001DD000,Consejo Insular de Ibiza,ingres,4,103380641.86
+2024,07001DD000,Consejo Insular de Ibiza,ingres,5,3560000.00
+2024,07001DV003,P. Esc. Turismo,despesa,4,30000.00
+2024,07002DD000,Consejo Insular de Mallorca,ingres,7,54866174.05
+2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,ingres,4,870000.00
+2024,07003DD000,Consejo Insular de Menorca,ingres,5,31100.00
+2024,07003DD000,Consejo Insular de Menorca,ingres,8,350000.00
+2024,07003DV001,Inst. Menorquín de Estudios,despesa,6,7000.00
+2024,07003DV001,Inst. Menorquín de Estudios,ingres,4,1567083.54
+2024,07003DV002,Consell Economic i Social,ingres,4,29250.00
+2024,07001MM000,Mc. Es Raiguer,despesa,1,1723945.24
+2024,07006AA000,Artà,ingres,4,3144373.91
+2024,07010AA000,Bunyola,despesa,2,3485052.61
+2024,07010AA000,Bunyola,despesa,6,155183.80
+2024,07010AA000,Bunyola,ingres,2,934274.22
+2024,07012AA000,Campanet,despesa,1,1277380.45
+2024,07012AA000,Campanet,despesa,6,18500.00
+2024,07012AA000,Campanet,ingres,7,12358.34
+2024,07014AO001,F. Castell de Capdepera,ingres,3,220000.00
+2024,07016AA000,Consell,despesa,4,591289.13
+2024,07016AA000,Consell,despesa,6,544300.00
+2024,07016AA000,Consell,ingres,2,240000.00
+2024,07020AA000,Esporles,despesa,6,13995.00
+2024,07026AV001,P. M. Deportes,ingres,4,2915990.00
+2024,07026AV003,Museo de Arte Contemporáneo,despesa,5,60000.00
+2024,07026AV003,Museo de Arte Contemporáneo,ingres,4,484790.00
+2024,07026AV003,Museo de Arte Contemporáneo,ingres,8,10.00
+2024,07026AV002,P. M. Música,despesa,3,1500.00
+2024,07026AV002,P. M. Música,despesa,6,5000.00
+2024,07028AA000,Lloret de Vistalegre,despesa,6,402300.00
+2024,07029AA000,Lloseta,ingres,9,80720.00
+2024,07032AA000,Maó,despesa,3,120980.00
+2024,07032AA000,Maó,despesa,4,5401225.00
+2024,07032AA000,Maó,ingres,4,13642584.00
+2024,07032AA000,Maó,ingres,5,376200.00
+2024,07034AA000,Mancor de la Vall,despesa,2,683415.00
+2024,07035AA000,Maria de la Salut,despesa,2,790945.09
+2024,07037AA000,Mercadal (Es),despesa,2,5583800.00
+2024,07041AA000,Petra,despesa,5,20000.00
+2024,07041AA000,Petra,ingres,3,379518.00
+2024,07046AA000,Sant Antoni de Portmany,ingres,4,8698745.90
+2024,07050AA000,Sant Joan de Labritja,despesa,1,2705642.00
+2024,07050AA000,Sant Joan de Labritja,ingres,7,2279788.00
+2024,07058AA000,Selva,ingres,2,220000.00
+2024,07040AA000,Palma,despesa,2,145747802.48
+2024,07040AA000,Palma,despesa,3,6545678.34
+2024,07040AA000,Palma,despesa,6,55436270.54
+2024,07040AV001,Inst. M. l'Esport,despesa,8,90000.00
+2024,07040AV002,P. M. d'Escoles d'Infants,ingres,8,10000.00
+2024,07040AV004,P. M. l'Habitatge,despesa,3,1500.00
+2024,07040AV004,P. M. l'Habitatge,despesa,4,6500.00
+2024,07040AV006,Instituto Municipal Innovación  (IMI),despesa,2,904071.71
+2024,07062AA000,Son Servera,despesa,1,7010266.73
+2024,07062AA000,Son Servera,ingres,2,338377.41
+2024,07003AA000,Alcúdia,ingres,2,600000.00
+2024,07039AA000,Muro,despesa,1,5614027.01
+2024,07002AA000,Alaior,ingres,7,2686835.22
+2024,07011AA000,Calvià,despesa,1,43475948.67
+2024,07033AA000,Manacor,despesa,8,60100.00
+2024,07033AV002,P. l'Escola M. de Mallorqui,despesa,3,31.00
+2024,07033AV002,P. l'Escola M. de Mallorqui,ingres,7,4500.00
+2024,07033AV003,P. M. d'Esports,despesa,2,312150.00
+2024,07044AA000,Pobla (Sa),despesa,5,5000.00
+2024,07044AA000,Pobla (Sa),despesa,6,1353047.33
+2024,07047AA000,Sencelles,despesa,1,1486330.00
+2024,07047AA000,Sencelles,despesa,9,79600.00
+2024,07901AA000,Ariany,ingres,7,90.00
+2024,07008AA000,Binissalem,despesa,5,47000.00
+2024,07017AA000,Costitx,despesa,1,357676.22
+2024,07017AA000,Costitx,ingres,4,528519.36
+2024,07018AA000,Deià,despesa,4,187697.92
+2024,07018AA000,Deià,despesa,6,155888.10
+2024,07018AA000,Deià,ingres,2,60000.00
+2024,07025AA000,Fornalutx,ingres,3,307227.00
+2024,07027AA000,Inca,despesa,7,150000.00
+2024,07027AA000,Inca,despesa,8,35000.00
+2024,07027AA000,Inca,ingres,2,418531.72
+2024,07021AA000,Estellencs,despesa,1,326418.98
+2024,07024AA000,Formentera,despesa,1,18001500.00
+2024,07024AA000,Formentera,ingres,3,9755000.00
+2024,07038AA000,Montuïri,despesa,6,56400.00
+2024,07053AA000,Santa Eugènia,despesa,6,128972.54
+2024,07053AA000,Santa Eugènia,despesa,8,10000.00
+2024,07065AA000,Vilafranca de Bonany,despesa,5,5000.00
+2024,07065AA000,Vilafranca de Bonany,ingres,7,7700.00
+2024,07001AA000,Alaró,despesa,7,6100.00
+2024,07001AA000,Alaró,ingres,2,351100.00
+2024,07015AA000,Ciutadella de Menorca,despesa,2,16351260.71
+2024,07015AA000,Ciutadella de Menorca,ingres,2,1203300.00
+2024,07015AA000,Ciutadella de Menorca,ingres,4,11028306.58
+2024,07023AA000,Ferreries,despesa,1,2767860.72
+2024,07023AA000,Ferreries,ingres,5,1064800.00
+2024,07042AA000,Pollença,despesa,4,3887300.00
+2024,07051AA000,Sant Llorenç des Cardassar,ingres,4,3637000.00
+2024,07052AA000,Sant Lluís,despesa,6,2664437.94
+2024,07052AA000,Sant Lluís,ingres,7,1772713.75
+2024,07054AA000,Santa Eulària des Riu,despesa,4,4230039.13
+2024,07054AA000,Santa Eulària des Riu,despesa,5,75000.00
+2024,07054AA000,Santa Eulària des Riu,ingres,2,6750355.00
+2024,07054AA000,Santa Eulària des Riu,ingres,6,20.00
+2024,07054AA000,Santa Eulària des Riu,ingres,8,361768.24
+2024,07054AA000,Santa Eulària des Riu,ingres,9,20.00
+2024,07056AA000,Santa María del Camí,despesa,6,1168918.19
+2024,07057AA000,Santanyí,despesa,7,135965.13
+2024,07902AA000,Migjorn Gran (Es),ingres,7,492223.09
+2024,07001DD000,Consejo Insular de Ibiza,despesa,7,7552010.83
+2024,07001DD000,Consejo Insular de Ibiza,ingres,2,4506279.00
+2024,07002DD000,Consejo Insular de Mallorca,ingres,2,20980930.00
+2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,despesa,5,66617.24
+2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,despesa,6,72550.52
+2024,07003DD000,Consejo Insular de Menorca,despesa,7,20818501.94
+2024,07003DD000,Consejo Insular de Menorca,despesa,8,675000.00
+2024,07003DV001,Inst. Menorquín de Estudios,despesa,5,7860.41
+2024,07003DV002,Consell Economic i Social,despesa,4,16000.00
+2024,07002MM000,Mc. Pla de Mallorca,despesa,1,1323315.89
+2024,07002MM000,Mc. Pla de Mallorca,despesa,6,12000.00
+2024,07004AA000,Algaida,despesa,1,2748407.93
+2024,07004AA000,Algaida,ingres,9,3800000.00
+2024,07006AA000,Artà,ingres,3,4680651.89
+2024,07012AA000,Campanet,ingres,5,6230.00
+2024,07013AA000,Campos,despesa,1,6551936.21
+2024,07013AA000,Campos,ingres,2,927894.81
+2024,07014AO001,F. Castell de Capdepera,despesa,2,84175.18
+2024,07016AA000,Consell,ingres,4,1546440.17
+2024,07020AA000,Esporles,ingres,3,1095830.00
+2024,07026AV001,P. M. Deportes,despesa,4,769350.00
+2024,07026AV002,P. M. Música,despesa,5,160000.00
+2024,07026AV002,P. M. Música,despesa,8,10.00
+2024,07028AA000,Lloret de Vistalegre,despesa,4,34725.00
+2024,07028AA000,Lloret de Vistalegre,ingres,2,73100.00
+2024,07028AA000,Lloret de Vistalegre,ingres,4,762800.00
+2024,07030AA000,Llubí,despesa,1,1048483.00
+2024,07030AA000,Llubí,despesa,4,87950.00
+2024,07031AA000,Llucmajor,despesa,5,273494.73
+2024,07031AA000,Llucmajor,despesa,6,1080300.00
+2024,07031AA000,Llucmajor,ingres,3,12445100.00
+2024,07031AA000,Llucmajor,ingres,4,11093700.00
+2024,07032AA000,Maó,despesa,5,231000.00
+2024,07034AA000,Mancor de la Vall,despesa,3,4000.00
+2024,07034AA000,Mancor de la Vall,ingres,1,618000.00
+2024,07034AA000,Mancor de la Vall,ingres,5,7600.00
+2024,07035AA000,Maria de la Salut,ingres,5,15924.72
+2024,07036AA000,Marratxí,despesa,2,6965385.26
+2024,07037AA000,Mercadal (Es),despesa,1,3142710.00
+2024,07037AA000,Mercadal (Es),despesa,5,250000.00
+2024,07037AA000,Mercadal (Es),ingres,4,2785500.00
+2024,07037AA000,Mercadal (Es),ingres,8,20000.00
+2024,07041AA000,Petra,despesa,6,565506.25
+2024,07041AA000,Petra,ingres,4,870596.20
+2024,07048AA000,Sant Josep de sa Talaia,despesa,1,12857603.39
+2024,07050AA000,Sant Joan de Labritja,ingres,3,3112845.00
+2024,07055AA000,Santa Margalida,despesa,2,8069650.00
+2024,07055AA000,Santa Margalida,ingres,4,3836847.00
+2024,07058AA000,Selva,ingres,3,687165.02
+2024,07058AA000,Selva,ingres,5,74510.00
+2024,07064AA000,Castell (Es),despesa,4,1003272.72
+2024,07064AA000,Castell (Es),ingres,2,180000.00
+2024,07005AA000,Andratx,despesa,5,100.00
+2024,07040AA000,Palma,despesa,5,536866.76
+2024,07040AA000,Palma,ingres,8,3210000.00
+2024,07040AV001,Inst. M. l'Esport,despesa,1,6497632.12
+2024,07040AV006,Instituto Municipal Innovación  (IMI),despesa,3,1100.00
+2024,07040AV009,Inst. M. Form. Ocupacional i Feina,despesa,6,6000.00
+2024,07040AV009,Inst. M. Form. Ocupacional i Feina,despesa,7,100000.00
+2024,07062AA000,Son Servera,despesa,6,68439.79
+2024,07003AA000,Alcúdia,ingres,7,795943.00
+2024,07039AA000,Muro,despesa,2,7067341.77
+2024,07039AA000,Muro,ingres,3,4296959.80
+2024,07039AA000,Muro,ingres,4,2661041.68
+2024,07049AA000,Sant Joan,ingres,2,108000.00
+2024,07059AA000,Salines (Ses),despesa,3,12000.00
+2024,07059AA000,Salines (Ses),despesa,7,5000.00
+2024,07059AA000,Salines (Ses),ingres,3,2022586.00
+2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",despesa,9,12000.00
+2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",ingres,3,559480.00
+2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",ingres,8,22000.00
+2024,07033AA000,Manacor,ingres,8,60000.00
+2024,07033AV002,P. l'Escola M. de Mallorqui,despesa,2,85669.00
+2024,07033AV003,P. M. d'Esports,ingres,4,257361.32
+2024,07044AA000,Pobla (Sa),despesa,1,7210152.11
+2024,07044AA000,Pobla (Sa),despesa,7,38815.69
+2024,07044AA000,Pobla (Sa),ingres,4,4946015.62
+2024,07047AA000,Sencelles,despesa,2,1383250.00
+2024,07047AA000,Sencelles,ingres,3,647800.00
+2024,07901AA000,Ariany,ingres,2,60000.00
+2024,07011AO002,Oficina Municipal de Tributos de Calvià,despesa,8,10000.00
+2024,07011AO002,Oficina Municipal de Tributos de Calvià,ingres,3,120000.00
+2024,07011AO002,Oficina Municipal de Tributos de Calvià,ingres,8,10000.00
+2024,07008AA000,Binissalem,despesa,3,18000.00
+2024,07027AA000,Inca,despesa,1,16224051.65
+2024,07027AA000,Inca,ingres,5,242725.54
+2024,07022AA000,Felanitx,despesa,2,10741600.00
+2024,07022AA000,Felanitx,despesa,8,8000.00
+2024,07024AA000,Formentera,despesa,3,30000.00
+2024,07001AA000,Alaró,ingres,1,1876000.00
+2024,07015AA000,Ciutadella de Menorca,despesa,5,430040.64
+2024,07015AA000,Ciutadella de Menorca,despesa,7,253021.51
+2024,07015AA000,Ciutadella de Menorca,ingres,5,989527.64
+2024,07015AV003,P. Esc. Infantiles,despesa,6,45000.00
+2024,07042AA000,Pollença,ingres,5,18100.00
+2024,07043AA000,Porreres,ingres,2,376021.90
+2024,07051AA000,Sant Llorenç des Cardassar,despesa,1,7604892.99
+2024,07052AA000,Sant Lluís,despesa,1,5688995.19
+2024,07052AA000,Sant Lluís,ingres,2,450000.00
+2024,07056AA000,Santa María del Camí,despesa,1,5161734.50
+2024,07056AA000,Santa María del Camí,ingres,1,3197833.16
+2024,07056AA000,Santa María del Camí,ingres,5,5.00
+2024,07902AA000,Migjorn Gran (Es),ingres,1,1065000.00
+2024,07001DD000,Consejo Insular de Ibiza,despesa,2,34023621.96
+2024,07002DD000,Consejo Insular de Mallorca,despesa,1,98804106.30
+2024,07002DD000,Consejo Insular de Mallorca,despesa,6,74270951.75
+2024,07002DD000,Consejo Insular de Mallorca,ingres,3,22950995.01
+2024,07002DD000,Consejo Insular de Mallorca,ingres,5,9193557.36
+2024,07002DD000,Consejo Insular de Mallorca,ingres,9,12125000.00
+2024,07002DV001,Inst. l'Esport Hipic,ingres,3,282900.00
+2024,07002DV001,Inst. l'Esport Hipic,ingres,8,5000.00
+2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,despesa,3,7000.00
+2024,07002DV003,Inst.  Mallorquí d'Afers Socials,ingres,7,4626347.59
+2024,07003DV001,Inst. Menorquín de Estudios,despesa,1,888744.64
+2024,07001MM000,Mc. Es Raiguer,ingres,4,5185194.29
+2024,07003MM000,Mc. Migjorn de Mallorca,ingres,3,2117070.48
+2024,07006AA000,Artà,despesa,6,2569337.55
+2024,07006AA000,Artà,despesa,7,1.00
+2024,07006AA000,Artà,ingres,5,48901.00
+2024,07010AA000,Bunyola,ingres,1,2519824.72
+2024,07013AA000,Campos,despesa,7,100000.00
+2024,07013AA000,Campos,ingres,1,5156933.64
+2024,07014AO001,F. Castell de Capdepera,despesa,1,90824.82
+2024,07026AV001,P. M. Deportes,despesa,5,240000.00
+2024,07026AV001,P. M. Deportes,ingres,3,345000.00
+2024,07026AV002,P. M. Música,despesa,1,617261.85
+2024,07026AV002,P. M. Música,despesa,2,304228.15
+2024,07028AA000,Lloret de Vistalegre,despesa,1,667720.00
+2024,07028AA000,Lloret de Vistalegre,ingres,1,424000.00
+2024,07029AA000,Lloseta,despesa,2,2228231.96
+2024,07030AA000,Llubí,despesa,2,632826.00
+2024,07031AV001,P. Res. Personas Mayores,ingres,4,1665018.39
+2024,07032AA000,Maó,ingres,8,60000.00
+2024,07034AA000,Mancor de la Vall,despesa,6,29500.00
+2024,07036AA000,Marratxí,ingres,1,14947000.00
+2024,07036AA000,Marratxí,ingres,3,8234400.00
+2024,07037AA000,Mercadal (Es),despesa,6,5650310.00
+2024,07037AA000,Mercadal (Es),ingres,7,2901310.00
+2024,07041AA000,Petra,ingres,5,433416.00
+2024,07041AO002,Fundación Teatro y Acción Socio-Cultural de Petra,ingres,4,56500.00
+2024,07045AA000,Puigpunyent,despesa,9,49935.39
+2024,07046AA000,Sant Antoni de Portmany,despesa,4,3287961.71
+2024,07046AA000,Sant Antoni de Portmany,ingres,2,2300000.00
+2024,07048AA000,Sant Josep de sa Talaia,ingres,2,2000000.00
+2024,07050AA000,Sant Joan de Labritja,despesa,2,6638970.00
+2024,07050AA000,Sant Joan de Labritja,despesa,3,18100.00
+2024,07055AA000,Santa Margalida,ingres,6,250000.00
+2024,07063AA000,Valldemossa,despesa,3,4000.00
+2024,07063AA000,Valldemossa,despesa,4,90810.00
+2024,07063AA000,Valldemossa,despesa,6,269535.35
+2024,07063AA000,Valldemossa,ingres,5,130000.00
+2024,07064AA000,Castell (Es),ingres,5,40000.00
+2024,07005AA000,Andratx,ingres,3,5958530.00
+2024,07040AA000,Palma,ingres,9,37960374.96
+2024,07040AV001,Inst. M. l'Esport,despesa,2,15790473.92
+2024,07040AV004,P. M. l'Habitatge,ingres,5,950000.00
+2024,07040AV004,P. M. l'Habitatge,ingres,8,10000.00
+2024,07040AV006,Instituto Municipal Innovación  (IMI),despesa,8,60000.00
+2024,07040AV006,Instituto Municipal Innovación  (IMI),ingres,7,487866.63
+2024,07062AA000,Son Servera,despesa,9,100000.00
+2024,07062AA000,Son Servera,ingres,8,60000.00
+2024,07003AA000,Alcúdia,despesa,7,199250.00
+2024,07039AA000,Muro,ingres,1,4872533.96
+2024,07049AA000,Sant Joan,ingres,5,38498.49
+2024,07059AA000,Salines (Ses),ingres,5,556143.11
+2024,07002AA000,Alaior,despesa,1,5929906.88
+2024,07002AA000,Alaior,ingres,3,1951480.24
+2024,07011AA000,Calvià,despesa,3,1018250.72
+2024,07033AA000,Manacor,despesa,2,20795728.68
+2024,07033AV003,P. M. d'Esports,ingres,3,10508.00
+2024,07033AV003,P. M. d'Esports,ingres,7,80000.00
+2024,07901AA000,Ariany,despesa,6,69090.00
+2024,07901AA000,Ariany,ingres,4,481724.22
+2024,07901AA000,Ariany,ingres,5,20.00
+2024,07011AO002,Oficina Municipal de Tributos de Calvià,despesa,1,1440666.00
+2024,07011AO002,Oficina Municipal de Tributos de Calvià,ingres,4,1934676.00
+2024,07008AA000,Binissalem,ingres,4,2722777.77
+2024,07017AA000,Costitx,ingres,2,44200.00
+2024,07025AA000,Fornalutx,despesa,1,523554.00
+2024,07025AA000,Fornalutx,ingres,5,12244.19
+2024,07027AA000,Inca,despesa,6,2662016.37
+2024,07007AA000,Banyalbufar,despesa,1,530080.00
+2024,07007AA000,Banyalbufar,despesa,9,42500.00
+2024,07022AA000,Felanitx,ingres,1,8297000.00
+2024,07065AA000,Vilafranca de Bonany,despesa,1,549460.00
+2024,07065AA000,Vilafranca de Bonany,despesa,2,796160.00
+2024,07065AA000,Vilafranca de Bonany,despesa,4,1098250.00
+2024,07065AA000,Vilafranca de Bonany,ingres,4,1329100.00
+2024,07001AA000,Alaró,despesa,9,31481.97
+2024,07015AA000,Ciutadella de Menorca,despesa,1,13868180.19
+2024,07015AV002,Hospital Municipal,despesa,5,48582.18
+2024,07015AV003,P. Esc. Infantiles,despesa,5,14372.04
+2024,07023AA000,Ferreries,ingres,4,2715922.23
+2024,07042AA000,Pollença,despesa,2,10443592.03
+2024,07051AA000,Sant Llorenç des Cardassar,despesa,4,6489279.59
+2024,07051AA000,Sant Llorenç des Cardassar,despesa,9,440000.00
+2024,07051AA000,Sant Llorenç des Cardassar,ingres,2,903000.00
+2024,07052AA000,Sant Lluís,despesa,3,166967.59
+2024,07052AA000,Sant Lluís,despesa,8,25000.00
+2024,07056AV001,P. Res. Pers. Majors. Cas Metge Rei,despesa,2,264331.13
+2024,07056AV001,P. Res. Pers. Majors. Cas Metge Rei,despesa,3,200.00
+2024,07002DD000,Consejo Insular de Mallorca,ingres,1,19277670.00
+2024,07002DV001,Inst. l'Esport Hipic,ingres,7,474000.00
+2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,despesa,8,6000.00
+2024,07003DD000,Consejo Insular de Menorca,despesa,5,480000.00
+2024,07003DV001,Inst. Menorquín de Estudios,despesa,4,600.00
+2024,07003DV001,Inst. Menorquín de Estudios,despesa,7,82000.00
+2024,07003DV001,Inst. Menorquín de Estudios,despesa,8,1000.00
+2024,07003DV001,Inst. Menorquín de Estudios,ingres,3,100000.00
+2024,07002MM000,Mc. Pla de Mallorca,ingres,3,1704210.68
+2024,07004AA000,Algaida,despesa,6,3802000.00
+2024,07004AA000,Algaida,ingres,1,2000767.56
+2024,07009AA000,Búger,despesa,1,542456.43
+2024,07009AA000,Búger,ingres,1,496400.00
+2024,07009AA000,Búger,ingres,2,66000.00
+2024,07009AA000,Búger,ingres,4,621114.00
+2024,07010AA000,Bunyola,despesa,5,75728.97
+2024,07012AA000,Campanet,despesa,4,340401.19
+2024,07012AA000,Campanet,ingres,2,92987.36
+2024,07013AA000,Campos,despesa,3,6000.00
+2024,07014AA000,Capdepera,ingres,2,750000.00
+2024,07014AO001,F. Castell de Capdepera,despesa,3,7000.00
+2024,07016AA000,Consell,ingres,5,90374.00
+2024,07026AA000,Eivissa,ingres,7,1721510.00
+2024,07026AV001,P. M. Deportes,despesa,1,1480605.87
+2024,07026AV003,Museo de Arte Contemporáneo,ingres,7,13200.00
+2024,07026AV002,P. M. Música,ingres,7,5000.00
+2024,07031AA000,Llucmajor,despesa,1,24492544.32
+2024,07031AA000,Llucmajor,ingres,1,18231100.00
+2024,07031AV001,P. Res. Personas Mayores,despesa,3,1000.00
+2024,07031AV001,P. Res. Personas Mayores,ingres,8,12000.00
+2024,07031AV002,P. Molí d'En Gaspar,ingres,4,1.00
+2024,07032AA000,Maó,despesa,6,6394277.00
+2024,07032AA000,Maó,despesa,7,582972.00
+2024,07032AA000,Maó,despesa,8,60000.00
+2024,07032AA000,Maó,despesa,9,1206940.00
+2024,07035AA000,Maria de la Salut,despesa,3,5000.00
+2024,07035AA000,Maria de la Salut,ingres,1,646699.41
+2024,07036AA000,Marratxí,ingres,5,955000.00
+2024,07037AA000,Mercadal (Es),despesa,4,1189200.00
+2024,07041AA000,Petra,despesa,1,841253.24
+2024,07041AA000,Petra,despesa,3,7006.00
+2024,07046AA000,Sant Antoni de Portmany,despesa,3,32000.00
+2024,07046AA000,Sant Antoni de Portmany,ingres,5,800000.00
+2024,07048AA000,Sant Josep de sa Talaia,despesa,2,28805696.00
+2024,07050AA000,Sant Joan de Labritja,ingres,2,1076067.00
+2024,07061AA000,Sóller,despesa,2,10973241.73
+2024,07064AA000,Castell (Es),ingres,4,3649630.33
+2024,07040AA000,Palma,despesa,8,1200000.00
+2024,07040AV001,Inst. M. l'Esport,ingres,7,3140000.00
+2024,07040AV006,Instituto Municipal Innovación  (IMI),ingres,8,60000.00
+2024,07003AA000,Alcúdia,ingres,5,5858605.00
+2024,07039AA000,Muro,despesa,3,12500.00
+2024,07039AA000,Muro,despesa,6,2289301.73
+2024,07039AA000,Muro,ingres,7,1297836.90
+2024,07049AA000,Sant Joan,despesa,3,3530.00
+2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",despesa,2,3159386.64
+2024,07002AA000,Alaior,ingres,8,10000.00
+2024,07011AA000,Calvià,ingres,1,54970000.00
+2024,07011AA000,Calvià,ingres,9,10000000.00
+2024,07033AA000,Manacor,ingres,3,11892002.40
+2024,07901AA000,Ariany,despesa,3,3510.00
+2024,07025AA000,Fornalutx,despesa,4,54660.00
+2024,07007AA000,Banyalbufar,despesa,2,910513.59
+2024,07021AA000,Estellencs,ingres,4,310879.69
+2024,07021AA000,Estellencs,ingres,5,100.00
+2024,07022AV001,Ctro. Cultural,ingres,4,5000.00
+2024,07024AA000,Formentera,ingres,2,800000.00
+2024,07053AA000,Santa Eugènia,ingres,5,16280.68
+2024,07001AA000,Alaró,despesa,1,3197492.50
+2024,07001AA000,Alaró,ingres,3,880650.00
+2024,07001AA000,Alaró,ingres,5,77548.00
+2024,07015AA000,Ciutadella de Menorca,despesa,4,6879045.54
+2024,07015AV002,Hospital Municipal,ingres,4,2778675.37
+2024,07023AA000,Ferreries,ingres,7,1105570.66
+2024,07043AA000,Porreres,ingres,4,2192308.13
+2024,07051AA000,Sant Llorenç des Cardassar,ingres,1,10190000.00
+2024,07051AA000,Sant Llorenç des Cardassar,ingres,5,1107000.00
+2024,07052AA000,Sant Lluís,despesa,9,621181.97
+2024,07054AA000,Santa Eulària des Riu,despesa,2,28211005.00
+2024,07054AA000,Santa Eulària des Riu,despesa,8,35020.00
+2024,07054AA000,Santa Eulària des Riu,ingres,4,10983070.00
+2024,07902AA000,Migjorn Gran (Es),despesa,1,1357210.44
+2024,07001DV003,P. Esc. Turismo,despesa,5,20000.00
+2024,07001DV003,P. Esc. Turismo,ingres,3,107000.00
+2024,07002DD000,Consejo Insular de Mallorca,ingres,4,478678043.67
+2024,07002DV001,Inst. l'Esport Hipic,ingres,4,3000000.00
+2024,07002DV001,Inst. l'Esport Hipic,ingres,5,264000.00
+2024,07002DV003,Inst.  Mallorquí d'Afers Socials,despesa,4,25075760.02
+2024,07002DV003,Inst.  Mallorquí d'Afers Socials,ingres,3,9342912.05
+2024,07003DD000,Consejo Insular de Menorca,despesa,3,95000.00
+2024,07003DD000,Consejo Insular de Menorca,despesa,4,42714518.48
+2024,07002MM000,Mc. Pla de Mallorca,despesa,3,500.00
+2024,07002MM000,Mc. Pla de Mallorca,despesa,4,302204.94
+2024,07001MM000,Mc. Es Raiguer,despesa,6,142771.82
+2024,07003MM000,Mc. Migjorn de Mallorca,despesa,3,2500.00
+2024,07004AA000,Algaida,ingres,2,321942.37
+2024,07006AA000,Artà,despesa,1,5912095.50
+2024,07009AA000,Búger,ingres,7,819214.66
+2024,07013AA000,Campos,despesa,6,137050.00
+2024,07013AA000,Campos,ingres,3,6058282.02
+2024,07013AA000,Campos,ingres,5,432638.52
+2024,07020AA000,Esporles,ingres,2,196000.00
+2024,07026AA000,Eivissa,despesa,6,10493710.57
+2024,07026AA000,Eivissa,despesa,8,10.00
+2024,07026AV003,Museo de Arte Contemporáneo,despesa,1,280526.57
+2024,07026AV002,P. M. Música,ingres,4,1019980.00
+2024,07029AA000,Lloseta,ingres,3,1898070.45
+2024,07030AA000,Llubí,despesa,9,45290.00
+2024,07031AV001,P. Res. Personas Mayores,despesa,2,246100.00
+2024,07031AV001,P. Res. Personas Mayores,despesa,8,12000.00
+2024,07031AV001,P. Res. Personas Mayores,ingres,5,100.00
+2024,07034AA000,Mancor de la Vall,despesa,1,973585.00
+2024,07036AA000,Marratxí,ingres,4,10986600.00
+2024,07036AO001,Institut Municipal Comunicació,despesa,2,299000.00
+2024,07037AA000,Mercadal (Es),ingres,1,5129000.00
+2024,07037AA000,Mercadal (Es),ingres,3,4322560.00
+2024,07037AA000,Mercadal (Es),ingres,5,451000.00
+2024,07041AA000,Petra,despesa,7,6.00
+2024,07045AA000,Puigpunyent,ingres,1,1171340.33
+2024,07045AA000,Puigpunyent,ingres,4,1007253.65
+2024,07048AA000,Sant Josep de sa Talaia,despesa,3,3750.00
+2024,07048AA000,Sant Josep de sa Talaia,ingres,7,2672569.67
+2024,07050AA000,Sant Joan de Labritja,despesa,6,3018288.00
+2024,07058AA000,Selva,despesa,3,2000.00
+2024,07064AA000,Castell (Es),despesa,1,5285996.97
+2024,07064AA000,Castell (Es),despesa,6,5520000.00
+2024,07005AA000,Andratx,despesa,8,10000.00
+2024,07005AA000,Andratx,ingres,5,790000.00
+2024,07040AV001,Inst. M. l'Esport,ingres,3,4488285.78
+2024,07040AV002,P. M. d'Escoles d'Infants,despesa,3,1000.00
+2024,07040AV009,Inst. M. Form. Ocupacional i Feina,despesa,4,131530.00
+2024,07059AA000,Salines (Ses),despesa,2,3960594.12
+2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",despesa,4,450501.00
+2024,07002AA000,Alaior,ingres,5,1370899.26
+2024,07011AA000,Calvià,despesa,4,39860323.74
+2024,07033AA000,Manacor,ingres,1,18835618.67
+2024,07033AA000,Manacor,ingres,7,55059.12
+2024,07033AO001,Institut Públic del Teatre Municipal,ingres,4,250000.00
+2024,07033AO002,Institució Pública Antoni M. Alcover,ingres,4,108500.00
+2024,07044AA000,Pobla (Sa),ingres,1,4832000.00
+2024,07044AA000,Pobla (Sa),ingres,7,406438.38
+2024,07017AA000,Costitx,despesa,6,161381.76
+2024,07018AA000,Deià,despesa,1,937239.08
+2024,07018AA000,Deià,despesa,2,1153741.61
+2024,07018AA000,Deià,despesa,5,48887.14
+2024,07018AA000,Deià,ingres,4,408550.00
+2024,07025AA000,Fornalutx,despesa,2,703352.31
+2024,07027AA000,Inca,despesa,2,15354311.15
+2024,07027AA000,Inca,ingres,8,35000.00
+2024,07007AA000,Banyalbufar,ingres,1,402716.17
+2024,07007AA000,Banyalbufar,ingres,2,304520.07
+2024,07021AA000,Estellencs,ingres,3,169796.48
+2024,07022AA000,Felanitx,despesa,3,33500.00
+2024,07022AA000,Felanitx,despesa,4,1259041.00
+2024,07022AA000,Felanitx,ingres,2,903000.00
+2024,07024AA000,Formentera,ingres,4,18779000.00
+2024,07024AA000,Formentera,ingres,7,4740785.00
+2024,07038AA000,Montuïri,ingres,4,1032098.90
+2024,07038AA000,Montuïri,ingres,5,9800.00
+2024,07038AA000,Montuïri,ingres,7,127000.00
+2024,07053AA000,Santa Eugènia,ingres,1,723133.07
+2024,07065AA000,Vilafranca de Bonany,ingres,9,272000.00
+2024,07015AV003,P. Esc. Infantiles,ingres,3,65000.00
+2024,07042AA000,Pollença,ingres,2,1200040.00
+2024,07001DD000,Consejo Insular de Ibiza,despesa,1,43120213.24
+2024,07001DD000,Consejo Insular de Ibiza,ingres,3,7761257.83
+2024,07001DV003,P. Esc. Turismo,despesa,3,800.00
+2024,07002DD000,Consejo Insular de Mallorca,despesa,8,1100000.00
+2024,07002DV001,Inst. l'Esport Hipic,despesa,1,1253383.57
+2024,07002DV001,Inst. l'Esport Hipic,despesa,2,1045716.43
+2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,despesa,1,3189007.03
+2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,ingres,8,6000.00
+2024,07002DV003,Inst.  Mallorquí d'Afers Socials,ingres,5,61274.60
+2024,07003DV002,Consell Economic i Social,despesa,2,13250.00
+2024,07004AA000,Algaida,despesa,2,1953749.91
+2024,07004AA000,Algaida,ingres,5,28500.00
+2024,07014AA000,Capdepera,despesa,1,8810778.49
+2024,07014AA000,Capdepera,despesa,4,349000.00
+2024,07016AA000,Consell,ingres,1,1223911.66
+2024,07020AA000,Esporles,despesa,4,102400.00
+2024,07020AA000,Esporles,ingres,4,1905903.07
+2024,07026AA000,Eivissa,despesa,3,405000.00
+2024,07026AA000,Eivissa,ingres,9,8109110.77
+2024,07026AV001,P. M. Deportes,despesa,8,10.00
+2024,07028AA000,Lloret de Vistalegre,despesa,3,4000.00
+2024,07029AA000,Lloseta,despesa,1,3458682.86
+2024,07030AA000,Llubí,despesa,3,17510.00
+2024,07030AA000,Llubí,ingres,3,158150.00
+2024,07031AV002,P. Molí d'En Gaspar,despesa,3,1.00
+2024,07032AA000,Maó,ingres,3,6898270.00
+2024,07034AA000,Mancor de la Vall,ingres,7,20000.00
+2024,07036AA000,Marratxí,despesa,6,1243570.27
+2024,07036AA000,Marratxí,despesa,8,16000.00
+2024,07036AO001,Institut Municipal Comunicació,despesa,3,1000.00
+2024,07037AA000,Mercadal (Es),despesa,3,19000.00
+2024,07037AA000,Mercadal (Es),despesa,8,20000.00
+2024,07045AA000,Puigpunyent,despesa,6,1230386.41
+2024,07045AA000,Puigpunyent,ingres,3,740703.25
+2024,07046AA000,Sant Antoni de Portmany,ingres,1,13960000.00
+2024,07050AA000,Sant Joan de Labritja,ingres,1,3955000.00
+2024,07055AA000,Santa Margalida,ingres,5,914663.00
+2024,07058AA000,Selva,ingres,1,1574000.00
+2024,07058AA000,Selva,ingres,4,1200324.98
+2024,07063AA000,Valldemossa,ingres,3,1881647.34
+2024,07064AA000,Castell (Es),ingres,3,1323400.00
+2024,07005AA000,Andratx,despesa,3,18000.00
+2024,07040AA000,Palma,ingres,2,32121192.61
+2024,07040AA000,Palma,ingres,3,121231326.79
+2024,07040AV001,Inst. M. l'Esport,ingres,4,17963969.94
+2024,07040AV002,P. M. d'Escoles d'Infants,despesa,6,21500.00
+2024,07040AV004,P. M. l'Habitatge,despesa,2,445894.38
+2024,07040AV004,P. M. l'Habitatge,ingres,3,121007.00
+2024,07040AV006,Instituto Municipal Innovación  (IMI),despesa,1,4960275.03
+2024,07040AV006,Instituto Municipal Innovación  (IMI),ingres,3,2893.00
+2024,07040AV009,Inst. M. Form. Ocupacional i Feina,despesa,2,1550365.36
+2024,07040AV009,Inst. M. Form. Ocupacional i Feina,ingres,5,6300.00
+2024,07062AA000,Son Servera,ingres,1,8186280.22
+2024,07003AA000,Alcúdia,ingres,1,17213800.00
+2024,07039AA000,Muro,despesa,4,373795.87
+2024,07039AA000,Muro,despesa,7,28000.00
+2024,07049AA000,Sant Joan,despesa,4,141310.89
+2024,07049AA000,Sant Joan,despesa,6,82800.00
+2024,07002AA000,Alaior,ingres,1,5331911.57
+2024,07011AA000,Calvià,despesa,2,30628888.28
+2024,07011AA000,Calvià,despesa,7,544823.00
+2024,07011AA000,Calvià,ingres,5,8278749.93
+2024,07011AA000,Calvià,ingres,6,1905000.00
+2024,07033AA000,Manacor,despesa,3,576476.83
+2024,07033AA000,Manacor,ingres,2,1404797.00
+2024,07033AA000,Manacor,ingres,4,13932449.99
+2024,07033AV002,P. l'Escola M. de Mallorqui,ingres,4,60200.00
+2024,07044AA000,Pobla (Sa),ingres,9,664500.00
+2024,07047AA000,Sencelles,despesa,3,6120.00
+2024,07047AA000,Sencelles,ingres,2,323200.00
+2024,07901AA000,Ariany,despesa,4,157270.00
+2024,07011AO002,Oficina Municipal de Tributos de Calvià,despesa,3,1000.00
+2024,07008AA000,Binissalem,despesa,2,2416727.10
+2024,07008AA000,Binissalem,ingres,1,2624000.00
+2024,07017AA000,Costitx,despesa,4,61099.20
+2024,07018AA000,Deià,ingres,3,869903.85
+2024,07025AA000,Fornalutx,despesa,3,500.00
+2024,07027AA000,Inca,despesa,4,1435996.80
+2024,07027AA000,Inca,ingres,3,11301563.46
+2024,07027AA000,Inca,ingres,7,1558334.77
+2024,07007AA000,Banyalbufar,ingres,4,421854.94
+2024,07022AA000,Felanitx,despesa,6,804500.00
+2024,07024AA000,Formentera,ingres,1,9475000.00
+2024,07038AA000,Montuïri,despesa,4,378460.00
+2024,07038AA000,Montuïri,ingres,3,389602.00
+2024,07053AA000,Santa Eugènia,despesa,1,912274.20
+2024,07053AA000,Santa Eugènia,despesa,2,593169.67
+2024,07053AA000,Santa Eugènia,despesa,9,51551.44
+2024,07015AA000,Ciutadella de Menorca,despesa,3,195492.43
+2024,07015AA000,Ciutadella de Menorca,ingres,3,10105103.42
+2024,07015AV002,Hospital Municipal,despesa,1,2637672.06
+2024,07023AA000,Ferreries,ingres,8,40000.00
+2024,07051AA000,Sant Llorenç des Cardassar,despesa,3,129497.92
+2024,07052AA000,Sant Lluís,ingres,8,25000.00
+2024,07054AA000,Santa Eulària des Riu,despesa,6,8215780.00
+2024,07056AA000,Santa María del Camí,ingres,4,2955752.35
+2024,07056AV001,P. Res. Pers. Majors. Cas Metge Rei,despesa,6,75000.00
+2024,07057AA000,Santanyí,ingres,4,4814378.88
+2024,07902AA000,Migjorn Gran (Es),despesa,3,5500.00
+2024,07902AA000,Migjorn Gran (Es),ingres,4,1093449.70
+2024,07902AA000,Migjorn Gran (Es),ingres,8,1000.00
+2024,07001DD000,Consejo Insular de Ibiza,despesa,3,207240.85
+2024,07002DD000,Consejo Insular de Mallorca,despesa,5,2098354.35
+2024,07003DD000,Consejo Insular de Menorca,ingres,4,88756112.35
+2024,07002MM000,Mc. Pla de Mallorca,despesa,2,8298895.86
+2024,07002MM000,Mc. Pla de Mallorca,ingres,7,130217.58
+2024,07003MM000,Mc. Migjorn de Mallorca,despesa,2,969332.98
+2024,07004AA000,Algaida,ingres,4,2052783.27
+2024,07006AA000,Artà,despesa,2,6160942.31
+2024,07009AA000,Búger,despesa,9,85000.00
+2024,07009AA000,Búger,ingres,5,8684.00
+2024,07010AA000,Bunyola,despesa,9,353763.00
+2024,07010AA000,Bunyola,ingres,3,1598126.34
+2024,07010AA000,Bunyola,ingres,5,61800.00
+2024,07012AA000,Campanet,despesa,2,984672.58
+2024,07012AA000,Campanet,ingres,4,946516.34
+2024,07013AA000,Campos,despesa,2,9987990.85
+2024,07014AA000,Capdepera,despesa,2,14381344.71
+2024,07014AA000,Capdepera,ingres,5,1866605.48
+2024,07014AO001,F. Castell de Capdepera,ingres,4,2000.00
+2024,07020AA000,Esporles,despesa,3,14980.00
+2024,07020AA000,Esporles,despesa,9,78739.00
+2024,07026AA000,Eivissa,despesa,5,500000.00
+2024,07026AA000,Eivissa,despesa,7,524866.67
+2024,07026AA000,Eivissa,ingres,1,30243606.00
+2024,07026AV001,P. M. Deportes,despesa,2,767034.13
+2024,07026AV003,Museo de Arte Contemporáneo,despesa,2,143316.58
+2024,07026AV003,Museo de Arte Contemporáneo,despesa,3,946.85
+2024,07026AV003,Museo de Arte Contemporáneo,despesa,6,13200.00
+2024,07026AV002,P. M. Música,ingres,8,10.00
+2024,07029AA000,Lloseta,despesa,3,40934.31
+2024,07029AA000,Lloseta,despesa,6,80720.00
+2024,07029AA000,Lloseta,ingres,1,2133000.00
+2024,07030AA000,Llubí,ingres,5,17700.00
+2024,07031AA000,Llucmajor,despesa,2,16761951.50
+2024,07031AA000,Llucmajor,despesa,8,55000.00
+2024,07031AV001,P. Res. Personas Mayores,despesa,1,1613719.29
+2024,07032AA000,Maó,despesa,2,13839924.00
+2024,07032AA000,Maó,ingres,2,875520.00
+2024,07032AA000,Maó,ingres,7,3800261.00
+2024,07034AA000,Mancor de la Vall,despesa,4,314950.00
+2024,07034AA000,Mancor de la Vall,ingres,4,1002350.00
+2024,07035AA000,Maria de la Salut,despesa,4,117373.09
+2024,07035AA000,Maria de la Salut,ingres,2,115000.00
+2024,07035AA000,Maria de la Salut,ingres,4,725679.19
+2024,07036AA000,Marratxí,ingres,8,16000.00
+2024,07036AO001,Institut Municipal Comunicació,ingres,4,300000.00
+2024,07041AO001,F. Escuela Municipal de Música de Petra,despesa,1,64821.83
+2024,07041AO001,F. Escuela Municipal de Música de Petra,despesa,3,821.81
+2024,07041AO001,F. Escuela Municipal de Música de Petra,ingres,3,41765.75
+2024,07041AO002,Fundación Teatro y Acción Socio-Cultural de Petra,despesa,1,41652.00
+2024,07041AO002,Fundación Teatro y Acción Socio-Cultural de Petra,ingres,3,14206.00
+2024,07045AA000,Puigpunyent,ingres,5,5220.00
+2024,07048AA000,Sant Josep de sa Talaia,ingres,3,13257075.94
+2024,07050AA000,Sant Joan de Labritja,despesa,4,494000.00
+2024,07050AA000,Sant Joan de Labritja,ingres,4,2379300.00
+2024,07050AA000,Sant Joan de Labritja,ingres,6,1000.00
+2024,07055AA000,Santa Margalida,despesa,6,1904510.00
+2024,07058AA000,Selva,despesa,2,1240618.22
+2024,07061AA000,Sóller,ingres,1,9347530.44
+2024,07064AA000,Castell (Es),despesa,2,2051250.00
+2024,07064AA000,Castell (Es),ingres,1,4231500.00
+2024,07005AA000,Andratx,despesa,6,1424598.33
+2024,07005AA000,Andratx,despesa,7,145000.00
+2024,07040AA000,Palma,ingres,5,11138278.05
+2024,07040AV001,Inst. M. l'Esport,despesa,3,5000.00
+2024,07040AV001,Inst. M. l'Esport,despesa,6,3140000.00
+2024,07040AV002,P. M. d'Escoles d'Infants,despesa,1,3908000.00
+2024,07040AV006,Instituto Municipal Innovación  (IMI),despesa,6,487866.63
+2024,07040AV009,Inst. M. Form. Ocupacional i Feina,ingres,8,20000.00
+2024,07062AA000,Son Servera,despesa,3,7000.00
+2024,07062AA000,Son Servera,despesa,4,349005.43
+2024,07003AA000,Alcúdia,despesa,1,14732161.00
+2024,07003AA000,Alcúdia,despesa,6,567935.00
+2024,07049AA000,Sant Joan,despesa,2,1148342.11
+2024,07049AA000,Sant Joan,ingres,3,577848.07
+2024,07011AO001,"Inst. M. de Educación y Bibliotecas, IMEB -Calvià",despesa,8,10000.00
+2024,07002AA000,Alaior,despesa,8,10000.00
+2024,07011AA000,Calvià,ingres,3,14564800.00
+2024,07033AA000,Manacor,despesa,7,247275.37
+2024,07044AA000,Pobla (Sa),ingres,3,4473485.13
+2024,07047AA000,Sencelles,ingres,5,27700.00
+2024,07901AA000,Ariany,despesa,2,555851.86
+2024,07011AO002,Oficina Municipal de Tributos de Calvià,despesa,6,3000.00
+2024,07011AO002,Oficina Municipal de Tributos de Calvià,ingres,7,3000.00
+2024,07008AA000,Binissalem,despesa,9,705000.00
+2024,07017AA000,Costitx,ingres,1,491000.00
+2024,07018AA000,Deià,ingres,5,16000.00
+2024,07021AA000,Estellencs,despesa,4,17980.80
+2024,07022AA000,Felanitx,despesa,7,50000.00
+2024,07022AA000,Felanitx,ingres,3,4991500.00
+2024,07024AA000,Formentera,despesa,7,310000.00
+2024,07024AA000,Formentera,ingres,5,10215.00
+2024,07053AA000,Santa Eugènia,despesa,3,17703.90
+2024,07053AA000,Santa Eugènia,ingres,4,703371.11
+2024,07001AA000,Alaró,despesa,3,20245.27
+2024,07001AA000,Alaró,despesa,4,630600.00
+2024,07015AA000,Ciutadella de Menorca,despesa,9,257596.62
+2024,07015AV002,Hospital Municipal,ingres,3,685975.39
+2024,07015AV003,P. Esc. Infantiles,ingres,4,1694000.00
+2024,07023AA000,Ferreries,ingres,1,2244000.00
+2024,07043AA000,Porreres,despesa,4,354240.00
+2024,07051AA000,Sant Llorenç des Cardassar,despesa,2,5627329.50
+2024,07052AA000,Sant Lluís,ingres,4,3317104.83
+2024,07054AA000,Santa Eulària des Riu,ingres,5,2096726.86
+2024,07056AA000,Santa María del Camí,ingres,2,490000.00
+2024,07057AA000,Santanyí,despesa,4,3019109.77
+2024,07902AA000,Migjorn Gran (Es),despesa,7,600.00
+2024,07902AA000,Migjorn Gran (Es),ingres,2,90700.00
+2024,07001DD000,Consejo Insular de Ibiza,ingres,9,200000.00
+2024,07001DV003,P. Esc. Turismo,despesa,1,539731.96
+2024,07001DV003,P. Esc. Turismo,despesa,2,124468.04
+2024,07002DD000,Consejo Insular de Mallorca,ingres,8,1100000.00
+2024,07002DV001,Inst. l'Esport Hipic,despesa,3,12000.00
+2024,07002DO001,Agència  Protecció Legalitat Urbanística i Territorial de Mallorca,despesa,2,383420.31
+2024,07002DV003,Inst.  Mallorquí d'Afers Socials,despesa,2,153579378.24
+2024,07003DD000,Consejo Insular de Menorca,despesa,6,28510567.62
+2024,07003DD000,Consejo Insular de Menorca,ingres,9,30470000.00
+2024,07003DV001,Inst. Menorquín de Estudios,despesa,2,679878.49
+2024,07001MM000,Mc. Es Raiguer,despesa,4,28000.00
+2024,07001MM000,Mc. Es Raiguer,ingres,5,6000.00

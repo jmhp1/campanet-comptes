@@ -7,6 +7,15 @@ OUT_DIR = os.path.dirname(os.path.abspath(__file__))  # persistent, small CSV ou
 OUT_ENTITIES = os.path.join(OUT_DIR, "balears_entities.csv")
 OUT_LIQ = os.path.join(OUT_DIR, "balears_liquidacio.csv")
 OUT_PRES = os.path.join(OUT_DIR, "balears_pressupost_inicial.csv")
+OUT_ROM = os.path.join(OUT_DIR, "balears_romanent.csv")
+
+RMTE_CODES = {
+    "fons_liquids": "011", "pendent_cobrar": "012", "pendent_pagar": "013",
+    "partides_pendents_aplicacio": "2", "total": "01",
+    "saldos_dubtos_cobrament": "02", "exces_financament_afectat": "03", "despeses_generals": "0",
+}
+RMTE_FIELDS = ["fons_liquids", "pendent_cobrar", "pendent_pagar", "partides_pendents_aplicacio",
+               "total", "saldos_dubtos_cobrament", "exces_financament_afectat", "despeses_generals"]
 
 def find_file(prefix):
     for ext in ("accdb", "mdb"):
@@ -57,6 +66,28 @@ def process_liquidaciones():
             for i in idxs:
                 costat = "despesa" if eco["tipreig"][i] == "G" else "ingres"
                 w.writerow([YEAR, d["codente"], d["nombreente"], costat, cdcta[i].strip(), eco["imported"][i], eco["importer"][i]])
+
+    if "tb_remanente" in db.catalog:
+        rmt = db.parse_table("tb_remanente")
+        ids_r = rmt["idente"]
+        cdrmte = rmt["cdrmte"]
+        by_idente = {}
+        for i in range(len(ids_r)):
+            idv = ids_r[i].strip()
+            if idv in balears_idente:
+                by_idente.setdefault(idv, {})[cdrmte[i].strip()] = rmt["importe"][i]
+        write_header = not os.path.exists(OUT_ROM)
+        with open(OUT_ROM, "a", newline="") as f:
+            w = csv.writer(f)
+            if write_header:
+                w.writerow(["any", "codente", "nom"] + RMTE_FIELDS)
+            for idv, codes in by_idente.items():
+                d = balears_idente[idv]
+                row = [YEAR, d["codente"], d["nombreente"]]
+                for field in RMTE_FIELDS:
+                    row.append(codes.get(RMTE_CODES[field], ""))
+                w.writerow(row)
+
     return len(balears_idente)
 
 def process_presupuestos():

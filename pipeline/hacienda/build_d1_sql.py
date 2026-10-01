@@ -79,12 +79,25 @@ with open(os.path.join(BASE, "balears_pressupost_inicial.csv")) as f:
         key = (c, row["any"], row["costat"], row["capitol"])
         merged.setdefault(key, {})["inicial"] = row["inicial"]
 
+# --- 2b. romanent de tresoreria ---
+ROM_FIELDS = ["fons_liquids", "pendent_cobrar", "pendent_pagar", "partides_pendents_aplicacio",
+              "total", "saldos_dubtos_cobrament", "exces_financament_afectat", "despeses_generals"]
+romanent = []  # list of (codi, any, {field: val})
+with open(os.path.join(BASE, "balears_romanent.csv")) as f:
+    for row in csv.DictReader(f):
+        c = row["codente"]
+        if c not in mallorca_codis:
+            continue
+        romanent.append((c, row["any"], {k: row[k] for k in ROM_FIELDS}))
+
 # --- write SQL ---
 with open(os.path.join(OUT_DIR, "d1_schema_update.sql"), "w") as f:
     f.write("ALTER TABLE liquidacio_capitols ADD COLUMN codi_ine TEXT;\n")
     f.write("ALTER TABLE pressupost_inicial_capitols ADD COLUMN codi_ine TEXT;\n")
     f.write(f"UPDATE liquidacio_capitols SET codi_ine = '{CAMPANET_CODI}' WHERE municipi = 'Campanet';\n")
     f.write(f"UPDATE pressupost_inicial_capitols SET codi_ine = '{CAMPANET_CODI}' WHERE municipi = 'Campanet';\n")
+    f.write("ALTER TABLE romanent_tresoreria ADD COLUMN codi_ine TEXT;\n")
+    f.write(f"UPDATE romanent_tresoreria SET codi_ine = '{CAMPANET_CODI}' WHERE municipi = 'Campanet';\n")
     f.write("""CREATE TABLE municipis (
   codi_ine TEXT PRIMARY KEY,
   nom TEXT NOT NULL,
@@ -126,6 +139,19 @@ with open(os.path.join(OUT_DIR, "d1_pressupost_inicial_mallorca.sql"), "w") as f
         )
         n_pres += 1
 
+n_rom = 0
+with open(os.path.join(OUT_DIR, "d1_romanent_mallorca.sql"), "w") as f:
+    for codi, any_, vals in sorted(romanent, key=lambda r: (r[0], r[1])):
+        nom_municipi = municipis[codi]["nom"]
+        cols = ", ".join(ROM_FIELDS)
+        vallist = ", ".join(numlit(vals[k]) for k in ROM_FIELDS)
+        f.write(
+            f"INSERT INTO romanent_tresoreria (municipi, codi_ine, any, {cols}) VALUES "
+            f"({esc(nom_municipi)}, {esc(codi)}, {any_}, {vallist});\n"
+        )
+        n_rom += 1
+
 print(f"municipis: {len(municipis)}")
 print(f"liquidacio_capitols rows: {n_liq}")
 print(f"pressupost_inicial_capitols rows: {n_pres}")
+print(f"romanent_tresoreria rows: {n_rom}")
