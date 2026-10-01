@@ -110,8 +110,12 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
 <body>
 <div class="wrap">
 <header>
-  <h1>Els comptes de Campanet</h1>
-  <p class="sub">Què va aprovar l'Ajuntament, què va gastar i ingressar de veritat, quant estalvi li queda i a qui adjudica els contractes. Dades oficials, 2017–2024.</p>
+  <h1 id="pageTitle">Els comptes de Campanet</h1>
+  <p class="sub" id="pageSub">Què va aprovar l'Ajuntament, què va gastar i ingressar de veritat, quant estalvi li queda i a qui adjudica els contractes. Dades oficials, 2017–2024.</p>
+  <div class="controls" style="margin-bottom:4px">
+    <label for="municipiSelect"><b>Municipi</b></label>
+    <select id="municipiSelect"><option value="">Campanet</option></select>
+  </div>
 </header>
 
 <nav class="tabs" role="tablist" aria-label="Seccions">
@@ -304,6 +308,26 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
       <div class="tablewrap"><table><thead><tr><th>Any</th><th>Pressupost</th></tr></thead><tbody id="docsPressBody"></tbody></table></div>
     </div>
   </section>
+</div>
+
+<!-- ALTRES MUNICIPIS -->
+<div id="p-altres" hidden>
+  <div class="warn">Dades preliminars del <a href="https://serviciostelematicosext.hacienda.gob.es/SGFAL/CONPREL" rel="noopener" target="_blank">Ministeri d'Hisenda</a> (liquidació de pressuposts de les entitats locals), sense verificar partida per partida com les de Campanet. Poden faltar anys si el municipi no els va reportar. Vista senzilla, de moment sense romanent, contractació ni resultat pressupostari.</div>
+  <section class="panel">
+    <h2 id="altresTitle">Municipi</h2>
+    <p class="note" id="altresPob"></p>
+    <div class="controls"><span>Any</span><div class="pills" id="altresYears"></div></div>
+  </section>
+  <div class="grid2">
+    <section class="panel">
+      <h2>Despeses: pressupostat vs executat</h2>
+      <div class="chartbox"><canvas id="chAltresDesp" aria-label="Despeses per capítol"></canvas></div>
+    </section>
+    <section class="panel">
+      <h2>Ingressos: pressupostat vs executat</h2>
+      <div class="chartbox"><canvas id="chAltresIng" aria-label="Ingressos per capítol"></canvas></div>
+    </section>
+  </div>
 </div>
 
 <footer>Totes les xifres en euros corrents. 2023* és el pressupost de 2022 prorrogat. Fet amb dades públiques; cada xifra es pot comprovar al document enllaçat a «Fonts i mètode».</footer>
@@ -786,8 +810,67 @@ function drawFonts(){
   document.getElementById("docsPressBody").innerHTML=Object.keys(DOCS_PRESS).sort((a,b)=>b-a).map(y=>`<tr><td>${y}</td><td><a href="${DOCS_BASE}${DOCS_PRESS[y]}" rel="noopener" target="_blank">PDF</a></td></tr>`).join("");
 }
 
+/* ---------- ALTRES MUNICIPIS (Ministeri d'Hisenda) ---------- */
+let altresData=null, altresMunicipiActual=null, altresYearSel=null;
+const ALTRES_CAP_NOM={c1:"Personal",c2:"Béns i serveis",c3:"Interessos i comissions",c4:"Transferències a tercers",c5:"Fons de contingència",c6:"Inversió",c7:"Transferències de capital",c8:"Actius financers",c9:"Passius financers",
+ i1:"Impostos directes",i2:"Impostos indirectes",i3:"Taxes i preus",i4:"Transferències corrents",i5:"Ingressos patrimonials",i6:"Alienació d'inversions",i7:"Subvencions de capital",i8:"Actius financers",i9:"Passius financers"};
+const DCH2=["c1","c2","c3","c4","c5","c6","c7","c8","c9"], ICH2=["i1","i2","i3","i4","i5","i6","i7","i8","i9"];
+
+function loadAltresData(){
+  if(altresData)return Promise.resolve(altresData);
+  return fetch("data/municipis_mallorca.json").then(r=>r.json()).then(j=>{altresData=j;return j;});
+}
+function populateMunicipiSelect(){
+  const sel=document.getElementById("municipiSelect");
+  loadAltresData().then(j=>{
+    j.municipis.forEach(m=>{const o=document.createElement("option");o.value=m.codi;o.textContent=m.nom;sel.appendChild(o);});
+  });
+  sel.onchange=()=>selectMunicipi(sel.value);
+}
+function selectMunicipi(codi){
+  const tabsNav=document.querySelector('[role="tablist"]'), key=document.querySelector(".key"), altres=document.getElementById("p-altres");
+  if(!codi){
+    document.getElementById("pageTitle").textContent="Els comptes de Campanet";
+    document.getElementById("pageSub").textContent="Què va aprovar l'Ajuntament, què va gastar i ingressar de veritat, quant estalvi li queda i a qui adjudica els contractes. Dades oficials, 2017–2024.";
+    tabsNav.style.display="";key.style.display="";altres.hidden=true;
+    show((location.hash||"#resum").slice(1),false);
+    return;
+  }
+  loadAltresData().then(j=>{
+    const m=j.municipis.find(x=>x.codi===codi);
+    altresMunicipiActual=codi;
+    document.getElementById("pageTitle").textContent=`Els comptes de ${m.nom}`;
+    document.getElementById("pageSub").textContent="Dades preliminars del Ministeri d'Hisenda. Vista senzilla mentre es completa la verificació, igual que es va fer amb Campanet.";
+    tabsNav.style.display="none";key.style.display="none";
+    document.querySelectorAll('[role="tabpanel"]').forEach(p=>p.hidden=true);
+    altres.hidden=false;
+    document.getElementById("altresTitle").textContent=m.nom;
+    document.getElementById("altresPob").textContent=m.poblacio?`${m.poblacio.toLocaleString("ca-ES")} habitants`:"";
+    const years=Object.keys((j.liquidacio[codi])||{}).sort();
+    if(!years.length){document.getElementById("altresYears").innerHTML="<em>Sense dades disponibles encara.</em>";return;}
+    altresYearSel=years[years.length-1];
+    document.getElementById("altresYears").innerHTML=years.map(y=>`<button aria-pressed="${y===altresYearSel}" data-y="${y}">${y}</button>`).join("");
+    document.getElementById("altresYears").onclick=e=>{const y=e.target.dataset.y;if(!y)return;altresYearSel=y;document.querySelectorAll("#altresYears button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.y===y)));drawAltresCharts();};
+    drawAltresCharts();
+  });
+}
+function drawAltresCharts(){
+  const codi=altresMunicipiActual, y=altresYearSel;
+  const data=((altresData.liquidacio[codi]||{})[y])||{};
+  function panel(id,keys){
+    const present=keys.filter(k=>data[k]);
+    mk(id,{type:"bar",data:{labels:present.map(k=>ALTRES_CAP_NOM[k]||k),datasets:[
+      {label:"Inicial",data:present.map(k=>data[k].inicial),backgroundColor:css("--plan")},
+      {label:"Definitiu",data:present.map(k=>data[k].definitiu),backgroundColor:css("--plan2")},
+      {label:"Executat",data:present.map(k=>data[k].executat),backgroundColor:css("--real")}
+    ]},options:baseOpts({plugins:{legend:{position:"bottom",labels:{color:css("--ink")}}},scales:{x:{ticks:{color:tickC()},grid:{display:false}},y:yAxis()}})});
+  }
+  panel("chAltresDesp",DCH2);
+  panel("chAltresIng",ICH2);
+}
+
 const DRAW={resum:drawResum,diners:drawDiners,promes:drawPromes,salut:drawSalut,contractes:drawContractes,fonts:drawFonts};
-function init(){renderPills();initTabs();}
+function init(){renderPills();initTabs();populateMunicipiSelect();}
 if(window.Chart)init();else window.addEventListener("load",init);
 </script>
 </body>

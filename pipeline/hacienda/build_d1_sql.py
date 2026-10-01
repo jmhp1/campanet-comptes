@@ -4,15 +4,23 @@ from collections import defaultdict
 BASE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = BASE
 
-EXCLUDE_NOM = {
-    # Menorca
-    "Alaior", "Ciutadella de Menorca", "Es Castell", "Es Mercadal", "Es Migjorn Gran",
-    "Ferreries", "Maó", "Sant Lluís",
-    # Eivissa
-    "Eivissa", "Sant Antoni de Portmany", "Sant Josep de sa Talaia",
-    "Sant Joan de Labritja", "Santa Eulària des Riu",
-    # Formentera
-    "Formentera",
+# Exclosos per codi (no per nom: el mateix municipi pot aparèixer amb grafies diferents
+# segons l'any, p. ex. "Santa Eulària des Riu" / "Santa Eulalia del Río").
+EXCLUDE_CODI = {
+    "07002AA000",  # Alaior (Menorca)
+    "07015AA000",  # Ciutadella de Menorca
+    "07023AA000",  # Ferreries (Menorca)
+    "07024AA000",  # Formentera
+    "07026AA000",  # Eivissa
+    "07032AA000",  # Maó (Menorca)
+    "07037AA000",  # Es Mercadal (Menorca)
+    "07046AA000",  # Sant Antoni de Portmany (Eivissa)
+    "07048AA000",  # Sant Josep de sa Talaia (Eivissa)
+    "07050AA000",  # Sant Joan de Labritja (Eivissa)
+    "07052AA000",  # Sant Lluís (Menorca)
+    "07054AA000",  # Santa Eulària des Riu (Eivissa)
+    "07064AA000",  # Es Castell (Menorca)
+    "07902AA000",  # Es Migjorn Gran (Menorca)
 }
 CAMPANET_CODI = "07012AA000"
 
@@ -44,7 +52,7 @@ with open(os.path.join(BASE, "balears_entities.csv")) as f:
         if not (c.endswith("AA000") and len(c) == 10):
             continue
         nom = row["nom"].strip()
-        if nom in EXCLUDE_NOM or c == CAMPANET_CODI:
+        if c in EXCLUDE_CODI or c == CAMPANET_CODI:
             continue
         prev = municipis.get(c)
         if prev is None or row["any"] > prev["any"]:

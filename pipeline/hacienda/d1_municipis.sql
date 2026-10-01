@@ -28,7 +28,6 @@ INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07033AA000', 'Man
 INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07034AA000', 'Mancor de la Vall', 'Mallorca', 1702);
 INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07035AA000', 'Maria de la Salut', 'Mallorca', 2397);
 INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07036AA000', 'Marratxí', 'Mallorca', 40079);
-INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07037AA000', 'Mercadal (Es)', 'Mallorca', 6215);
 INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07038AA000', 'Montuïri', 'Mallorca', 3216);
 INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07039AA000', 'Muro', 'Mallorca', 8115);
 INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07040AA000', 'Palma', 'Mallorca', 431521);
@@ -40,7 +39,6 @@ INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07047AA000', 'Sen
 INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07049AA000', 'Sant Joan', 'Mallorca', 2185);
 INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07051AA000', 'Sant Llorenç des Cardassar', 'Mallorca', 9331);
 INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07053AA000', 'Santa Eugènia', 'Mallorca', 1899);
-INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07054AA000', 'Santa Eulalia del Río', 'Mallorca', 39358);
 INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07055AA000', 'Santa Margalida', 'Mallorca', 13757);
 INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07056AA000', 'Santa María del Camí', 'Mallorca', 7623);
 INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07057AA000', 'Santanyí', 'Mallorca', 12887);
@@ -49,7 +47,5 @@ INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07059AA000', 'Sal
 INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07061AA000', 'Sóller', 'Mallorca', 13744);
 INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07062AA000', 'Son Servera', 'Mallorca', 12261);
 INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07063AA000', 'Valldemossa', 'Mallorca', 2016);
-INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07064AA000', 'Castell (Es)', 'Mallorca', 7772);
 INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07065AA000', 'Vilafranca de Bonany', 'Mallorca', 3816);
 INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07901AA000', 'Ariany', 'Mallorca', 1018);
-INSERT INTO municipis (codi_ine, nom, illa, poblacio) VALUES ('07902AA000', 'Migjorn Gran (Es)', 'Mallorca', 1690);
