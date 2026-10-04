@@ -343,6 +343,17 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
     <p class="note">Romanent de tresoreria. Només la part verda es pot gastar lliurement.</p>
     <div class="chartbox tall"><canvas id="chAltresRT" aria-label="Composició del romanent de tresoreria"></canvas></div>
   </section>
+  <section class="panel" id="altresContractesPanel" hidden>
+    <h2>Contractes i adjudicataris</h2>
+    <p class="note">Expedients publicats a la Plataforma de Contractació del Sector Públic (contractes majors; els menors no hi surten). Cada fila enllaça a la fitxa oficial.</p>
+    <div class="controls">
+      <input type="search" id="altresCtSearch" placeholder="Cerca per empresa o objecte" aria-label="Cerca contractes" style="min-width:260px">
+      <span id="altresCtSum" class="note" style="margin:0"></span>
+    </div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Any</th><th>Expedient</th><th>Objecte</th><th>Procediment</th><th>Estat</th><th>Adjudicatari</th><th class="r">Import adjudicat</th></tr></thead>
+      <tbody id="altresCtBody"></tbody></table></div>
+  </section>
 </div>
 
 <footer>Totes les xifres en euros corrents. 2023* és el pressupost de 2022 prorrogat. Fet amb dades públiques; cada xifra es pot comprovar al document enllaçat a «Fonts i mètode».</footer>
@@ -885,6 +896,7 @@ function drawAltresCharts(){
   drawAltresSankey();
   drawAltresSaldo();
   drawAltresRT();
+  drawAltresContractes();
 }
 function drawAltresSankey(){
   const codi=altresMunicipiActual, y=altresYearSel, data=((altresData.liquidacio[codi]||{})[y])||{};
@@ -943,6 +955,22 @@ function drawAltresRT(){
     {label:"Deutes que no es preveu cobrar",data:years.map(y=>rt[y].saldos_dubtos_cobrament),backgroundColor:css("--neg"),stack:"s"}]},
     options:baseOpts({interaction:{mode:"index",intersect:false},plugins:{legend:{position:"bottom",labels:{color:css("--ink")}},tooltip:{callbacks:{label:c=>`${c.dataset.label}: ${eur(c.raw)}`,footer:it=>`Total: ${eur(rt[years[it[0].dataIndex]].total)}`}}},
       scales:{x:{...xAxis(),stacked:true},y:{...yAxis(),stacked:true}}})});
+}
+function drawAltresContractes(){
+  const codi=altresMunicipiActual, rows=(altresData.contractes||{})[codi]||[];
+  const panel=document.getElementById("altresContractesPanel");
+  if(!rows.length){panel.hidden=true;return;}
+  panel.hidden=false;
+  const tbl=()=>{
+    const q=(document.getElementById("altresCtSearch").value||"").toLowerCase();
+    const filtered=rows.filter(c=>!q||(c.adj||"").toLowerCase().includes(q)||(c.obj||"").toLowerCase().includes(q));
+    document.getElementById("altresCtSum").textContent=`${filtered.length} de ${rows.length} contractes`;
+    document.getElementById("altresCtBody").innerHTML=filtered
+      .sort((a,b)=>(b.any||"").localeCompare(a.any||""))
+      .map(c=>`<tr><td>${c.any||"—"}</td><td><a href="${c.link}" target="_blank" rel="noopener">${c.exp||"—"}</a></td><td>${c.obj||"—"}</td><td>${c.proc||"—"}</td><td>${c.estat||"—"}</td><td>${c.adj||"—"}</td><td class="r">${eur(c.imp)}</td></tr>`).join("");
+  };
+  document.getElementById("altresCtSearch").oninput=tbl;
+  tbl();
 }
 
 const DRAW={resum:drawResum,diners:drawDiners,promes:drawPromes,salut:drawSalut,contractes:drawContractes,fonts:drawFonts};

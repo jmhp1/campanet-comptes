@@ -1,0 +1,49 @@
+=== Descarregant 2016 ===
+=== 2016: OK ( 56M) ===
+=== Descarregant 2017 ===
+=== 2017: OK ( 96M) ===
+=== Descarregant 2018 ===
+=== 2018: OK (273M) ===
+=== Descarregant 2019 ===
+=== 2019: OK (448M) ===
+=== Descarregant 2020 ===
+=== 2020: OK (432M) ===
+=== Descarregant 2021 ===
+=== 2021: OK (593M) ===
+=== Descarregant 2022 ===
+=== 2016: ja descarregat i vàlid, salto ===
+=== 2017: ja descarregat i vàlid, salto ===
+=== 2018: ja descarregat i vàlid, salto ===
+=== 2019: ja descarregat i vàlid, salto ===
+=== 2020: ja descarregat i vàlid, salto ===
+=== 2021: ja descarregat i vàlid, salto ===
+=== Descarregant 2022 ===
+=== 2022: ZIP INVÀLID, reintent ===
+=== 2016: ja descarregat i vàlid, salto ===
+=== 2017: ja descarregat i vàlid, salto ===
+=== 2018: ja descarregat i vàlid, salto ===
+=== 2019: ja descarregat i vàlid, salto ===
+=== 2020: ja descarregat i vàlid, salto ===
+=== 2021: ja descarregat i vàlid, salto ===
+=== Descarregant 2022 ===
+=== 2022: ZIP INVÀLID, reintent ===
+=== 2022: FALLAT definitivament ===
+=== Descarregant 2023 ===
+=== 2023: ZIP INVÀLID, reintent ===
+=== 2023: FALLAT definitivament ===
+=== Descarregant 2024 ===
+=== 2024: ZIP INVÀLID, reintent ===
+=== 2024: FALLAT definitivament ===
+=== TOT FET ===
+=== 2016: ja descarregat i vàlid, salto ===
+=== 2017: ja descarregat i vàlid, salto ===
+=== 2018: ja descarregat i vàlid, salto ===
+=== 2019: ja descarregat i vàlid, salto ===
+=== 2020: ja descarregat i vàlid, salto ===
+=== 2021: ja descarregat i vàlid, salto ===
+=== Descarregant 2022 ===
+=== 2022: intent 1 incomplet (320M), reintentant amb represa ===
+=== 2022: intent 2 incomplet (320M), reintentant amb represa ===
+=== 2022: intent 3 incomplet (320M), reintentant amb represa ===
+=== 2022: intent 4 incomplet (320M), reintentant amb represa ===
+=== 2022: intent 5 incomplet (320M), reintentant amb represa ===

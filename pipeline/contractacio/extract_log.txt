@@ -1,0 +1,11 @@
+2016: 124 fitxers, 0 coincidències (brutes, abans de desduplicar)
+2017: 187 fitxers, 0 coincidències (brutes, abans de desduplicar)
+2018: 314 fitxers, 1038 coincidències (brutes, abans de desduplicar)
+2019: 479 fitxers, 1626 coincidències (brutes, abans de desduplicar)
+2020: 522 fitxers, 1586 coincidències (brutes, abans de desduplicar)
+2021: 700 fitxers, 2456 coincidències (brutes, abans de desduplicar)
+2022: 883 fitxers, 3378 coincidències (brutes, abans de desduplicar)
+2023: 1250 fitxers, 4991 coincidències (brutes, abans de desduplicar)
+2024: 1302 fitxers, 4990 coincidències (brutes, abans de desduplicar)
+
+TOTAL registres únics: 5173 -> /Users/joanmateuhorrachpou/Desktop/cowork_OS/campanet-comptes/pipeline/contractacio/contractes_mallorca.csv
