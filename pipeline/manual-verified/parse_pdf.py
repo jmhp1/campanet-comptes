@@ -53,7 +53,7 @@ def parse_capitols(path):
         lines = f.readlines()
     desp_lines = get_section_lines(lines, "SITUACIÓ DE DESPESES", ["SITUACIÓ D'INGRESSOS"])
     ing_lines = get_section_lines(lines, "SITUACIÓ D'INGRESSOS", ["RESULTAT PRESSUPOSTARI", "ESTAT DE FLUXES"])
-    desp_rows = extract_rows(desp_lines, 8, r"^\d{2}\s+\S+\s+(\d{3,5})\s+.*")
+    desp_rows = extract_rows(desp_lines, 8, r"^\d{1,2}\s+\S+\s+(\d{3,5})\s+.*")
     ing_rows = extract_rows(ing_lines, 10, r"^(\d{3,5})\s+\S.*")
     desp_cap = aggregate(desp_rows, 0, 2, 4)
     ing_cap = aggregate(ing_rows, 0, 2, 6)

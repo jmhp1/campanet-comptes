@@ -125,6 +125,7 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
   <button role="tab" id="t-salut" aria-controls="p-salut" data-tab="salut">Salut financera</button>
   <button role="tab" id="t-contractes" aria-controls="p-contractes" data-tab="contractes">Contractació</button>
   <button role="tab" id="t-fonts" aria-controls="p-fonts" data-tab="fonts">Fonts i mètode</button>
+  <button role="tab" id="t-cobertura" aria-controls="p-cobertura" data-tab="cobertura">Cobertura de dades</button>
 </nav>
 <div class="key" aria-label="Clau de colors">
   <span><i style="background:var(--pos)"></i>Saldo positiu, estalvi</span>
@@ -420,7 +421,21 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
   </section>
 </div>
 
-<footer>Totes les xifres en euros corrents. 2023* és el pressupost de 2022 prorrogat. Fet amb dades públiques; cada xifra es pot comprovar al document enllaçat a «Fonts i mètode».</footer>
+<div role="tabpanel" id="p-cobertura" aria-labelledby="t-cobertura" hidden>
+  <section class="panel">
+    <h2>Quines dades tenim de cada poble</h2>
+    <p class="note" style="max-width:none">Per a cada poble i any: si tenim el pressupost inicial i la liquidació (executat) del Ministeri d'Hisenda, o si en falta algun. Quan a un poble li faltaven anys i hem trobat els comptes a la seva pròpia web, es marca com a «omplert amb la web». Taula pensada per saber on es pot confiar més i on encara falten dades.</p>
+    <div class="key" aria-label="Clau de cobertura" id="dcovKey" style="margin-bottom:14px"></div>
+    <div id="dcovKpis" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px"></div>
+    <div class="tablewrap"><table id="dcovTable">
+      <thead><tr id="dcovHead"></tr></thead>
+      <tbody id="dcovBody"></tbody>
+    </table></div>
+    <p class="note" style="margin-top:10px">«Contr.» = expedients trobats a la Plataforma de Contractació del Sector Públic (total disponible, no és un buit per any).</p>
+  </section>
+</div>
+
+<footer id="pageFooter">Totes les xifres en euros corrents. 2023* és el pressupost de 2022 prorrogat. Fet amb dades públiques; cada xifra es pot comprovar al document enllaçat a «Fonts i mètode».</footer>
 </div>
 
 <script>
@@ -663,14 +678,14 @@ const legend={position:"bottom",labels:{color:css("--ink"),boxWidth:12}};
 
 /* ---------- Tabs ---------- */
 const drawn={};
-const TABS=["resum","diners","promes","salut","contractes","fonts"];
+const TABS=["resum","diners","promes","salut","contractes","fonts","cobertura"];
 function show(tab,push=true){
   if(!TABS.includes(tab))tab="resum";
-  const prefix=altresMode?"p-altres-":"p-";
+  const prefix=tab==="cobertura"?"p-":(altresMode?"p-altres-":"p-");
   document.querySelectorAll('[role="tab"]').forEach(b=>{const on=b.dataset.tab===tab;b.setAttribute("aria-selected",on);b.tabIndex=on?0:-1;});
   document.querySelectorAll('[role="tabpanel"]').forEach(p=>p.hidden=p.id!==prefix+tab);
   if(push)history.replaceState(null,"","#"+tab);
-  if(!drawn[tab]){drawn[tab]=true;(altresMode?ALTRES_DRAW:DRAW)[tab]();}
+  if(!drawn[tab]){drawn[tab]=true;tab==="cobertura"?drawCobertura():(altresMode?ALTRES_DRAW:DRAW)[tab]();}
 }
 function initTabs(){
   const list=document.querySelector('[role="tablist"]');
@@ -929,12 +944,20 @@ function renderAltresYearPills(){
 function altresCap(codi,y){return ((altresData.liquidacio[codi]||{})[y])||{};}
 function altresSumSide(codi,y,keys,field){const d=altresCap(codi,y);let s=0,any=false;keys.forEach(k=>{if(d[k]&&d[k][field]!=null){s+=d[k][field];any=true;}});return any?s:null;}
 function lastWithValue(years,fn){for(let i=years.length-1;i>=0;i--){const v=fn(years[i]);if(v!=null&&isFinite(v))return{year:years[i],value:v};}return null;}
+/* Elisió catalana: "de"->"d'" davant vocal/h, llevat dels noms amb article propi (Sa/Ses/Es/Son/Na),
+   que el conserven ("de Sa Pobla", no "de sa Pobla" ni "d'Sa Pobla"). */
+function elideDe(nom){
+  if(/^(Sa|Ses|Es|Son|Na)\s/.test(nom))return "de "+nom;
+  return /^[AEIOUÀÈÉÍÒÓÚÜH]/i.test(nom)?"d'"+nom:"de "+nom;
+}
+function resetDrawnExceptCobertura(){for(const k in drawn)if(k!=="cobertura")delete drawn[k];}
 function selectMunicipi(codi){
   if(!codi){
     altresMode=false;
     document.getElementById("pageTitle").textContent="Els comptes de Campanet";
     document.getElementById("pageSub").textContent="Què va aprovar l'Ajuntament, què va gastar i ingressar de veritat, quant estalvi li queda i a qui adjudica els contractes. Dades oficials, 2017–2024.";
-    for(const k in drawn)delete drawn[k];
+    document.getElementById("pageFooter").textContent="Totes les xifres en euros corrents. 2023* és el pressupost de 2022 prorrogat. Fet amb dades públiques; cada xifra es pot comprovar al document enllaçat a «Fonts i mètode».";
+    resetDrawnExceptCobertura();
     show((location.hash||"#resum").slice(1),false);
     return;
   }
@@ -942,13 +965,14 @@ function selectMunicipi(codi){
     const m=j.municipis.find(x=>x.codi===codi);
     altresMode=true;
     altresMunicipiActual=codi;
-    document.getElementById("pageTitle").textContent=`Els comptes de ${m.nom}`;
+    document.getElementById("pageTitle").textContent=`Els comptes ${elideDe(m.nom)}`;
     document.getElementById("pageSub").textContent="Dades preliminars del Ministeri d'Hisenda. Vista senzilla mentre es completa la verificació, igual que es va fer amb Campanet.";
+    document.getElementById("pageFooter").textContent="Totes les xifres en euros corrents. Dades del Ministeri d'Hisenda i, quan s'indica a «Cobertura de dades», de la web pròpia de l'ajuntament. Encara no hi ha un document (PDF) enllaçat per a cada xifra.";
     document.getElementById("altresTitle").textContent=m.nom;
     document.getElementById("altresPob").textContent=m.poblacio?`${m.poblacio.toLocaleString("ca-ES")} habitants`:"";
     altresYears=Object.keys((j.liquidacio[codi])||{}).sort();
     altresYearSel=altresYears[altresYears.length-1];
-    for(const k in drawn)delete drawn[k];
+    resetDrawnExceptCobertura();
     show((location.hash||"#resum").slice(1),false);
   });
 }
@@ -1177,6 +1201,94 @@ function drawAltresContractes(){
   };
   document.getElementById("altresCtSearch").oninput=tbl;
   tbl();
+}
+
+/* ---------- COBERTURA DE DADES (tots els pobles, inclòs Campanet) ---------- */
+const COV_YEARS=["2016","2017","2018","2019","2020","2021","2022","2023","2024"];
+// S'actualitza a mida que es revisa la web de cada ajuntament (vegeu pipeline/manual-verified/).
+const COV_WEB_STATUS={
+  "07020AA000":"found",   // Esporles: 2017/2018/2020 omplerts amb PDFs de la web
+  "07025AA000":"empty",   // Fornalutx: revisada, no hi ha secció d'hisenda/pressuposts
+  "07021AA000":"empty",   // Estellencs
+  "07009AA000":"empty",   // Búger
+  "07034AA000":"empty",   // Mancor de la Vall
+  "07049AA000":"empty",   // Sant Joan
+  "07030AA000":"empty",   // Llubí
+  "07047AA000":"partial", // Sencelles: té PDFs però no dels anys que falten
+  "07058AA000":"partial", // Selva
+  "07045AA000":"empty",   // Puigpunyent: portal de transparència propi, 0 documents de liquidació
+  "07060AA000":"empty",   // Sineu: només pressuposts inicials (ja els teníem), sense comptes generals
+  "07019AA000":"empty",   // Escorca: carpetes "Comptes generals"/"Pressuposts" buides a la web
+  "07007AA000":"partial", // Banyalbufar: només Compte General 2023 (no és any que falti)
+  "07018AA000":"found",   // Deià: 2021 omplert amb PDF de la web (2022-2024 encara no publicats)
+  "07017AA000":"found",   // Costitx: 2017/2018/2019/2021 omplerts amb PDFs de la web
+  "07901AA000":"empty",   // Ariany: portal de transparència propi, 0 documents econòmics
+  "07053AA000":"empty",   // Santa Eugènia: sense comptes generals publicats
+  "07035AA000":"empty",   // Maria de la Salut: sense comptes generals publicats (2023 és massa recent)
+  "07041AA000":"empty",   // Petra: només notes BOIB del pressupost inicial, sense comptes generals
+  "07038AA000":"found",   // Montuïri: 2021 omplert amb PDF de la web
+  "07001AA000":"partial", // Alaró: només Compte General 2023/2024 (no és l'any que falta: 2021)
+  "07027AA000":"partial", // Inca: sèrie IBESTAT només dona totals, no detall per capítols
+};
+const COV_WEB_LABEL={found:["Trobat a la web","pos"],partial:["Web parcial","plan"],empty:["Web revisada, buida","neg"],progress:["Revisant ara","real"],not_checked:["Per revisar","muted"],no_gaps:["Ja complet, no cal","muted"]};
+const CAMPANET_COV={codi:"07012AA000",nom:"Campanet",poblacio:2824,nContr:18,web:"found",
+  cells:{"2016":"pres_only","2017":"complete","2018":"complete","2019":"complete","2020":"complete","2021":"complete","2022":"complete","2023":"complete","2024":"complete"}};
+function covCellStatus(caps){
+  const vals=Object.values(caps||{});
+  const hasP=vals.some(v=>v.inicial!=null), hasL=vals.some(v=>v.executat!=null);
+  if(hasP&&hasL)return "complete";
+  if(hasP)return "pres_only";
+  if(hasL)return "liq_only";
+  return "none";
+}
+const COV_GLYPH={complete:"C",pres_only:"P",liq_only:"L",none:"·"};
+const COV_TITLE={complete:"Complet: pressupost + liquidació",pres_only:"Només pressupost (falta liquidació)",liq_only:"Només liquidació (falta pressupost)",none:"Sense dades"};
+function drawCobertura(){
+  loadAltresData().then(j=>{
+    const rows=j.municipis.map(m=>{
+      const cells=Object.fromEntries(COV_YEARS.map(y=>[y,covCellStatus((j.liquidacio[m.codi]||{})[y])]));
+      const hasGaps=Object.values(cells).some(s=>s!=="complete");
+      return {
+        codi:m.codi,nom:m.nom,poblacio:m.poblacio,cells,
+        nContr:(j.contractes[m.codi]||[]).length,
+        web:COV_WEB_STATUS[m.codi]||(hasGaps?"not_checked":"no_gaps"),
+      };
+    });
+    rows.push(CAMPANET_COV);
+    rows.sort((a,b)=>a.poblacio-b.poblacio);
+    renderCobertura(rows);
+  });
+}
+function renderCobertura(rows){
+  document.getElementById("dcovKey").innerHTML=
+    `<span><i style="background:var(--pos)"></i>Complet (pressupost + liquidació)</span>`+
+    `<span><i style="background:var(--plan2)"></i>Parcial — P/L diu quina falta</span>`+
+    `<span><i style="background:var(--neg)"></i>Cap de les dues</span>`;
+  const complete=rows.reduce((n,r)=>n+COV_YEARS.filter(y=>r.cells[y]==="complete").length,0);
+  const total=rows.length*COV_YEARS.length;
+  const foundWeb=rows.filter(r=>r.web==="found").length;
+  const notChecked=rows.filter(r=>r.web==="not_checked").length;
+  document.getElementById("dcovKpis").innerHTML=[
+    [rows.length,"Municipis"],
+    [Math.round(100*complete/total)+"%","Caselles completes"],
+    [foundWeb,"Webs amb dades trobades"],
+    [notChecked,"Webs per revisar encara"],
+  ].map(([v,l])=>`<div style="background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 14px;min-width:120px">
+    <div style="font-size:26px;font-weight:700;font-family:'IBM Plex Sans Condensed',sans-serif">${v}</div>
+    <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em">${l}</div></div>`).join("");
+  document.getElementById("dcovHead").innerHTML=
+    `<th>Municipi</th>`+COV_YEARS.map(y=>`<th class="r">'${y.slice(2)}</th>`).join("")+`<th class="r">Contr.</th><th>Web pròpia</th>`;
+  document.getElementById("dcovBody").innerHTML=rows.map(r=>{
+    const cells=COV_YEARS.map(y=>{
+      const s=r.cells[y];
+      const bg=s==="complete"?"var(--pos-soft)":s==="none"?"var(--neg-soft)":"var(--plan2)";
+      const fg=s==="complete"?"var(--pos)":s==="none"?"var(--neg)":"var(--ink)";
+      return `<td class="r"><span title="${r.nom} ${y}: ${COV_TITLE[s]}" style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:20px;border-radius:4px;background:${bg};color:${fg};font-weight:700;font-size:11px">${COV_GLYPH[s]}</span></td>`;
+    }).join("");
+    const [wlabel,wcls]=COV_WEB_LABEL[r.web];
+    const wcolor=wcls==="muted"?"var(--muted)":`var(--${wcls})`;
+    return `<tr><td><b>${r.nom}</b> <span style="color:var(--muted);font-size:12px">${r.poblacio.toLocaleString("ca-ES")}</span></td>${cells}<td class="r">${r.nContr}</td><td><span style="color:${wcolor};font-size:13px">${wlabel}</span></td></tr>`;
+  }).join("");
 }
 
 const DRAW={resum:drawResum,diners:drawDiners,promes:drawPromes,salut:drawSalut,contractes:drawContractes,fonts:drawFonts};
