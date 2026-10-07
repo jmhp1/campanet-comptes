@@ -143,7 +143,7 @@ def process_year(year, municipis_by_nif, best_by_id):
 def main():
     municipis_by_nif = load_municipis()
     best_by_id = {}
-    for year in [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]:
+    for year in [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]:
         process_year(year, municipis_by_nif, best_by_id)
 
     fields = ["codi_ine", "municipi", "any", "expedient", "objecte", "procediment", "estat",
